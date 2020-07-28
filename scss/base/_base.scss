@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('/font/Rubik-Regular.eot?') format('oldIE'),
+       url('/font/Rubik-Regular.woff') format('woff'),
+       url('/font/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('/font/NotoSansJP-Regular.eot?') format('oldIE'),
+       url('/font/NotoSansJP-Regular.woff') format('woff'),
+       url('/font/NotoSansJP-Regular.ttf') format('truetype');
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Rubik, "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: .1em;
+  color: #333;
+}
