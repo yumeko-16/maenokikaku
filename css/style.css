@@ -394,9 +394,14 @@ body {
   padding: 50px 2em;
 }
 
-.wrap1024 {
+.section__1024 {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.section__title {
+  font-size: 32px;
+  line-height: 1.5;
 }
 
 .header {
@@ -456,11 +461,6 @@ body {
 .mv {
   text-align: center;
   background: #d4e7f6;
-}
-
-.mv__title {
-  font-size: 32px;
-  line-height: 1.5;
 }
 
 .mv__img {
