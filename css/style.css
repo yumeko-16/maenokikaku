@@ -394,6 +394,11 @@ body {
   padding: 50px 2em;
 }
 
+.wrap1024 {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -470,14 +475,8 @@ body {
   font-size: 17px;
 }
 
-.mv__btn {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #329eff;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+@media screen and (min-width: 1024px) {
+  .mv__txt {
+    text-align: center;
+  }
 }

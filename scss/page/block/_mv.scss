@@ -15,15 +15,11 @@
     text-align: left;
     font-size: 17px;
   }
-  &__btn {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 50px;
-    color: #fff;
-    background-color: #329eff;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+}
+@media screen and (min-width: 1024px) {
+  .mv {
+    &__txt {
+      text-align: center;
+    }
   }
 }
