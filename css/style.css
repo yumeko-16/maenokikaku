@@ -373,21 +373,25 @@ video {
 
 @font-face {
   font-family: 'Rubik';
-  src: url("/font/Rubik-Regular.eot?") format("oldIE"), url("/font/Rubik-Regular.woff") format("woff"), url("/font/Rubik-Regular.ttf") format("truetype");
+  src: url("../../font/Rubik-Regular.eot?") format("oldIE"), url("../../font/Rubik-Regular.woff") format("woff"), url("../../font/Rubik-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'NotoSansJP';
-  src: url("/font/NotoSansJP-Regular.eot?") format("oldIE"), url("/font/NotoSansJP-Regular.woff") format("woff"), url("/font/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("../../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../../font/NotoSansJP-Regular.woff") format("woff"), url("../../font/NotoSansJP-Regular.ttf") format("truetype");
 }
 
 body {
   box-sizing: border-box;
-  font-family: Rubik, "Noto Sans JP", sans-serif;
+  font-family: "Rubik", "NotoSansJP", 'Noto Sans JP', sans-serif;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: .1em;
   color: #333;
+}
+
+.section {
+  padding: 50px 2em;
 }
 
 .header {
@@ -436,4 +440,42 @@ body {
   line-height: 35px;
   color: #fff;
   background-color: #22bc92;
+}
+
+.main {
+  margin-top: 64px;
+}
+
+.mv {
+  text-align: center;
+  background: #d4e7f6;
+}
+
+.mv__title {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.mv__img {
+  display: block;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mv__txt {
+  text-align: left;
+  font-size: 17px;
+}
+
+.mv__btn {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #329eff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
