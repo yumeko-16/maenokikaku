@@ -4,12 +4,16 @@
     list-style: none;
   }
   &__btn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 15px 5px;
-    border-radius: 50px;
-    text-align: center;
+    padding: 15px 15px;
+    border-radius: 30px;
+    font-weight: 600;
     color: #fff;
     background-color: #329eff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
