@@ -624,3 +624,15 @@ ul {
     font-size: 15px;
   }
 }
+
+.company__content {
+  margin: 45px auto 0;
+}
+
+.company__summary {
+  margin-bottom: 20px;
+}
+
+.company__google {
+  width: 100%;
+}
