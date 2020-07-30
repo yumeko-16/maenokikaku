@@ -16,7 +16,7 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(33,35,37,.12);
     border-radius: 8px;
-    @include lg() {
+    @include md() {
       width: calc((100% - 64px) / 3);
       min-height: 353px;
     }

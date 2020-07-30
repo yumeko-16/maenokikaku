@@ -1,11 +1,36 @@
 .company {
   &__content {
     margin: 45px auto 0;
+    @include md() {
+      display: flex;
+      align-items: center;
+    }
   }
   &__summary {
     margin-bottom: 20px;
+    @include md() {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  &__name {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  &__address {
+    margin-bottom: 20px;
+  }
+  &__map {
+    width: 100%;
+    @include md() {
+      width: 50%;
+    }
   }
   &__google {
+    display: block;
     width: 100%;
+    @include md() {
+      height: 300px;
+    }
   }
 }

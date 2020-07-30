@@ -583,7 +583,7 @@ ul {
   border-radius: 8px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   .service__item {
     width: calc((100% - 64px) / 3);
     min-height: 353px;
@@ -629,10 +629,50 @@ ul {
   margin: 45px auto 0;
 }
 
+@media (min-width: 769px) {
+  .company__content {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .company__summary {
   margin-bottom: 20px;
 }
 
-.company__google {
+@media (min-width: 769px) {
+  .company__summary {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.company__name {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.company__address {
+  margin-bottom: 20px;
+}
+
+.company__map {
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .company__map {
+    width: 50%;
+  }
+}
+
+.company__google {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .company__google {
+    height: 300px;
+  }
 }
