@@ -2,6 +2,11 @@
   background-color: #edf2f7;
   &__list {
     margin: 45px auto;
+    @include md() {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
   &__item {
     width: 100%;
@@ -11,6 +16,10 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(33,35,37,.12);
     border-radius: 8px;
+    @include lg() {
+      width: calc((100% - 64px) / 3);
+      min-height: 353px;
+    }
   }
   &__img {
     display: block;
@@ -25,10 +34,16 @@
     &-title {
       text-align: center;
       font-size: 22px;
+      @include md() {
+        font-size: 20px;
+      }
     }
     &-txt {
       margin-top: 10px;
       font-size: 16px;
+      @include md() {
+        font-size: 15px;
+      }
     }
   }
 }
