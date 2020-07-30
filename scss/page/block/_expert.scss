@@ -1,8 +1,7 @@
 .expert {
   &__list {
     max-width: 300px;
-    margin: 45px auto 45px;
-    list-style: none;
+    margin: 45px auto;
     @include md() {
       max-width: 350px;
     }
