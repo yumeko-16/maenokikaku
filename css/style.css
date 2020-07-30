@@ -373,12 +373,12 @@ video {
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../../font/Rubik-Regular.eot?") format("oldIE"), url("../../font/Rubik-Regular.woff") format("woff"), url("../../font/Rubik-Regular.ttf") format("truetype");
+  src: url("../font/Rubik-Regular.eot?") format("oldIE"), url("../font/Rubik-Regular.woff") format("woff"), url("../font/Rubik-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'NotoSansJP';
-  src: url("../../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../../font/NotoSansJP-Regular.woff") format("woff"), url("../../font/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../font/NotoSansJP-Regular.woff") format("woff"), url("../font/NotoSansJP-Regular.ttf") format("truetype");
 }
 
 body {
@@ -390,7 +390,7 @@ body {
   color: #333;
 }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   body {
     font-size: 19px;
   }
@@ -400,29 +400,40 @@ a {
   text-decoration: none;
 }
 
-.section {
-  padding: 50px 2em;
+.br-pc {
+  display: none;
 }
 
-.section__1024 {
+@media (min-width: 769px) {
+  .br-pc {
+    display: block;
+  }
+}
+
+.txt-bold {
+  font-weight: 600;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+@media (min-width: 769px) {
+  .section {
+    padding: 80px 0;
+  }
+}
+
+.section__inner {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section__title {
   text-align: center;
   font-size: 32px;
   line-height: 1.5;
-}
-
-@media screen and (min-width: 769px) {
-  .section {
-    padding: 80px 2em;
-  }
-}
-
-.txt-bold {
-  font-weight: 600;
 }
 
 .header {
@@ -481,6 +492,12 @@ a {
   background: #d4e7f6;
 }
 
+@media (min-width: 769px) {
+  .mv {
+    border-radius: 0 0 50% 50%/0 0 8% 8%;
+  }
+}
+
 .mv__img {
   display: block;
   max-width: 540px;
@@ -492,13 +509,7 @@ a {
   text-align: left;
 }
 
-@media screen and (min-width: 769px) {
-  .mv {
-    border-radius: 0 0 50% 50%/0 0 8% 8%;
-  }
-}
-
-@media screen and (min-width: 1025px) {
+@media (min-width: 769px) {
   .mv__txt {
     text-align: center;
   }
@@ -508,6 +519,12 @@ a {
   max-width: 300px;
   margin: 45px auto 45px;
   list-style: none;
+}
+
+@media (min-width: 769px) {
+  .expert__list {
+    max-width: 350px;
+  }
 }
 
 .expert__btn {
@@ -522,23 +539,17 @@ a {
   border-radius: 30px;
   font-weight: 600;
   color: #fff;
-  background-color: #329eff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition: none;
   transition: none;
+  background-color: #329eff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 481px) {
+@media (min-width: 769px) {
   .expert__btn {
-    max-width: 350px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .expert__list {
     max-width: 350px;
   }
 }
