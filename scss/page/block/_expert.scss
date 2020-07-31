@@ -1,10 +1,6 @@
 .expert {
   &__list {
-    max-width: 300px;
-    margin: 45px auto;
-    @include md() {
-      max-width: 350px;
-    }
+    margin: 0 auto 40px;
   }
   &__btn {
     @include _btn;

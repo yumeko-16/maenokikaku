@@ -1,13 +1,13 @@
 .company {
   &__content {
-    margin: 45px auto 0;
+    margin: 0 auto;
     @include md() {
       display: flex;
       align-items: center;
     }
   }
   &__summary {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     @include md() {
       width: 50%;
       margin-bottom: 0;

@@ -7,12 +7,9 @@
     display: block;
     max-width: 540px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   &__txt {
-    text-align: left;
-    @include md() {
-      text-align: center;
-    }
+    margin: 0 auto;
   }
 }

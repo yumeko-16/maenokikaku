@@ -1,7 +1,7 @@
 .service {
   background-color: #edf2f7;
   &__list {
-    margin: 45px auto;
+    margin: 0 auto;
     @include md() {
       display: flex;
       justify-content: space-between;

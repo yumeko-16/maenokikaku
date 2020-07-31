@@ -429,13 +429,16 @@ ul {
 }
 
 .section__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .section__title {
-  text-align: center;
+  margin: 0 auto 40px;
   font-size: 32px;
   line-height: 1.5;
 }
@@ -506,28 +509,15 @@ ul {
   display: block;
   max-width: 540px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .mv__txt {
-  text-align: left;
-}
-
-@media (min-width: 769px) {
-  .mv__txt {
-    text-align: center;
-  }
+  margin: 0 auto;
 }
 
 .expert__list {
-  max-width: 300px;
-  margin: 45px auto;
-}
-
-@media (min-width: 769px) {
-  .expert__list {
-    max-width: 350px;
-  }
+  margin: 0 auto 40px;
 }
 
 .expert__btn {
@@ -562,7 +552,7 @@ ul {
 }
 
 .service__list {
-  margin: 45px auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 769px) {
@@ -626,7 +616,7 @@ ul {
 }
 
 .company__content {
-  margin: 45px auto 0;
+  margin: 0 auto;
 }
 
 @media (min-width: 769px) {
@@ -637,7 +627,7 @@ ul {
 }
 
 .company__summary {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 769px) {
@@ -674,5 +664,57 @@ ul {
 @media (min-width: 769px) {
   .company__google {
     height: 300px;
+  }
+}
+
+.contact {
+  background-color: #edf2f7;
+}
+
+.contact__txt {
+  margin: 0 auto 40px;
+}
+
+.contact__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact__icon {
+  color: #333;
+}
+
+.contact__num {
+  margin-left: 20px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+}
+
+.contact__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition: none;
+  transition: none;
+  background-color: #22bc92;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 769px) {
+  .contact__btn {
+    max-width: 350px;
   }
 }

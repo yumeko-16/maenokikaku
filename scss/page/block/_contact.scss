@@ -1,0 +1,28 @@
+.contact {
+  background-color: #edf2f7;
+  &__txt {
+    margin: 0 auto 40px;
+  }
+  &__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    color: #333;
+  }
+  &__num {
+    margin-left: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+  }
+  &__btn {
+    @include _btn;
+    background-color: #22bc92;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    @include md() {
+      max-width: 350px;
+    }
+  }
+}
