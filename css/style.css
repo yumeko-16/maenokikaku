@@ -495,6 +495,23 @@ ul {
   margin-top: 64px;
 }
 
+.footer {
+  padding: 20px 0;
+  background: #232b33;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__inner {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .mv {
   background: #d4e7f6;
 }
