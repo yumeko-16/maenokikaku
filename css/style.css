@@ -464,6 +464,7 @@ ul {
 .section__title {
   margin: 0 auto 8.33333vw;
   font-size: 6.66667vw;
+  font-weight: 600;
   line-height: 1.5;
 }
 
@@ -639,6 +640,23 @@ ul {
 @media (min-width: 769px) {
   .mv {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
+  }
+}
+
+.mv__title {
+  font-size: 9.375vw;
+}
+
+@media (min-width: 481px) {
+  .mv__title {
+    font-size: 5.85938vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .mv__title {
+    font-size: 45px;
+    margin: 0 auto 20px;
   }
 }
 

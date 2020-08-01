@@ -71,6 +71,7 @@ ul {
   &__title {
     margin: 0 auto get_vw(40);
     font-size: get_vw(32);
+    font-weight: 600;
     line-height: 1.5;
     @include sm() {
       margin: 0 auto get_vw-sm(40);
