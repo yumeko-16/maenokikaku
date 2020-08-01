@@ -7,7 +7,13 @@
     display: block;
     max-width: 540px;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto get_vw(20);
+    @include sm() {
+      margin: 0 auto get_vw-sm(20);
+    }
+    @include md() {
+      margin: 0 auto 20px;
+    }
   }
   &__txt {
     margin: 0 auto;

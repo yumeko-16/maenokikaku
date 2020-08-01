@@ -1,13 +1,15 @@
 .expert {
   &__list {
-    margin: 0 auto 40px;
+    margin: 0 auto get_vw(40);
+    @include sm() {
+      margin: 0 auto get_vw-sm(40);
+    }
+    @include md() {
+      margin: 0 auto 40px;
+    }
   }
   &__btn {
-    @include _btn;
+    @include _btn('normal');
     background-color: #329eff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    @include md() {
-      max-width: 350px;
-    }
   }
 }

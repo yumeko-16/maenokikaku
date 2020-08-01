@@ -1,24 +1,40 @@
 .company {
   &__content {
-    margin: 0 auto;
     @include md() {
       display: flex;
       align-items: center;
     }
   }
   &__summary {
-    margin-bottom: 40px;
+    margin-bottom: get_vw(40);
+    @include sm() {
+      margin-bottom: get_vw-sm(40);
+    }
     @include md() {
       width: 50%;
       margin-bottom: 0;
     }
   }
   &__name {
-    margin-bottom: 20px;
-    font-size: 22px;
+    margin-bottom: get_vw(20);
+    font-size: get_vw(22);
+    @include sm() {
+      margin-bottom: get_vw-sm(20);
+      font-size: get_vw-sm(22);
+    }
+    @include md() {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
   }
   &__address {
-    margin-bottom: 20px;
+    margin-bottom: get_vw(20);
+    @include sm() {
+      margin-bottom: get_vw-sm(20);
+    }
+    @include md() {
+      margin-bottom: 20px;
+    }
   }
   &__map {
     width: 100%;
