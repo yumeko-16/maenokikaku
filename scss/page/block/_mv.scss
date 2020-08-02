@@ -3,14 +3,22 @@
   @include md() {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
   }
-  &__title {
-    font-size: get_vw(45);
-    @include sm() {
-      font-size: get_vw-sm(45);
-    }
+  &__inner {
     @include md() {
-      font-size: 45px;
-      margin: 0 auto 20px;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    @include md() {
+      width: 50%;
+    }
+  }
+  &__title {
+    @include md() {
+      margin: 0 0 40px;
     }
   }
   &__img {
@@ -22,6 +30,7 @@
       margin: 0 auto get_vw-sm(20);
     }
     @include md() {
+      width: 50%;
       margin: 0 auto 20px;
     }
   }
