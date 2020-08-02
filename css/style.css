@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Rubik';
+  src: url("../font/Rubik-Regular.eot?") format("oldIE"), url("../font/Rubik-Regular.woff") format("woff"), url("../font/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url("../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../font/NotoSansJP-Regular.woff") format("woff"), url("../font/NotoSansJP-Regular.ttf") format("truetype");
+}
+
 /*!
  * ress.css • v1.2.2
  * MIT License
@@ -369,16 +379,6 @@ video {
   /* Required when declaring ::selection */
   color: #000;
   text-shadow: none;
-}
-
-@font-face {
-  font-family: 'Rubik';
-  src: url("../font/Rubik-Regular.eot?") format("oldIE"), url("../font/Rubik-Regular.woff") format("woff"), url("../font/Rubik-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'NotoSansJP';
-  src: url("../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../font/NotoSansJP-Regular.woff") format("woff"), url("../font/NotoSansJP-Regular.ttf") format("truetype");
 }
 
 body {
