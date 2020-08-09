@@ -1,0 +1,110 @@
+.mail {
+  &__description {
+    margin-bottom: get_vw(40);
+  }
+  &__step-bar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto get_vw(40);
+    text-align: center;
+  }
+  &__step-item {
+    position: relative;
+    width: 33.333%;
+    font-size: get_vw(12);
+    list-style: none;
+    &:after {
+      content: "";
+      position: absolute;
+      top: get_vw(10);
+      left: calc(-50% + 3.75vw);
+      width: calc(100% - 7.5vw);
+      height: get_vw(4);
+      background: #D0E1F9;
+    }
+    &:first-child:after {
+      display: none;
+    }
+  }
+  &__num {
+    display: inline-block;
+    width: get_vw(24);
+    height: get_vw(24);
+    margin-bottom: get_vw(5);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    line-height: get_vw(24);
+    color: #fff;
+    background: #D0E1F9;
+  }
+  &__visited:after {
+    background: #4D648D;
+  }
+  &__visited span {
+    background: #4D648D;
+  }
+  &__item {
+    margin-bottom: get_vw(40);
+    &-name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: get_vw(20);
+    }
+  }
+  &__label {
+    display: block;
+    font-weight: 600;
+  }
+  &__required {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: get_vw(10);
+    padding: 0 get_vw(9);
+    border-radius: get_vw(30);
+    font-size: get_vw(12);
+    color: #fff;
+    background-color: #f63a52;
+  }
+  &__input {
+    width: 100%;
+    height: get_vw(50);
+    padding: 0 get_vw(17);
+    outline: none;
+    background-color: #edf2f7;
+  }
+  &__txtarea {
+    width: 100%;
+    height: get_vw(260);
+    padding: get_vw(17);
+    outline: none;
+    background-color: #edf2f7;
+  }
+  &__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 3.125vw;
+    border-radius: 6.25vw;
+    box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-color: #329eff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition: none;
+    transition: none;
+  }
+}

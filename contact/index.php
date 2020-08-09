@@ -111,7 +111,7 @@ function validation($data) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>株式会社前野企画</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -134,17 +134,22 @@ function validation($data) {
 
         <?php if( $page_flag === 1 ): ?>
 
+        <ol class="mail__step-bar">
+          <li class="mail__step-item"><span class="mail__num">1</span><br>入力</li>
+          <li class="mail__step-item mail__visited"><span class="mail__num">2</span><br>確認</li>
+          <li class="mail__step-item"><span class="mail__num">3</span><br>完了</li>
+        </ol>
         <form method="post" action="">
           <div class="">
-            <label>氏名</label>
+            <label class="mail__label">氏名</label>
             <p><?php echo $clean['your_name']; ?></p>
           </div>
           <div class="">
-            <label>メールアドレス</label>
+            <label class="mail__label">メールアドレス</label>
             <p><?php echo $clean['email']; ?></p>
           </div>
           <div class="">
-            <label>お問い合わせ内容</label>
+            <label class="mail__label">お問い合わせ内容</label>
             <p><?php echo nl2br($clean['contact']); ?></p>
           </div>
           <input type="submit" name="btn_back" value="戻る">
@@ -156,9 +161,25 @@ function validation($data) {
 
         <?php elseif( $page_flag === 2 ): ?>
 
+        <ol class="mail__step-bar">
+          <li class="mail__step-item"><span class="mail__num">1</span><br>入力</li>
+          <li class="mail__step-item"><span class="mail__num">2</span><br>確認</li>
+          <li class="mail__step-item mail__visited"><span class="mail__num">3</span><br>完了</li>
+        </ol>
         <p>送信が完了しました。</p>
 
         <?php else: ?>
+
+        <p class="mail__description">
+          寺院エキスパートシステム・その他サービスに関するお問い合わせは、
+          お電話又は下記メールフォームより承っております。
+          どうぞ、お気軽にお問い合わせください。
+        </p>
+        <ol class="mail__step-bar">
+          <li class="mail__step-item mail__visited"><span class="mail__num">1</span><br>入力</li>
+          <li class="mail__step-item"><span class="mail__num">2</span><br>確認</li>
+          <li class="mail__step-item"><span class="mail__num">3</span><br>完了</li>
+        </ol>
 
         <?php if( !empty($error) ): ?>
         <ul class="error_list">
@@ -169,19 +190,28 @@ function validation($data) {
         <?php endif; ?>
 
         <form action="" method="post">
-          <div class="">
-            <label>氏名</label>
-            <input type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>">
+          <div class="mail__item">
+            <div class="mail__item-name">
+              <label class="mail__label">氏名</label>
+              <span class="mail__required">必須</span>
+            </div>
+            <input class="mail__input" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>" placeholder="例）山田 太郎">
           </div>
-          <div class="">
-            <label>メールアドレス</label>
-            <input type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>">
+          <div class="mail__item">
+            <div class="mail__item-name">
+              <label class="mail__label">メールアドレス</label>
+              <span class="mail__required">必須</span>
+            </div>
+            <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@pantograph.co.jp">
           </div>
-          <div class="">
-            <label>お問い合わせ内容</label>
-            <textarea name="contact"></textarea>
+          <div class="mail__item">
+            <div class="mail__item-name">
+              <label class="mail__label">お問い合わせ内容</label>
+              <span class="mail__required">必須</span>
+            </div>
+            <textarea class="mail__txtarea" name="contact" placeholder="お問合わせ内容をご入力ください。"></textarea>
           </div>
-          <input type="submit" name="btn_confirm" value="入力内容を確認する">
+          <input class="mail__btn" type="submit" name="btn_confirm" value="入力内容を確認する">
         </form>
 
         <?php endif; ?>
