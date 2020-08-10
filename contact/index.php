@@ -171,8 +171,8 @@ function validation($data) {
         <?php else: ?>
 
         <p class="mail__description">
-          寺院エキスパートシステム・その他サービスに関するお問い合わせは、
-          お電話又は下記メールフォームより承っております。
+          寺院エキスパートシステム・その他サービスに関するお問い合わせは、<br class="br-md">
+          お電話又は下記メールフォームより承っております。<br>
           どうぞ、お気軽にお問い合わせください。
         </p>
         <ol class="mail__step-bar">
