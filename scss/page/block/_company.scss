@@ -1,4 +1,13 @@
 .company {
+  &__concept {
+    margin-bottom: get_vw(40);
+    @include sm() {
+      margin-bottom: get_vw-sm(40);
+    }
+    @include md() {
+      margin-bottom: 40px;
+    }
+  }
   &__content {
     @include md() {
       display: flex;

@@ -175,11 +175,11 @@ function validation($data) {
           お電話又は下記メールフォームより承っております。<br>
           どうぞ、お気軽にお問い合わせください。
         </p>
-        <ol class="mail__step-bar">
-          <li class="mail__step-item mail__visited"><span class="mail__num">1</span><br>入力</li>
-          <li class="mail__step-item"><span class="mail__num">2</span><br>確認</li>
-          <li class="mail__step-item"><span class="mail__num">3</span><br>完了</li>
-        </ol>
+        <ul class="mail__step-bar">
+          <li class="mail__step-item mail__visited">内容入力</li>
+          <li class="mail__step-item">内容確認</li>
+          <li class="mail__step-item mail__step-completion">完了</li>
+        </ul>
 
         <?php if( !empty($error) ): ?>
         <ul class="error_list">
