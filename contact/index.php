@@ -120,109 +120,129 @@ function validation($data) {
   <script src="https://kit.fontawesome.com/d45c93bc1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="/index.html">株式会社前野企画</a>
-      <a class="header__btn" href="/contact/index.php">お問い合わせ</a>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="section mail">
-      <div class="section__inner">
-        <h2 class="section__title">お問い合わせ</h2>
-
-        <?php if( $page_flag === 1 ): ?>
-
-        <ul class="mail__step-bar">
-          <li class="mail__step-item">内容入力</li>
-          <li class="mail__step-item mail__visited">内容確認</li>
-          <li class="mail__step-item mail__step-completion">完了</li>
-        </ul>
-        <form method="post" action="">
-          <div class="">
-            <label class="mail__label">氏名</label>
-            <p><?php echo $clean['your_name']; ?></p>
-          </div>
-          <div class="">
-            <label class="mail__label">メールアドレス</label>
-            <p><?php echo $clean['email']; ?></p>
-          </div>
-          <div class="">
-            <label class="mail__label">お問い合わせ内容</label>
-            <p><?php echo nl2br($clean['contact']); ?></p>
-          </div>
-          <input type="submit" name="btn_back" value="戻る">
-          <input type="submit" name="btn_submit" value="送信">
-          <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
-          <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
-          <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
-        </form>
-
-        <?php elseif( $page_flag === 2 ): ?>
-
-        <ul class="mail__step-bar">
-          <li class="mail__step-item">内容入力</li>
-          <li class="mail__step-item">内容確認</li>
-          <li class="mail__step-item mail__step-completion mail__visited">完了</li>
-        </ul>
-        <p>送信が完了しました。</p>
-
-        <?php else: ?>
-
-        <p class="mail__description">
-          寺院エキスパートシステム・その他サービスに関するお問い合わせは、<br class="br-sm">
-          お電話又は下記メールフォームより承っております。<br>
-          どうぞ、お気軽にお問い合わせください。
-        </p>
-        <ul class="mail__step-bar">
-          <li class="mail__step-item mail__visited">内容入力</li>
-          <li class="mail__step-item">内容確認</li>
-          <li class="mail__step-item mail__step-completion">完了</li>
-        </ul>
-
-        <?php if( !empty($error) ): ?>
-        <ul class="mail__error-list">
-          <?php foreach( $error as $value ): ?>
-          <li class="mail__error-item"><?php echo $value; ?></li>
-          <?php endforeach; ?>
-        </ul>
-        <?php endif; ?>
-
-        <form action="" method="post">
-          <div class="mail__item">
-            <div class="mail__item-name">
-              <label class="mail__label">氏名</label>
-              <span class="mail__required">必須</span>
-            </div>
-            <input class="mail__input" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>" placeholder="例）山田 太郎">
-          </div>
-          <div class="mail__item">
-            <div class="mail__item-name">
-              <label class="mail__label">メールアドレス</label>
-              <span class="mail__required">必須</span>
-            </div>
-            <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@pantograph.co.jp">
-          </div>
-          <div class="mail__item">
-            <div class="mail__item-name">
-              <label class="mail__label">お問い合わせ内容</label>
-              <span class="mail__required">必須</span>
-            </div>
-            <textarea class="mail__txtarea" name="contact" placeholder="お問合わせ内容をご入力ください。"></textarea>
-          </div>
-          <input class="mail__btn" type="submit" name="btn_confirm" value="入力内容を確認する">
-        </form>
-
-        <?php endif; ?>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="/index.html">株式会社前野企画</a>
+        <a class="header__btn" href="/contact/index.php">お問い合わせ</a>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="footer">
-    <div class="footer__inner">
-      <small>© 2020 前野企画</small>
-    </div>
-  </footer>
+    <main class="main">
+      <section class="section mail">
+        <div class="section__inner">
+          <h2 class="section__title">お問い合わせ</h2>
+
+          <?php if( $page_flag === 1 ): ?>
+
+          <ul class="mail__step-bar">
+            <li class="mail__step-item">内容入力</li>
+            <li class="mail__step-item mail__visited">内容確認</li>
+            <li class="mail__step-item mail__step-completion">完了</li>
+          </ul>
+          <form method="post" action="">
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">氏名</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <p><?php echo $clean['your_name']; ?></p>
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">メールアドレス</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <p><?php echo $clean['email']; ?></p>
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">お問い合わせ内容</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <p><?php echo nl2br($clean['contact']); ?></p>
+            </div>
+            <div class="mail__btns">
+              <input class="mail__btn--back" type="submit" name="btn_back" value="戻る">
+              <input class="mail__btn" type="submit" name="btn_submit" value="入力内容を送信する">
+            </div>
+            <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
+            <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
+            <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
+          </form>
+
+          <?php elseif( $page_flag === 2 ): ?>
+
+          <ul class="mail__step-bar">
+            <li class="mail__step-item">内容入力</li>
+            <li class="mail__step-item">内容確認</li>
+            <li class="mail__step-item mail__step-completion mail__visited">完了</li>
+          </ul>
+          <p>
+            この度はお問い合わせ頂き誠にありがとうございました。<br>
+            <br>
+            いただいた内容につきましては入力していただいたメールアドレス宛に確認メールを送信させていただいております。<br>
+            もし、メールが到着しなかった場合は入力していただいたメールアドレスが間違っている可能性があります。<br>
+            <br>
+            お問い合わせいただいた内容につきましては、近日中にお返事させていただきます。
+          </p>
+
+          <?php else: ?>
+
+          <p class="mail__description">
+            寺院エキスパートシステム・その他サービスに関するお問い合わせは、<br class="br-sm">
+            お電話又は下記メールフォームより承っております。<br>
+            どうぞ、お気軽にお問い合わせください。
+          </p>
+          <ul class="mail__step-bar">
+            <li class="mail__step-item mail__visited">内容入力</li>
+            <li class="mail__step-item">内容確認</li>
+            <li class="mail__step-item mail__step-completion">完了</li>
+          </ul>
+
+          <?php if( !empty($error) ): ?>
+          <ul class="mail__error-list">
+            <?php foreach( $error as $value ): ?>
+            <li class="mail__error-item"><?php echo $value; ?></li>
+            <?php endforeach; ?>
+          </ul>
+          <?php endif; ?>
+
+          <form action="" method="post">
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">氏名</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <input class="mail__input" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>" placeholder="例）山田 太郎">
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">メールアドレス</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@pantograph.co.jp">
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">お問い合わせ内容</label>
+                <span class="mail__required">必須</span>
+              </div>
+              <textarea class="mail__txtarea" name="contact" placeholder="お問合わせ内容をご入力ください。"></textarea>
+            </div>
+            <input class="mail__btn" type="submit" name="btn_confirm" value="入力内容を確認する">
+          </form>
+
+          <?php endif; ?>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <small>© 2020 前野企画</small>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

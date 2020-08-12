@@ -71,7 +71,6 @@
     color: #fff;
     &:before {
       border-left-color: #329eff;
-      content: '';
     }
   }
   &__item {
@@ -154,9 +153,20 @@
       padding: 17px;
     }
   }
+  &__btns {
+    display: flex;
+    flex-direction: column-reverse;
+    @include sm() {
+      flex-direction: row;
+    }
+  }
   &__btn {
     @include _btn('normal');
     background-color: #329eff;
+    &--back {
+      @include _btn('back');
+      background-color: #666;
+    }
   }
   &__error {
     &-list {

@@ -51,6 +51,12 @@ ul {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .section {
   padding: get_vw(50) 0;
   @include sm() {

@@ -34,6 +34,28 @@ $initType: 'normal';
     }
   }
 
+  @if( $type == 'back' ) {
+    width: 50%;
+    max-width: 250px;
+    margin: get_vw(40) auto 0;
+    padding: get_vw(15);
+    border-radius: get_vw(30);
+    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
+    @include sm() {
+      margin-top: 0;
+      margin-right: get_vw-sm(40);
+      padding: get_vw-sm(15);
+      border-radius: get_vw-sm(30);
+      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, 0.5);
+    }
+    @include md() {
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+
   @else if( $type == 'header' ) {
     padding: get_vw(5) get_vw(15);
     border-radius: get_vw(30);
