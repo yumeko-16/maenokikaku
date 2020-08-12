@@ -158,4 +158,18 @@
     @include _btn('normal');
     background-color: #329eff;
   }
+  &__error {
+    &-list {
+      margin: 0 auto get_vw(40);
+      @include sm() {
+        margin-bottom: get_vw-sm(40);
+      }
+      @include md() {
+        margin-bottom: 40px;
+      }
+    }
+    &-item {
+      color: #f63a52;
+    }
+  }
 }

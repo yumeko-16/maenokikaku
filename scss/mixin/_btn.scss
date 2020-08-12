@@ -13,6 +13,7 @@ $initType: 'normal';
   transition: all 0.3s;
   -webkit-transition: none;
   transition: none;
+  outline: none;
 
   @if( $type == 'normal' ) {
     width: 100%;

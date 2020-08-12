@@ -28,34 +28,27 @@ ul {
   @include sm() {
     display: block;
   }
-  @include md() {
-    display: none;
-  }
 }
 .br-md {
-  display: block;
-  @include sm() {
-    display: none;
-  }
+  display: none;
   @include md() {
     display: block;
   }
 }
 .br-lg {
   display: none;
-  @include sm() {
-    display: block;
-  }
-  @include md() {
-    display: none;
-  }
   @include lg() {
     display: block;
   }
 }
 
-.txt-bold {
-  font-weight: 600;
+.txt {
+  &-blue {
+    color: #329eff;
+  }
+  &-bold {
+    font-weight: 600;
+  }
 }
 
 .section {

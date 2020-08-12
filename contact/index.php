@@ -123,7 +123,7 @@ function validation($data) {
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/index.html">株式会社前野企画</a>
-      <a class="header__btn" href="./contact.php">お問い合わせ</a>
+      <a class="header__btn" href="/contact/index.php">お問い合わせ</a>
     </div>
   </header>
 
@@ -134,11 +134,11 @@ function validation($data) {
 
         <?php if( $page_flag === 1 ): ?>
 
-        <ol class="mail__step-bar">
-          <li class="mail__step-item"><span class="mail__num">1</span><br>入力</li>
-          <li class="mail__step-item mail__visited"><span class="mail__num">2</span><br>確認</li>
-          <li class="mail__step-item"><span class="mail__num">3</span><br>完了</li>
-        </ol>
+        <ul class="mail__step-bar">
+          <li class="mail__step-item">内容入力</li>
+          <li class="mail__step-item mail__visited">内容確認</li>
+          <li class="mail__step-item mail__step-completion">完了</li>
+        </ul>
         <form method="post" action="">
           <div class="">
             <label class="mail__label">氏名</label>
@@ -161,17 +161,17 @@ function validation($data) {
 
         <?php elseif( $page_flag === 2 ): ?>
 
-        <ol class="mail__step-bar">
-          <li class="mail__step-item"><span class="mail__num">1</span><br>入力</li>
-          <li class="mail__step-item"><span class="mail__num">2</span><br>確認</li>
-          <li class="mail__step-item mail__visited"><span class="mail__num">3</span><br>完了</li>
-        </ol>
+        <ul class="mail__step-bar">
+          <li class="mail__step-item">内容入力</li>
+          <li class="mail__step-item">内容確認</li>
+          <li class="mail__step-item mail__step-completion mail__visited">完了</li>
+        </ul>
         <p>送信が完了しました。</p>
 
         <?php else: ?>
 
         <p class="mail__description">
-          寺院エキスパートシステム・その他サービスに関するお問い合わせは、<br class="br-md">
+          寺院エキスパートシステム・その他サービスに関するお問い合わせは、<br class="br-sm">
           お電話又は下記メールフォームより承っております。<br>
           どうぞ、お気軽にお問い合わせください。
         </p>
@@ -182,9 +182,9 @@ function validation($data) {
         </ul>
 
         <?php if( !empty($error) ): ?>
-        <ul class="error_list">
+        <ul class="mail__error-list">
           <?php foreach( $error as $value ): ?>
-          <li><?php echo $value; ?></li>
+          <li class="mail__error-item"><?php echo $value; ?></li>
           <?php endforeach; ?>
         </ul>
         <?php endif; ?>
