@@ -443,7 +443,7 @@ ul {
 }
 
 .txt-blue {
-  color: #329eff;
+  color: #6b90db;
 }
 
 .txt-bold {
@@ -1185,6 +1185,10 @@ ul {
   }
 }
 
+.company {
+  background-color: #edf2f7;
+}
+
 .company__concept {
   margin-bottom: 8.33333vw;
 }
@@ -1279,10 +1283,6 @@ ul {
   .company__google {
     height: 300px;
   }
-}
-
-.contact {
-  background-color: #edf2f7;
 }
 
 .contact__txt {
