@@ -988,6 +988,203 @@ ul {
   }
 }
 
+.flow__item {
+  position: relative;
+}
+
+.flow__item:not(:last-child) {
+  margin-bottom: 8.33333vw;
+}
+
+@media (min-width: 481px) {
+  .flow__item:not(:last-child) {
+    margin-bottom: 5.20833vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.flow__item:not(:first-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8.33333vw;
+  left: -webkit-calc(10% + 5.21vw - .42vw);
+  left: calc(10% + 5.21vw - .42vw);
+  z-index: 10;
+  height: 12.5vw;
+  border-left: 0.83333vw dotted #e5e5e5;
+}
+
+@media (min-width: 481px) {
+  .flow__item:not(:first-child)::before {
+    top: -5.20833vw;
+    left: -webkit-calc(10% + 3.26vw - .26vw);
+    left: calc(10% + 3.26vw - .26vw);
+    height: 7.8125vw;
+    border-left: 0.52083vw dotted #e5e5e5;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item:not(:first-child)::before {
+    top: -40px;
+    left: -webkit-calc(10% + 25px - 2px);
+    left: calc(10% + 25px - 2px);
+    height: 60px;
+    border-left: 4px dotted #e5e5e5;
+  }
+}
+
+.flow__item:last-child > dl::before,
+.flow__item:last-child > dl::after {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.flow__item-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 4.16667vw 6.25vw;
+  border: 0.41667vw solid #6b90db;
+  border-radius: 2.08333vw;
+}
+
+@media (min-width: 481px) {
+  .flow__item-inside {
+    padding: 2.60417vw 3.90625vw;
+    border: 0.26042vw solid #6b90db;
+    border-radius: 1.30208vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item-inside {
+    padding: 20px 30px;
+    border: 2px solid #6b90db;
+    border-radius: 10px;
+  }
+}
+
+.flow__item-inside::before, .flow__item-inside::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.flow__item-inside::last-child::before, .flow__item-inside::last-child::after {
+  border: none;
+}
+
+.flow__item-inside::before {
+  border-width: 4.58333vw;
+  border-top-color: #6b90db;
+}
+
+@media (min-width: 481px) {
+  .flow__item-inside::before {
+    border-width: 2.86458vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item-inside::before {
+    border-width: 22px;
+  }
+}
+
+.flow__item-inside::after {
+  border-width: 4.16667vw;
+  border-top-color: #fff;
+}
+
+@media (min-width: 481px) {
+  .flow__item-inside::after {
+    border-width: 2.60417vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item-inside::after {
+    border-width: 20px;
+  }
+}
+
+.flow__item-title {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  margin-right: 2vw;
+  text-align: center;
+  font-size: 4.16667vw;
+  font-weight: 600;
+  color: #6b90db;
+}
+
+@media (min-width: 481px) {
+  .flow__item-title {
+    font-size: 2.60417vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item-title {
+    font-size: 20px;
+  }
+}
+
+.flow__item-icon {
+  display: block;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 2.08333vw;
+  padding: 1.04167vw 2.08333vw;
+  border-radius: 4.16667vw;
+  font-size: 2.5vw;
+  color: #fff;
+  background: #6b90db;
+  background: -moz-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
+  background: -webkit-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
+  background: linear-gradient(to right, #6b90db 0%, #66d5e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+}
+
+@media (min-width: 481px) {
+  .flow__item-icon {
+    margin-bottom: 1.30208vw;
+    padding: 0.65104vw 1.30208vw;
+    border-radius: 2.60417vw;
+    font-size: 1.5625vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .flow__item-icon {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+}
+
 .company__concept {
   margin-bottom: 8.33333vw;
 }

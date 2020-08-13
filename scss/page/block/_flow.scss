@@ -1,0 +1,149 @@
+.flow {
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: get_vw(40);
+      @include sm() {
+        margin-bottom: get_vw-sm(40);
+      }
+      @include md() {
+        margin-bottom: 40px;
+      }
+    }
+    &:not(:first-child)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: get_vw(-40);
+      left: -webkit-calc(10% + 5.21vw - .42vw);
+      left: calc(10% + 5.21vw - .42vw);
+      z-index: 10;
+      height: get_vw(60);
+      border-left: get_vw(4) dotted #e5e5e5;
+      @include sm() {
+        top: get_vw-sm(-40);
+        left: -webkit-calc(10% + 3.26vw - .26vw);
+        left: calc(10% + 3.26vw - .26vw);
+        height: get_vw-sm(60);
+        border-left: get_vw-sm(4) dotted #e5e5e5;
+      }
+      @include md() {
+        top: -40px;
+        left: -webkit-calc(10% + 25px - 2px);
+        left: calc(10% + 25px - 2px);
+        height: 60px;
+        border-left: 4px dotted #e5e5e5;
+      }
+    }
+    &:last-child > dl::before,
+    &:last-child > dl::after {
+      content: "";
+      border: solid transparent;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    &-inside {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      padding: get_vw(20) get_vw(30);
+      border: get_vw(2) solid rgb(107,144,219);
+      border-radius: get_vw(10);
+      @include sm() {
+        padding: get_vw-sm(20) get_vw-sm(30);
+        border: get_vw-sm(2) solid rgb(107,144,219);
+        border-radius: get_vw-sm(10);
+      }
+      @include md() {
+        padding: 20px 30px;
+        border: 2px solid rgb(107,144,219);
+        border-radius: 10px;
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+      &::last-child::before,
+      &::last-child::after {
+        border: none;
+      }
+      &::before {
+        border-width: get_vw(22);
+        border-top-color: rgb(107,144,219);
+        @include sm() {
+          border-width: get_vw-sm(22);
+        }
+        @include md() {
+          border-width: 22px;
+        }
+      }
+      &::after {
+        border-width: get_vw(20);
+        border-top-color: #fff;
+        @include sm() {
+          border-width: get_vw-sm(20);
+        }
+        @include md() {
+          border-width: 20px;
+        }
+      }
+    }
+    &-title {
+      -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+      margin-right: 2vw;
+      text-align: center;
+      font-size: get_vw(20);
+      font-weight: 600;
+      color: rgb(107,144,219);
+      @include sm() {
+        font-size: get_vw-sm(20);
+      }
+      @include md() {
+        font-size: 20px;
+      }
+    }
+    &-icon {
+      display: block;
+      position: relative;
+      z-index: 100;
+      margin-bottom: get_vw(10);
+      padding: get_vw(5) get_vw(10);
+      border-radius: get_vw(20);
+      font-size: get_vw(12);
+      color: #fff;
+      background: rgb(107,144,219);
+      background: -moz-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
+      background: -webkit-linear-gradient(left, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
+      background: linear-gradient(to right, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+      @include sm() {
+        margin-bottom: get_vw-sm(10);
+        padding: get_vw-sm(5) get_vw-sm(10);
+        border-radius: get_vw-sm(20);
+        font-size: get_vw-sm(12);
+      }
+      @include md() {
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
