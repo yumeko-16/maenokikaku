@@ -1,4 +1,13 @@
 .expert {
+  &__txt {
+    margin: 0 auto get_vw(40);
+    @include sm() {
+      margin-bottom: get_vw-sm(40);
+    }
+    @include md() {
+      margin-bottom: 40px;
+    }
+  }
   &__list {
     margin: 0 auto get_vw(40);
     @include sm() {

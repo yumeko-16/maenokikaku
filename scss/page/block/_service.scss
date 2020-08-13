@@ -1,5 +1,14 @@
 .service {
   background-color: #edf2f7;
+  &__txt {
+    margin: 0 auto get_vw(40);
+    @include sm() {
+      margin-bottom: get_vw-sm(40);
+    }
+    @include md() {
+      margin-bottom: 40px;
+    }
+  }
   &__list {
     margin: 0 auto;
     @include md() {
@@ -57,9 +66,9 @@
     }
     &-title {
       text-align: center;
-      font-size: get_vw(22);
+      font-size: get_vw(20);
       @include sm() {
-        font-size: get_vw-sm(22);
+        font-size: get_vw-sm(20);
       }
       @include md() {
         font-size: 20px;
