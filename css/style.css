@@ -518,7 +518,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 100;
   width: 100%;
   background: #fff;
   box-shadow: 0 0.625vw 5.20833vw rgba(77, 77, 99, 0.1);
@@ -1192,7 +1192,7 @@ ul {
 .flow__item-icon {
   display: block;
   position: relative;
-  z-index: 100;
+  z-index: 50;
   margin-bottom: 2.08333vw;
   padding: 1.04167vw 2.08333vw;
   border-radius: 4.16667vw;
