@@ -11,7 +11,7 @@
   }
   &__list {
     margin: 0 auto;
-    @include md() {
+    @include sm() {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -26,6 +26,7 @@
     box-shadow: 0 get_vw(4) get_vw(8) rgba(33,35,37,.12);
     background-color: #fff;
     @include sm() {
+      width: calc((100% - 64px) / 2);
       margin-bottom: get_vw-sm(20);
       padding: get_vw-sm(20);
       border-radius: get_vw-sm(8);
