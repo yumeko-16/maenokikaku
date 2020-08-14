@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 ul {
@@ -84,6 +85,7 @@ ul {
     font-size: get_vw(32);
     font-weight: 600;
     line-height: 1.5;
+    color: #329eff;
     @include sm() {
       margin: 0 auto get_vw-sm(40);
       font-size: get_vw-sm(32);

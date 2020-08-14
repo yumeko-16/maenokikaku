@@ -1,7 +1,11 @@
 .mv {
-  background: #d4e7f6;
-  background: linear-gradient(to right, rgba(107, 144, 219, .8), rgba(102, 213, 233, .8)), url(/img/mv_bg.jpg);
+  background: rgb(107,144,219);
+  background: -moz-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
+  background: linear-gradient(to right, rgba(107, 144, 219, .8) 0%, rgba(102, 213, 233, .8) 100%), url(/img/mv_bg.jpg);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
   background-size: cover;
+  background-position: center;
   @include md() {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
   }
@@ -38,13 +42,11 @@
       display: none;
       @include md() {
         @include _btn;
-        margin-bottom: get_vw(40);
         background-color: #22bc92;
       }
     }
     &-sp {
       @include _btn;
-      margin-bottom: get_vw(40);
       background-color: #22bc92;
       @include md() {
         display: none;
