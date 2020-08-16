@@ -67,10 +67,10 @@
     }
   }
   &__visited {
-    background-color: #329eff;
+    background-color: $main;
     color: #fff;
     &:before {
-      border-left-color: #329eff;
+      border-left-color: $main;
     }
   }
   &__item {
@@ -162,10 +162,8 @@
   }
   &__btn {
     @include _btn('normal');
-    background-color: #329eff;
     &--back {
       @include _btn('back');
-      background-color: #666;
     }
   }
   &__error {

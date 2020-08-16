@@ -1,4 +1,5 @@
 .flow {
+  background-color: #edf2f7;
   &__item {
     position: relative;
     &:not(:last-child) {
@@ -57,6 +58,7 @@
       padding: get_vw(20) get_vw(30);
       border: get_vw(2) solid rgb(107,144,219);
       border-radius: get_vw(10);
+      background-color: #fff;
       @include sm() {
         padding: get_vw-sm(20) get_vw-sm(30);
         border: get_vw-sm(2) solid rgb(107,144,219);

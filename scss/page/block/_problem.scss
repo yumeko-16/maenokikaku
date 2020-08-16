@@ -1,5 +1,4 @@
 .problem {
-  background: #edf2f7;
   &__item {
     position: relative;
     width: 100%;
@@ -35,7 +34,7 @@
     text-align: center;
     font-size: get_vw(13);
     color: #fff;
-    background: #388ac4;
+    background: $main;
     @include sm() {
       top: get_vw-sm(-38);
       left: 0;

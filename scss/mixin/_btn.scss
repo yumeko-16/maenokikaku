@@ -22,6 +22,7 @@ $initType: 'normal';
     padding: get_vw(15);
     border-radius: get_vw(30);
     box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
+    background-color: $btn;
     @include sm() {
       padding: get_vw-sm(15);
       border-radius: get_vw-sm(30);
@@ -41,6 +42,8 @@ $initType: 'normal';
     padding: get_vw(15);
     border-radius: get_vw(30);
     box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
+    color: $txt;
+    background-color: $btn--back;
     @include sm() {
       margin-top: 0;
       margin-right: get_vw-sm(40);
@@ -60,7 +63,7 @@ $initType: 'normal';
     padding: get_vw(5) get_vw(15);
     border-radius: get_vw(30);
     font-size: get_vw(14);
-    background-color: #22bc92;
+    background-color: $accent;
     @include sm() {
       padding: get_vw-sm(5) get_vw-sm(15);
       border-radius: get_vw-sm(30);

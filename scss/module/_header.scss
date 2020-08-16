@@ -38,8 +38,15 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-size: get_vw(17);
     font-weight: 600;
     color: #333;
+    @include sm() {
+      font-size: get_vw-sm(18);
+    }
+    @include md() {
+      font-size: 19px;
+    }
   }
   &__btn {
     @include _btn('header');

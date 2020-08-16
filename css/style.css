@@ -500,7 +500,7 @@ ol {
   font-size: 6.66667vw;
   font-weight: 600;
   line-height: 1.5;
-  color: #329eff;
+  color: #0079bf;
 }
 
 @media (min-width: 481px) {
@@ -572,8 +572,21 @@ ol {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-size: 3.54167vw;
   font-weight: 600;
   color: #333;
+}
+
+@media (min-width: 481px) {
+  .header__logo {
+    font-size: 2.34375vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__logo {
+    font-size: 19px;
+  }
 }
 
 .header__btn {
@@ -755,6 +768,7 @@ ol {
     padding: 3.125vw;
     border-radius: 6.25vw;
     box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
+    background-color: #6D8EA2;
     background-color: #22bc92;
   }
 }
@@ -795,6 +809,7 @@ ol {
   padding: 3.125vw;
   border-radius: 6.25vw;
   box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
+  background-color: #6D8EA2;
   background-color: #22bc92;
 }
 
@@ -823,10 +838,6 @@ ol {
 .mv__img {
   display: block;
   width: 100%;
-}
-
-.problem {
-  background: #edf2f7;
 }
 
 .problem__item {
@@ -872,7 +883,7 @@ ol {
   text-align: center;
   font-size: 2.70833vw;
   color: #fff;
-  background: #388ac4;
+  background: #0079bf;
 }
 
 @media (min-width: 481px) {
@@ -923,6 +934,10 @@ ol {
 
 .problem__txt {
   font-weight: 600;
+}
+
+.expert {
+  background-color: #edf2f7;
 }
 
 .expert__txt {
@@ -1008,31 +1023,28 @@ ol {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 31.25vw;
-  height: 31.25vw;
+  width: 20.83333vw;
+  height: 20.83333vw;
   margin-right: auto;
   margin-bottom: 7.29167vw;
   margin-left: auto;
   border-radius: 50%;
-  background: #6b90db;
-  background: -moz-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: -webkit-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: linear-gradient(to right, #6b90db 0%, #66d5e9 100%);
+  background: #0079bf;
 }
 
 @media (min-width: 481px) {
   .expert__icon {
-    width: 19.53125vw;
-    height: 19.53125vw;
+    width: 13.02083vw;
+    height: 13.02083vw;
     margin-bottom: 4.55729vw;
   }
 }
 
 @media (min-width: 769px) {
   .expert__icon {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 35px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1060,7 +1072,8 @@ ol {
   padding: 3.125vw;
   border-radius: 6.25vw;
   box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
-  background-color: #329eff;
+  background-color: #6D8EA2;
+  background-color: #6D8EA2;
 }
 
 @media (min-width: 481px) {
@@ -1077,10 +1090,6 @@ ol {
     border-radius: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
-}
-
-.service {
-  background-color: #edf2f7;
 }
 
 .service__txt {
@@ -1215,6 +1224,10 @@ ol {
   }
 }
 
+.flow {
+  background-color: #edf2f7;
+}
+
 .flow__item {
   position: relative;
 }
@@ -1290,6 +1303,7 @@ ol {
   padding: 4.16667vw 6.25vw;
   border: 0.41667vw solid #6b90db;
   border-radius: 2.08333vw;
+  background-color: #fff;
 }
 
 @media (min-width: 481px) {
@@ -1412,10 +1426,6 @@ ol {
   }
 }
 
-.company {
-  background-color: #edf2f7;
-}
-
 .company__concept {
   margin-bottom: 8.33333vw;
 }
@@ -1512,6 +1522,10 @@ ol {
   }
 }
 
+.contact {
+  background-color: #edf2f7;
+}
+
 .contact__txt {
   margin: 0 auto 8.33333vw;
 }
@@ -1591,6 +1605,7 @@ ol {
   padding: 3.125vw;
   border-radius: 6.25vw;
   box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
+  background-color: #6D8EA2;
   background-color: #22bc92;
 }
 
@@ -1700,12 +1715,12 @@ ol {
 }
 
 .mail__visited {
-  background-color: #329eff;
+  background-color: #0079bf;
   color: #fff;
 }
 
 .mail__visited:before {
-  border-left-color: #329eff;
+  border-left-color: #0079bf;
 }
 
 .mail__item {
@@ -1855,7 +1870,7 @@ ol {
   padding: 3.125vw;
   border-radius: 6.25vw;
   box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
-  background-color: #329eff;
+  background-color: #6D8EA2;
 }
 
 @media (min-width: 481px) {
@@ -1894,7 +1909,8 @@ ol {
   padding: 3.125vw;
   border-radius: 6.25vw;
   box-shadow: 0 0.41667vw 1.66667vw rgba(0, 0, 0, 0.5);
-  background-color: #666;
+  color: #333;
+  background-color: #dfe2e7;
 }
 
 @media (min-width: 481px) {
