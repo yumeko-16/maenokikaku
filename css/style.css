@@ -683,6 +683,72 @@ ol {
   }
 }
 
+#js-pagetop {
+  opacity: 0;
+}
+
+#js-pagetop.fadein {
+  opacity: 1;
+}
+
+#js-pagetop:hover {
+  opacity: .8;
+}
+
+.pagetop {
+  display: block;
+  position: fixed;
+  right: 3.125vw;
+  bottom: 6.25vw;
+  width: 10.41667vw;
+  height: 10.41667vw;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+  line-height: 10.41667vw;
+  background: #7db4e6;
+}
+
+@media (min-width: 481px) {
+  .pagetop {
+    right: 1.95313vw;
+    bottom: 3.90625vw;
+    width: 6.51042vw;
+    height: 6.51042vw;
+    line-height: 6.51042vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .pagetop {
+    right: 15px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.pagetop i {
+  font-size: 4.16667vw;
+  color: #fff;
+  line-height: 10.41667vw;
+}
+
+@media (min-width: 481px) {
+  .pagetop i {
+    font-size: 2.60417vw;
+    line-height: 6.51042vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .pagetop i {
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
+
 .mv {
   background: #6b90db;
   background: -moz-linear-gradient(left, #6b90db 0%, #66d5e9 100%);

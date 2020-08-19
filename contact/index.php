@@ -118,6 +118,8 @@ function validation($data) {
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d45c93bc1b.js" crossorigin="anonymous"></script>
+  <script src="/js/anime.min.js"></script>
+  <script type="text/javascript" src="/js/common.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -243,6 +245,10 @@ function validation($data) {
         <small>© 2020 前野企画</small>
       </div>
     </footer>
+
+    <a id="js-pagetop" class="pagetop" href="#top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
   </div>
 </body>
 </html>
