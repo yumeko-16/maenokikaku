@@ -1302,7 +1302,7 @@ ol {
   width: 100%;
   padding: 4.16667vw 6.25vw;
   border: 0.41667vw solid #6b90db;
-  border-radius: 2.08333vw;
+  border-radius: 1.66667vw;
   background-color: #fff;
 }
 
@@ -1310,7 +1310,7 @@ ol {
   .flow__item-inside {
     padding: 2.60417vw 3.90625vw;
     border: 0.26042vw solid #6b90db;
-    border-radius: 1.30208vw;
+    border-radius: 1.04167vw;
   }
 }
 
@@ -1318,7 +1318,7 @@ ol {
   .flow__item-inside {
     padding: 20px 30px;
     border: 2px solid #6b90db;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 }
 
@@ -1645,31 +1645,29 @@ ol {
   display: flex;
   justify-content: center;
   margin-bottom: 8.33333vw;
-  padding: 3.33333vw 0;
   text-align: center;
-  font-size: 0;
 }
 
 @media (min-width: 481px) {
   .mail__step-bar {
     margin-bottom: 5.20833vw;
-    padding: 2.08333vw 0;
   }
 }
 
 @media (min-width: 769px) {
   .mail__step-bar {
     margin-bottom: 40px;
-    padding: 16px 0;
   }
 }
 
 .mail__step-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 45.83333vw;
   margin-right: 3.75vw;
   padding: 2.5vw 1.66667vw;
-  text-align: center;
   font-size: 3.125vw;
   color: #666;
   background-color: #edf2f7;
@@ -1950,4 +1948,169 @@ ol {
 
 .mail__error-item {
   color: #f63a52;
+}
+
+.expert {
+  background-color: #edf2f7;
+}
+
+.expert__tab-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8.33333vw;
+  box-shadow: 0 1.45833vw 3.33333vw 0 rgba(0, 0, 0, 0.07);
+}
+
+@media (min-width: 481px) {
+  .expert__tab-list {
+    margin-bottom: 5.20833vw;
+    box-shadow: 0 0.91146vw 2.08333vw 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__tab-list {
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+.expert__tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 2.5vw 1.66667vw;
+  border-bottom: solid 0.20833vw #edf2f7;
+  text-align: center;
+  font-size: 3.125vw;
+  color: #666;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 481px) {
+  .expert__tab-item {
+    padding: 1.5625vw 1.04167vw;
+    border-bottom: solid 0.13021vw #edf2f7;
+    font-size: 1.95313vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__tab-item {
+    width: 100%;
+    padding: 12px 8px;
+    border-bottom: none;
+    font-size: 15px;
+  }
+}
+
+.expert__tab-item:not(:last-child) {
+  border-right: solid 0.20833vw #edf2f7;
+}
+
+@media (min-width: 481px) {
+  .expert__tab-item:not(:last-child) {
+    border-right: solid 0.13021vw #edf2f7;
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__tab-item:not(:last-child) {
+    border-right: solid 1px #edf2f7;
+  }
+}
+
+.expert__tab-item:nth-child(5), .expert__tab-item:nth-child(6) {
+  border-bottom: none;
+}
+
+.expert__tab-item.is-active {
+  background-color: #0079bf;
+  color: #fff;
+}
+
+.expert__tab-target {
+  display: none;
+}
+
+.expert__tab-target.is-active {
+  display: block;
+  animation: fade 0.5s ease;
+}
+
+.expert__content {
+  box-shadow: 0 1.45833vw 3.33333vw 0 rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+}
+
+@media (min-width: 481px) {
+  .expert__content {
+    box-shadow: 0 0.91146vw 2.08333vw 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__content {
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+.expert__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8.33333vw;
+}
+
+@media (min-width: 481px) {
+  .expert__info {
+    margin-bottom: 5.20833vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__info {
+    margin-bottom: 40px;
+  }
+}
+
+.expert__info:last-child {
+  margin-bottom: 0;
+}
+
+.expert__box {
+  width: 50%;
+}
+
+.expert__img {
+  display: block;
+  width: 100%;
+}
+
+.expert__summary {
+  padding: 4.16667vw;
+}
+
+@media (min-width: 481px) {
+  .expert__summary {
+    padding: 2.60417vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .expert__summary {
+    padding: 20px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

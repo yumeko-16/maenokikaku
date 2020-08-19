@@ -13,24 +13,22 @@
       display: flex;
       justify-content: center;
       margin-bottom: get_vw(40);
-      padding: get_vw(16) 0;
       text-align: center;
-      font-size: 0;
       @include sm() {
         margin-bottom: get_vw-sm(40);
-        padding: get_vw-sm(16) 0;
       }
       @include md() {
         margin-bottom: 40px;
-        padding: 16px 0;
       }
     }
     &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
       width: get_vw(220);
       margin-right: get_vw(18);
       padding: get_vw(12) get_vw(8);
-      text-align: center;
       font-size: get_vw(15);
       color: #666;
       background-color: #edf2f7;

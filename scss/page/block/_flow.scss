@@ -1,5 +1,5 @@
 .flow {
-  background-color: #edf2f7;
+  background-color: $bgc;
   &__item {
     position: relative;
     &:not(:last-child) {
@@ -57,17 +57,17 @@
       width: 100%;
       padding: get_vw(20) get_vw(30);
       border: get_vw(2) solid rgb(107,144,219);
-      border-radius: get_vw(10);
+      border-radius: get_vw(8);
       background-color: #fff;
       @include sm() {
         padding: get_vw-sm(20) get_vw-sm(30);
         border: get_vw-sm(2) solid rgb(107,144,219);
-        border-radius: get_vw-sm(10);
+        border-radius: get_vw-sm(8);
       }
       @include md() {
         padding: 20px 30px;
         border: 2px solid rgb(107,144,219);
-        border-radius: 10px;
+        border-radius: 8px;
       }
       &::before,
       &::after {

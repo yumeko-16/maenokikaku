@@ -1,5 +1,5 @@
 .solution {
-  background-color: #edf2f7;
+  background-color: $bgc;
   &__txt {
     margin: 0 auto get_vw(40);
     @include sm() {
