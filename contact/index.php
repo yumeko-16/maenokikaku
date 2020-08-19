@@ -126,7 +126,11 @@ function validation($data) {
     <header class="header">
       <div class="header__inner">
         <a class="header__logo" href="/index.html">株式会社前野企画</a>
-        <a class="header__btn" href="/contact/index.php">お問い合わせ</a>
+        <nav class="header__nav">
+          <a class="header__nav-item" href="/">ホーム</a>
+          <a class="header__nav-item" href="/expert/index.html">寺院エキスパート</a>
+          <a class="header__nav-item header__btn" href="/contact/index.php">お問い合わせ</a>
+        </nav>
       </div>
     </header>
 

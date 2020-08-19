@@ -545,9 +545,8 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1024px;
+  width: 100%;
   height: 13.33333vw;
-  margin: 0 auto;
   padding: 0 4.16667vw;
 }
 
@@ -579,13 +578,37 @@ ol {
 
 @media (min-width: 481px) {
   .header__logo {
-    font-size: 2.34375vw;
+    font-size: 2.60417vw;
   }
 }
 
 @media (min-width: 769px) {
   .header__logo {
-    font-size: 19px;
+    font-size: 26px;
+  }
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 4.16667vw;
+  font-size: 3.54167vw;
+  font-weight: 600;
+}
+
+@media (min-width: 481px) {
+  .header__nav-item:not(:last-child) {
+    margin-right: 2.60417vw;
+    font-size: 2.21354vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__nav-item:not(:last-child) {
+    margin-right: 20px;
+    font-size: 17px;
   }
 }
 
