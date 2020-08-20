@@ -1385,24 +1385,24 @@ ol {
   position: relative;
   width: 100%;
   padding: 4.16667vw 6.25vw;
-  border: 0.41667vw solid #6b90db;
   border-radius: 1.66667vw;
   background-color: #fff;
+  box-shadow: 0 1.45833vw 3.33333vw 0 rgba(0, 0, 0, 0.07);
 }
 
 @media (min-width: 481px) {
   .flow__item-inside {
     padding: 2.60417vw 3.90625vw;
-    border: 0.26042vw solid #6b90db;
     border-radius: 1.04167vw;
+    box-shadow: 0 0.91146vw 2.08333vw 0 rgba(0, 0, 0, 0.07);
   }
 }
 
 @media (min-width: 769px) {
   .flow__item-inside {
     padding: 20px 30px;
-    border: 2px solid #6b90db;
     border-radius: 8px;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
   }
 }
 
@@ -1422,7 +1422,6 @@ ol {
 
 .flow__item-inside::before {
   border-width: 4.58333vw;
-  border-top-color: #6b90db;
 }
 
 @media (min-width: 481px) {
@@ -1461,7 +1460,7 @@ ol {
   text-align: center;
   font-size: 4.16667vw;
   font-weight: 600;
-  color: #6b90db;
+  color: #0079bf;
 }
 
 @media (min-width: 481px) {
@@ -1485,11 +1484,7 @@ ol {
   border-radius: 4.16667vw;
   font-size: 2.5vw;
   color: #fff;
-  background: #6b90db;
-  background: -moz-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: -webkit-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: linear-gradient(to right, #6b90db 0%, #66d5e9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+  background: linear-gradient(135deg, #0079bf, #5067c5);
 }
 
 @media (min-width: 481px) {

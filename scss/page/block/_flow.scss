@@ -56,18 +56,18 @@
       position: relative;
       width: 100%;
       padding: get_vw(20) get_vw(30);
-      border: get_vw(2) solid rgb(107,144,219);
       border-radius: get_vw(8);
       background-color: #fff;
+      box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
       @include sm() {
         padding: get_vw-sm(20) get_vw-sm(30);
-        border: get_vw-sm(2) solid rgb(107,144,219);
         border-radius: get_vw-sm(8);
+        box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
       }
       @include md() {
         padding: 20px 30px;
-        border: 2px solid rgb(107,144,219);
         border-radius: 8px;
+        box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
       }
       &::before,
       &::after {
@@ -85,7 +85,6 @@
       }
       &::before {
         border-width: get_vw(22);
-        border-top-color: rgb(107,144,219);
         @include sm() {
           border-width: get_vw-sm(22);
         }
@@ -111,7 +110,7 @@
       text-align: center;
       font-size: get_vw(20);
       font-weight: 600;
-      color: rgb(107,144,219);
+      color: $main;
       @include sm() {
         font-size: get_vw-sm(20);
       }
@@ -128,11 +127,7 @@
       border-radius: get_vw(20);
       font-size: get_vw(12);
       color: #fff;
-      background: rgb(107,144,219);
-      background: -moz-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
-      background: -webkit-linear-gradient(left, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
-      background: linear-gradient(to right, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+      background: linear-gradient(135deg, $main, #5067c5);
       @include sm() {
         margin-bottom: get_vw-sm(10);
         padding: get_vw-sm(5) get_vw-sm(10);
