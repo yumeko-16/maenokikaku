@@ -1,11 +1,5 @@
 .mv {
-  background: rgb(107,144,219);
-  background: -moz-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
-  background: -webkit-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
-  background: linear-gradient(to right, rgba(107, 144, 219, .8) 0%, rgba(102, 213, 233, .8) 100%), url(/img/mv_bg.jpg);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, $main, #5067c5);
   @include md() {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
   }
@@ -30,6 +24,7 @@
   }
   &__txt {
     margin: 0 auto get_vw(40);
+    color: #eee;
     @include sm() {
       margin-bottom: get_vw-sm(40);
     }

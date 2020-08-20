@@ -773,13 +773,7 @@ ol {
 }
 
 .mv {
-  background: #6b90db;
-  background: -moz-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: -webkit-linear-gradient(left, #6b90db 0%, #66d5e9 100%);
-  background: linear-gradient(to right, rgba(107, 144, 219, 0.8) 0%, rgba(102, 213, 233, 0.8) 100%), url(/img/mv_bg.jpg);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #0079bf, #5067c5);
 }
 
 @media (min-width: 769px) {
@@ -818,6 +812,7 @@ ol {
 
 .mv__txt {
   margin: 0 auto 8.33333vw;
+  color: #eee;
 }
 
 @media (min-width: 481px) {
