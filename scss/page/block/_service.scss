@@ -45,14 +45,12 @@
     width: 35%;
     max-width: 160px;
     margin: 0 auto;
-    border-radius: get_vw(80);
+    border-radius: 50%;
     box-shadow: 0 get_vw(2) get_vw(4) get_vw(-1) rgba(0,0,0,0.2);
     @include sm() {
-      border-radius: get_vw-sm(80);
       box-shadow: 0 get_vw-sm(2) get_vw-sm(4) get_vw-sm(-1) rgba(0,0,0,0.2);
     }
     @include md() {
-      border-radius: 80px;
       box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2);
     }
   }

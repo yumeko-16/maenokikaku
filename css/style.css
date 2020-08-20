@@ -1240,20 +1240,18 @@ ol {
   width: 35%;
   max-width: 160px;
   margin: 0 auto;
-  border-radius: 16.66667vw;
+  border-radius: 50%;
   box-shadow: 0 0.41667vw 0.83333vw -0.20833vw rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 481px) {
   .service__img {
-    border-radius: 10.41667vw;
     box-shadow: 0 0.26042vw 0.52083vw -0.13021vw rgba(0, 0, 0, 0.2);
   }
 }
 
 @media (min-width: 769px) {
   .service__img {
-    border-radius: 80px;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
 }
