@@ -2121,23 +2121,6 @@ ol {
   animation: fade 0.5s ease;
 }
 
-.expert__content {
-  box-shadow: 0 1.45833vw 3.33333vw 0 rgba(0, 0, 0, 0.07);
-  background-color: #fff;
-}
-
-@media (min-width: 481px) {
-  .expert__content {
-    box-shadow: 0 0.91146vw 2.08333vw 0 rgba(0, 0, 0, 0.07);
-  }
-}
-
-@media (min-width: 769px) {
-  .expert__content {
-    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
-  }
-}
-
 .expert__info {
   display: flex;
   align-items: center;
