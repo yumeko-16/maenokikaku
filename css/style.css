@@ -9,6 +9,20 @@
   src: url("../font/NotoSansJP-Regular.eot?") format("oldIE"), url("../font/NotoSansJP-Regular.woff") format("woff"), url("../font/NotoSansJP-Regular.ttf") format("truetype");
 }
 
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--up {
+  transform: translate(0, 100px);
+}
+
 /*!
  * ress.css • v1.2.2
  * MIT License

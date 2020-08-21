@@ -52,3 +52,19 @@ document.querySelector( "#js-pagetop" ).addEventListener('click', (e) => {
   });
   return false;
 });
+
+/* ========================================================
+スクロールフェードイン
+=========================================================*/
+const scrollAnimationElm = document.querySelectorAll('.sa');
+const scrollAnimationFunc = () => {
+  for (let i = 0; i < scrollAnimationElm.length; i++) {
+    const triggerMargin = 50;
+    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+      scrollAnimationElm[i].classList.add('show');
+    }
+  }
+}
+
+scrollAnimationFunc();
+window.addEventListener('scroll', scrollAnimationFunc);
