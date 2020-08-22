@@ -132,6 +132,26 @@ function validation($data) {
           <a class="header__nav-item header__btn" href="/contact/index.php">お問い合わせ</a>
         </nav>
       </div>
+      <nav class="header__sp-nav">
+        <ul>
+          <li class="header__sp-item">
+            <a class="header__sp-link" href="/">ホーム</a>
+          </li>
+          <li class="header__sp-item">
+            <a class="header__sp-link" href="/expert/index.html">寺院エキスパート</a>
+          </li>
+          <li class="header__sp-item">
+            <a class="header__sp-link header__btn" href="/contact/index.php">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="js-burger" class="header__burger">
+        <div class="header__burger-inner">
+          <span class="header__burger-line header__burger-line--1"></span>
+          <span class="header__burger-line header__burger-line--2"></span>
+          <span class="header__burger-line header__burger-line--3"></span>
+        </div>
+      </div>
     </header>
 
     <main class="main">
