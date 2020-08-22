@@ -169,7 +169,7 @@ function validation($data) {
           <form method="post" action="">
             <div class="mail__item">
               <div class="mail__item-name">
-                <label class="mail__label">氏名</label>
+                <label class="mail__label">寺院名</label>
                 <span class="mail__required">必須</span>
               </div>
               <p><?php echo $clean['your_name']; ?></p>
@@ -237,17 +237,17 @@ function validation($data) {
           <form action="" method="post">
             <div class="mail__item">
               <div class="mail__item-name">
-                <label class="mail__label">氏名</label>
+                <label class="mail__label">寺院名</label>
                 <span class="mail__required">必須</span>
               </div>
-              <input class="mail__input" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>" placeholder="例）山田 太郎">
+              <input class="mail__input" type="text" name="your_name" value="<?php if( !empty($clean['your_name']) ) { echo $clean['your_name']; } ?>" placeholder="例）普蔵院">
             </div>
             <div class="mail__item">
               <div class="mail__item-name">
                 <label class="mail__label">メールアドレス</label>
                 <span class="mail__required">必須</span>
               </div>
-              <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@pantograph.co.jp">
+              <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@mail.co.jp">
             </div>
             <div class="mail__item">
               <div class="mail__item-name">

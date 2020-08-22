@@ -1983,6 +1983,7 @@ ol {
   width: 100%;
   height: 10.41667vw;
   padding: 0 3.54167vw;
+  border-radius: 1.66667vw;
   outline: none;
   background-color: #edf2f7;
 }
@@ -1991,6 +1992,7 @@ ol {
   .mail__input {
     height: 6.51042vw;
     padding: 0 2.21354vw;
+    border-radius: 1.04167vw;
   }
 }
 
@@ -1998,13 +2000,31 @@ ol {
   .mail__input {
     height: 50px;
     padding: 0 17px;
+    border-radius: 8px;
   }
+}
+
+.mail__input::placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
+}
+
+.mail__input::-ms-input-placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
+}
+
+.mail__input:-ms-input-placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
 }
 
 .mail__txtarea {
   width: 100%;
   height: 54.16667vw;
   padding: 3.54167vw;
+  resize: none;
+  border-radius: 1.66667vw;
   outline: none;
   background-color: #edf2f7;
 }
@@ -2013,6 +2033,7 @@ ol {
   .mail__txtarea {
     height: 33.85417vw;
     padding: 2.21354vw;
+    border-radius: 1.04167vw;
   }
 }
 
@@ -2020,7 +2041,23 @@ ol {
   .mail__txtarea {
     height: 260px;
     padding: 17px;
+    border-radius: 8px;
   }
+}
+
+.mail__txtarea::placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
+}
+
+.mail__txtarea::-ms-input-placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
+}
+
+.mail__txtarea:-ms-input-placeholder {
+  letter-spacing: .08em;
+  color: #ccc;
 }
 
 .mail__btns {

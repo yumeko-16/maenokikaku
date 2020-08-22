@@ -125,30 +125,61 @@
     width: 100%;
     height: get_vw(50);
     padding: 0 get_vw(17);
+    border-radius: get_vw(8);
     outline: none;
     background-color: #edf2f7;
     @include sm() {
       height: get_vw-sm(50);
       padding: 0 get_vw-sm(17);
+      border-radius: get_vw-sm(8);
     }
     @include md() {
       height: 50px;
       padding: 0 17px;
+      border-radius: 8px;
+    }
+    &::placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &:-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
     }
   }
   &__txtarea {
     width: 100%;
     height: get_vw(260);
     padding: get_vw(17);
+    resize: none;
+    border-radius: get_vw(8);
     outline: none;
     background-color: #edf2f7;
     @include sm() {
       height: get_vw-sm(260);
       padding: get_vw-sm(17);
+      border-radius: get_vw-sm(8);
     }
     @include md() {
       height: 260px;
       padding: 17px;
+      border-radius: 8px;
+    }
+    &::placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &:-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
     }
   }
   &__btns {
