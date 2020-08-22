@@ -585,20 +585,20 @@ ol {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 3.54167vw;
+  font-size: 4.58333vw;
   font-weight: 600;
   color: #333;
 }
 
 @media (min-width: 481px) {
   .header__logo {
-    font-size: 2.60417vw;
+    font-size: 2.86458vw;
   }
 }
 
 @media (min-width: 769px) {
   .header__logo {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
