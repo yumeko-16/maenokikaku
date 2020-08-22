@@ -25,6 +25,15 @@ ol {
   list-style: none;
 }
 
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=search]:focus,
+input[type=url]:focus,
+textarea:focus {
+  outline: none;
+}
+
 .br-sm {
   display: none;
   @include sm() {

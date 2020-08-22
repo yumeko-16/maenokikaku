@@ -54,6 +54,7 @@ if( !empty($clean['btn_confirm']) ) {
 	$auto_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 	$auto_reply_text .= "氏名：" . $clean['your_name'] . "\n";
 	$auto_reply_text .= "メールアドレス：" . $clean['email'] . "\n\n";
+	$auto_reply_text .= "電話番号：" . $clean['tel'] . "\n\n";
   $auto_reply_text .= "お問い合わせ内容：" . nl2br($clean['contact']) . "\n\n";
   $auto_reply_text .= "株式会社前野企画";
 
@@ -68,6 +69,7 @@ if( !empty($clean['btn_confirm']) ) {
 	$admin_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 	$admin_reply_text .= "氏名：" . $clean['your_name'] . "\n";
   $admin_reply_text .= "メールアドレス：" . $clean['email'] . "\n\n";
+  $admin_reply_text .= "電話番号：" . $clean['tel'] . "\n\n";
   $admin_reply_text .= "お問い合わせ内容：" . nl2br($clean['contact']) . "\n\n";
 
 	// 運営側へメール送信
@@ -172,21 +174,27 @@ function validation($data) {
                 <label class="mail__label">寺院名</label>
                 <span class="mail__required">必須</span>
               </div>
-              <p><?php echo $clean['your_name']; ?></p>
+              <p class="txt-blue"><?php echo $clean['your_name']; ?></p>
             </div>
             <div class="mail__item">
               <div class="mail__item-name">
                 <label class="mail__label">メールアドレス</label>
                 <span class="mail__required">必須</span>
               </div>
-              <p><?php echo $clean['email']; ?></p>
+              <p class="txt-blue"><?php echo $clean['email']; ?></p>
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">電話番号</label>
+              </div>
+              <p class="txt-blue"><?php echo $clean['tel']; ?></p>
             </div>
             <div class="mail__item">
               <div class="mail__item-name">
                 <label class="mail__label">お問い合わせ内容</label>
                 <span class="mail__required">必須</span>
               </div>
-              <p><?php echo nl2br($clean['contact']); ?></p>
+              <p class="txt-blue"><?php echo nl2br($clean['contact']); ?></p>
             </div>
             <div class="mail__btns">
               <input class="mail__btn--back" type="submit" name="btn_back" value="戻る">
@@ -194,6 +202,7 @@ function validation($data) {
             </div>
             <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
             <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
+            <input type="hidden" name="tel" value="<?php echo $clean['tel']; ?>">
             <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
           </form>
 
@@ -247,14 +256,20 @@ function validation($data) {
                 <label class="mail__label">メールアドレス</label>
                 <span class="mail__required">必須</span>
               </div>
-              <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['your_name']) ) { echo $clean['email']; } ?>" placeholder="例）abc@mail.co.jp">
+              <input class="mail__input" type="text" name="email" value="<?php if( !empty($clean['email']) ) { echo $clean['email']; } ?>" placeholder="例）abc@mail.co.jp">
+            </div>
+            <div class="mail__item">
+              <div class="mail__item-name">
+                <label class="mail__label">電話番号</label>
+              </div>
+              <input class="mail__input" type="tel" name="tel" value="<?php if( !empty($clean['tel']) ) { echo $clean['tel']; } ?>" placeholder="例）012-345-6789">
             </div>
             <div class="mail__item">
               <div class="mail__item-name">
                 <label class="mail__label">お問い合わせ内容</label>
                 <span class="mail__required">必須</span>
               </div>
-              <textarea class="mail__txtarea" name="contact" placeholder="お問合わせ内容をご入力ください。"></textarea>
+              <textarea class="mail__txtarea" name="contact" placeholder="お問合わせ内容をご入力ください。"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
             </div>
             <input class="mail__btn" type="submit" name="btn_confirm" value="入力内容を確認する">
           </form>

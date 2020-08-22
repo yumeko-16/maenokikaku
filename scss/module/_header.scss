@@ -51,6 +51,7 @@
     display: none;
     @include sm() {
       display: flex;
+      align-items: center;
     }
     &-item:not(:last-child) {
       font-weight: 600;
