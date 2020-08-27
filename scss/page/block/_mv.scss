@@ -36,8 +36,7 @@
     &-pc {
       display: none;
       @include md() {
-        @include _btn;
-        background-color: #22bc92;
+        @include _btn('contact');
       }
     }
     &-sp {

@@ -5,15 +5,15 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: get_vw(40);
+      margin-bottom: get_vw(80);
       box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, .07);
       @include sm() {
-        margin-bottom: get_vw-sm(40);
+        margin-bottom: get_vw-sm(80);
         box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, .07);
       }
       @include md() {
         flex-wrap: nowrap;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .07);
       }
     }

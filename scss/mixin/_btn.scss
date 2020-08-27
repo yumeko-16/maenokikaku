@@ -21,17 +21,43 @@ $initType: 'normal';
     margin: 0 auto;
     padding: get_vw(15);
     border-radius: get_vw(30);
-    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
-    background-color: $btn;
+    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, .5);
+    background-color: $btn__normal;
     @include sm() {
       padding: get_vw-sm(15);
       border-radius: get_vw-sm(30);
-      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, 0.5);
+      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, .5);
     }
     @include md() {
       padding: 15px;
       border-radius: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    }
+    &:hover {
+      background-color: $btn__normal--hover;
+    }
+  }
+
+  @if( $type == 'contact' ) {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: get_vw(15);
+    border-radius: get_vw(30);
+    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, .5);
+    background-color: $accent;
+    @include sm() {
+      padding: get_vw-sm(15);
+      border-radius: get_vw-sm(30);
+      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, .5);
+    }
+    @include md() {
+      padding: 15px;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    }
+    &:hover {
+      background-color: $accent--hover;
     }
   }
 
@@ -41,7 +67,7 @@ $initType: 'normal';
     margin: get_vw(40) auto 0;
     padding: get_vw(15);
     border-radius: get_vw(30);
-    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
+    box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, .5);
     color: $txt;
     background-color: $btn--back;
     @include sm() {
@@ -49,13 +75,17 @@ $initType: 'normal';
       margin-right: get_vw-sm(40);
       padding: get_vw-sm(15);
       border-radius: get_vw-sm(30);
-      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, 0.5);
+      box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, .5);
     }
     @include md() {
       margin: 0 auto;
       padding: 15px;
       border-radius: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    }
+    &:hover {
+      background-color: $btn__back--hover;
+      color: #fff;
     }
   }
 
@@ -73,6 +103,9 @@ $initType: 'normal';
       padding: 5px 15px;
       border-radius: 30px;
       font-size: 14px;
+    }
+    &:hover {
+      background-color: $accent--hover;
     }
   }
 }

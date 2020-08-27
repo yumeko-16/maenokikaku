@@ -77,6 +77,5 @@
   }
   &__btn {
     @include _btn('normal');
-    background-color: $btn;
   }
 }
