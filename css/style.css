@@ -2304,18 +2304,18 @@ textarea:focus {
 .expert__info {
   display: flex;
   align-items: center;
-  margin-bottom: 8.33333vw;
+  margin-bottom: 16.66667vw;
 }
 
 @media (min-width: 481px) {
   .expert__info {
-    margin-bottom: 5.20833vw;
+    margin-bottom: 10.41667vw;
   }
 }
 
 @media (min-width: 769px) {
   .expert__info {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }
 
