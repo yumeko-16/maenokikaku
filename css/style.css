@@ -2302,8 +2302,6 @@ textarea:focus {
 }
 
 .expert__info {
-  display: flex;
-  align-items: center;
   margin-bottom: 16.66667vw;
 }
 
@@ -2315,6 +2313,8 @@ textarea:focus {
 
 @media (min-width: 769px) {
   .expert__info {
+    display: flex;
+    align-items: center;
     margin-bottom: 80px;
   }
 }
@@ -2324,7 +2324,13 @@ textarea:focus {
 }
 
 .expert__box {
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .expert__box {
+    width: 50%;
+  }
 }
 
 .expert__img {
