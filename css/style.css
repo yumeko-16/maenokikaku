@@ -1956,6 +1956,7 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   margin-bottom: 4.16667vw;
 }
 
@@ -1977,34 +1978,35 @@ textarea:focus {
 }
 
 .mail__required {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 6.25vw;
   margin-left: 2.08333vw;
   padding: 0 1.875vw;
   border-radius: 6.25vw;
   font-size: 2.5vw;
+  line-height: 6.25vw;
   color: #fff;
   background-color: #f63a52;
 }
 
 @media (min-width: 481px) {
   .mail__required {
+    height: 3.90625vw;
     margin-left: 1.30208vw;
     padding: 0 1.17188vw;
     border-radius: 3.90625vw;
     font-size: 1.5625vw;
+    line-height: 3.90625vw;
   }
 }
 
 @media (min-width: 769px) {
   .mail__required {
+    height: 30px;
     margin-left: 10px;
     padding: 0 9px;
     border-radius: 30px;
     font-size: 12px;
+    line-height: 30px;
   }
 }
 
