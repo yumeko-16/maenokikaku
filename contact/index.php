@@ -42,8 +42,8 @@ if( !empty($clean['btn_confirm']) ) {
 
   // ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: 株式会社前野企画 <chelsea.tm20@gmail.com>\n";
-	$header .= "Reply-To: 株式会社前野企画 <chelsea.tm20@gmail.com>\n";
+	$header .= "From: 株式会社前野企画 <maenokikaku@email.plala.or.jp>\n";
+	$header .= "Reply-To: 株式会社前野企画 <maenokikaku@email.plala.or.jp>\n";
 
   // 件名を設定
   $auto_reply_subject = 'お問い合わせありがとうございます。';
@@ -73,7 +73,7 @@ if( !empty($clean['btn_confirm']) ) {
   $admin_reply_text .= "お問い合わせ内容：" . nl2br($clean['contact']) . "\n\n";
 
 	// 運営側へメール送信
-  mb_send_mail( 'chelsea.tm20@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
+  mb_send_mail( 'maenokikaku@email.plala.or.jp', $admin_reply_subject, $admin_reply_text, $header);
 
   } else {
 		$page_flag = 0;
