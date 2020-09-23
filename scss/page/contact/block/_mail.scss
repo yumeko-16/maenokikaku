@@ -10,8 +10,12 @@
   }
   &__step {
     &-bar {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-bottom: get_vw(40);
       text-align: center;
       @include sm() {
@@ -22,9 +26,15 @@
       }
     }
     &-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       position: relative;
       width: get_vw(220);
       margin-right: get_vw(18);
@@ -83,7 +93,9 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-bottom: get_vw(20);
       @include sm() {
         margin-bottom: get_vw-sm(20);
@@ -139,6 +151,22 @@
       padding: 0 17px;
       border-radius: 8px;
     }
+    &::-webkit-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-moz-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &:-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
     &::placeholder {
       letter-spacing: .08em;
       color: #ccc;
@@ -169,6 +197,22 @@
       padding: 17px;
       border-radius: 8px;
     }
+    &::-webkit-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-moz-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &:-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
+    &::-ms-input-placeholder {
+      letter-spacing: .08em;
+      color: #ccc;
+    }
     &::placeholder {
       letter-spacing: .08em;
       color: #ccc;
@@ -183,10 +227,18 @@
     }
   }
   &__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     @include sm() {
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
     }
   }
   &__btn {

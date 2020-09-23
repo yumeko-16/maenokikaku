@@ -16,21 +16,18 @@
       display: block;
       position: absolute;
       top: get_vw(-40);
-      left: -webkit-calc(10% + 5.21vw - .42vw);
       left: calc(10% + 5.21vw - .42vw);
       z-index: 10;
       height: get_vw(60);
       border-left: get_vw(4) dotted #e5e5e5;
       @include sm() {
         top: get_vw-sm(-40);
-        left: -webkit-calc(10% + 3.26vw - .26vw);
         left: calc(10% + 3.26vw - .26vw);
         height: get_vw-sm(60);
         border-left: get_vw-sm(4) dotted #e5e5e5;
       }
       @include md() {
         top: -40px;
-        left: -webkit-calc(10% + 25px - 2px);
         left: calc(10% + 25px - 2px);
         height: 60px;
         border-left: 4px dotted #e5e5e5;
@@ -44,7 +41,8 @@
       top: 100%;
       left: 50%;
       -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
     }
     &-inside {
       display: -webkit-box;
@@ -58,16 +56,19 @@
       padding: get_vw(20) get_vw(30);
       border-radius: get_vw(8);
       background-color: #fff;
-      box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+      -webkit-box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+              box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
       @include sm() {
         padding: get_vw-sm(20) get_vw-sm(30);
         border-radius: get_vw-sm(8);
-        box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+        -webkit-box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+                box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
       }
       @include md() {
         padding: 20px 30px;
         border-radius: 8px;
-        box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
+        -webkit-box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
+                box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
       }
       &::before,
       &::after {
@@ -77,7 +78,8 @@
         left: 50%;
         border: solid transparent;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
       }
       &::last-child::before,
       &::last-child::after {
@@ -127,6 +129,7 @@
       border-radius: get_vw(20);
       font-size: get_vw(12);
       color: #fff;
+      background: -o-linear-gradient(315deg, $main, #5067c5);
       background: linear-gradient(135deg, $main, #5067c5);
       @include sm() {
         margin-bottom: get_vw-sm(10);

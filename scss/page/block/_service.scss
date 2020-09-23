@@ -11,9 +11,14 @@
   &__list {
     margin: 0 auto;
     @include sm() {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
   }
   &__item {
@@ -22,14 +27,16 @@
     margin-bottom: get_vw(20);
     padding: get_vw(20);
     border-radius: get_vw(8);
-    box-shadow: 0 get_vw(4) get_vw(8) rgba(33,35,37,.12);
+    -webkit-box-shadow: 0 get_vw(4) get_vw(8) rgba(33,35,37,.12);
+            box-shadow: 0 get_vw(4) get_vw(8) rgba(33,35,37,.12);
     background-color: #fff;
     @include sm() {
       width: calc((100% - 64px) / 2);
       margin-bottom: get_vw-sm(20);
       padding: get_vw-sm(20);
       border-radius: get_vw-sm(8);
-      box-shadow: 0 get_vw-sm(4) get_vw-sm(8) rgba(33,35,37,.12);
+      -webkit-box-shadow: 0 get_vw-sm(4) get_vw-sm(8) rgba(33,35,37,.12);
+              box-shadow: 0 get_vw-sm(4) get_vw-sm(8) rgba(33,35,37,.12);
     }
     @include md() {
       width: calc((100% - 64px) / 3);
@@ -37,7 +44,8 @@
       margin-bottom: 20px;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(33,35,37,.12);
+      -webkit-box-shadow: 0 4px 8px rgba(33,35,37,.12);
+              box-shadow: 0 4px 8px rgba(33,35,37,.12);
     }
   }
   &__img {
@@ -46,12 +54,15 @@
     max-width: 160px;
     margin: 0 auto;
     border-radius: 50%;
-    box-shadow: 0 get_vw(2) get_vw(4) get_vw(-1) rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 get_vw(2) get_vw(4) get_vw(-1) rgba(0,0,0,0.2);
+            box-shadow: 0 get_vw(2) get_vw(4) get_vw(-1) rgba(0,0,0,0.2);
     @include sm() {
-      box-shadow: 0 get_vw-sm(2) get_vw-sm(4) get_vw-sm(-1) rgba(0,0,0,0.2);
+      -webkit-box-shadow: 0 get_vw-sm(2) get_vw-sm(4) get_vw-sm(-1) rgba(0,0,0,0.2);
+              box-shadow: 0 get_vw-sm(2) get_vw-sm(4) get_vw-sm(-1) rgba(0,0,0,0.2);
     }
     @include md() {
-      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2);
+      -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2);
+              box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2);
     }
   }
   &__explanation {
