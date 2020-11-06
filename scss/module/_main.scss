@@ -1,9 +1,9 @@
 .main {
-  margin-top: get_vw(64);
+  margin-top: get_vw(81);
   @include sm() {
-    margin-top: get_vw-sm(64);
+    margin-top: get_vw-sm(81);
   }
   @include md() {
-    margin-top: 64px;
+    margin-top: 81px;
   }
 }

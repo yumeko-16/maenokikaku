@@ -469,18 +469,18 @@ textarea:focus {
 }
 
 .main {
-  margin-top: 13.33333vw;
+  margin-top: 16.875vw;
 }
 
 @media (min-width: 481px) {
   .main {
-    margin-top: 8.33333vw;
+    margin-top: 10.54688vw;
   }
 }
 
 @media (min-width: 769px) {
   .main {
-    margin-top: 64px;
+    margin-top: 81px;
   }
 }
 
