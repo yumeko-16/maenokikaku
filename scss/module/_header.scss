@@ -70,7 +70,7 @@
       height: 100vh;
       padding-top: get_vw(64);
       background-color: $main;
-      transition: all .6s;
+      transition: all .5s;
       z-index: 200;
       // overflow-y: auto;
     }
@@ -107,7 +107,7 @@
       width: get_vw(40);
       height: get_vw(5);
       background: #636363;
-      transition: 1.5s;
+      transition: .5s;
       border-radius: get_vw(50);
       &--1 {
         top: 0;
