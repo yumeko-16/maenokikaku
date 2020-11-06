@@ -40,7 +40,7 @@
       }
     }
     &-sp {
-      @include _btn;
+      @include _btn('contact');
       background-color: #22bc92;
       @include md() {
         display: none;

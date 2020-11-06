@@ -115,6 +115,7 @@ function validation($data) {
   <title>寺院管理のお問い合わせ｜株式会社前野企画</title>
   <meta name="description" content="寺院管理ソフト「寺院エキスパート」の導入、その他サービスについてはこちらのお問い合わせフォームからお気軽にご連絡ください。">
   <meta name=”keywords” content="前野企画, 寺院エキスパートシステム, 寺院管理, 寺務, 檀家管理">
+  <link rel="stylesheet" href="/css/ress.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -129,31 +130,20 @@ function validation($data) {
   <div class="wrapper">
     <header class="header">
       <div class="header__inner">
-        <a class="header__logo" href="/index.html">株式会社前野企画</a>
+        <h1><a class="header__logo" href="/index.html">株式会社前野企画</a></h1>
         <nav class="header__nav">
-          <a class="header__nav-item" href="/">ホーム</a>
-          <a class="header__nav-item" href="/expert/index.html">寺院エキスパート</a>
-          <a class="header__nav-item header__btn" href="/contact/index.php">お問い合わせ</a>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="/">ホーム</a></li>
+            <li class="header__nav-item"><a href="/expert/index.html">寺院エキスパート</a></li>
+            <li class="header__nav-item"><a class="header__btn" href="/contact/index.php">お問い合わせ</a></li>
+          </ul>
         </nav>
-      </div>
-      <nav class="header__sp-nav">
-        <ul>
-          <li class="header__sp-item">
-            <a class="header__sp-link" href="/">ホーム</a>
-          </li>
-          <li class="header__sp-item">
-            <a class="header__sp-link" href="/expert/index.html">寺院エキスパート</a>
-          </li>
-          <li class="header__sp-item">
-            <a class="header__sp-link header__btn" href="/contact/index.php">お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-      <div id="js-burger" class="header__burger">
-        <div class="header__burger-inner">
-          <span class="header__burger-line header__burger-line--1"></span>
-          <span class="header__burger-line header__burger-line--2"></span>
-          <span class="header__burger-line header__burger-line--3"></span>
+        <div id="js-burger" class="header__burger">
+          <div class="header__burger-inner">
+            <span class="header__burger-line header__burger-line--1"></span>
+            <span class="header__burger-line header__burger-line--2"></span>
+            <span class="header__burger-line header__burger-line--3"></span>
+          </div>
         </div>
       </div>
     </header>
