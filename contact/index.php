@@ -114,7 +114,7 @@ function validation($data) {
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>寺院管理のお問い合わせ｜株式会社前野企画</title>
   <meta name="description" content="寺院管理ソフト「寺院エキスパート」の導入、その他サービスについてはこちらのお問い合わせフォームからお気軽にご連絡ください。">
-  <meta name=”keywords” content="前野企画, 寺院エキスパートシステム, 寺院管理, 寺務, 檀家管理">
+  <meta name=”keywords” content="前野企画, 寺院, エキスパート, システム, お問い合わせ">
   <link rel="stylesheet" href="/css/ress.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
