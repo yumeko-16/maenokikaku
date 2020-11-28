@@ -243,8 +243,6 @@ textarea:focus {
 }
 
 .header__logo {
-  display: block;
-  text-decoration: none;
   font-size: 4.58333vw;
   font-weight: 600;
 }
