@@ -68,6 +68,22 @@ textarea:focus {
   outline: none;
 }
 
+.br {
+  margin-top: 3.54167vw;
+}
+
+@media (min-width: 481px) {
+  .br {
+    margin-top: 2.34375vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .br {
+    margin-top: 19px;
+  }
+}
+
 .br-sm {
   display: none;
 }

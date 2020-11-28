@@ -34,6 +34,15 @@ textarea:focus {
   outline: none;
 }
 
+.br {
+  margin-top: get_vw(17);
+  @include sm() {
+    margin-top: get_vw-sm(18);
+  }
+  @include md() {
+    margin-top: 19px;
+  }
+}
 .br-sm {
   display: none;
   @include sm() {
