@@ -26,8 +26,6 @@
     }
   }
   &__logo {
-    display: block;
-    text-decoration: none;
     font-size: get_vw(22);
     font-weight: 600;
     @include sm() {
