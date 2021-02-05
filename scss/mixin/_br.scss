@@ -1,0 +1,27 @@
+.br {
+  margin-top: get_vw(17);
+  @include sm() {
+    margin-top: get_vw-sm(18);
+  }
+  @include md() {
+    margin-top: 19px;
+  }
+  &-sm {
+    display: none;
+    @include sm() {
+      display: block;
+    }
+  }
+  &-md {
+    display: none;
+    @include md() {
+      display: block;
+    }
+  }
+  &-lg {
+    display: none;
+    @include lg() {
+      display: block;
+    }
+  }
+}
