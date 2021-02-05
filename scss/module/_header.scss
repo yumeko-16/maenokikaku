@@ -67,11 +67,11 @@
       font-weight: 600;
       @include sm() {
         padding-bottom: 0;
-        font-size: get_vw-sm(17);
+        font-size: get_vw-sm(18);
       }
       @include md() {
         padding-bottom: 0;
-        font-size: 17px;
+        font-size: 18px;
       }
       &:not(:last-child) {
         @include sm() {

@@ -28,7 +28,7 @@
     top: get_vw(-60);
     left: 0;
     z-index: 1;
-    width: get_vw(75);
+    width: get_vw(81);
     padding: get_vw(15) 0;
     border-radius: get_vw(100);
     text-align: center;
@@ -38,7 +38,7 @@
     @include sm() {
       top: get_vw-sm(-38);
       left: 0;
-      width: get_vw-sm(75);
+      width: get_vw-sm(77);
       padding: get_vw-sm(15) 0;
       border-radius: get_vw-sm(100);
       font-size: get_vw-sm(13);
@@ -46,7 +46,7 @@
     @include md() {
       top: -38px;
       left: 0;
-      width: 75px;
+      width: 78px;
       padding: 15px 0;
       border-radius: 100px;
       font-size: 13px;
