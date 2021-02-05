@@ -453,7 +453,7 @@ textarea:focus {
 }
 
 .header__btn:hover {
-  background-color: #50a73f;
+  background-color: #009999;
 }
 
 .nav-open .header__nav {
@@ -722,7 +722,7 @@ textarea:focus {
 
 @media (min-width: 769px) {
   .mv__btn-pc:hover {
-    background-color: #50a73f;
+    background-color: #009999;
   }
 }
 
@@ -765,7 +765,7 @@ textarea:focus {
 }
 
 .mv__btn-sp:hover {
-  background-color: #50a73f;
+  background-color: #009999;
 }
 
 @media (min-width: 769px) {
@@ -1618,7 +1618,7 @@ textarea:focus {
 }
 
 .contact__btn:hover {
-  background-color: #50a73f;
+  background-color: #009999;
 }
 
 .mail__description {
