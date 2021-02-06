@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1280px) {
   .br-lg {
     display: block;
   }
@@ -813,7 +813,7 @@ textarea:focus {
   top: -12.5vw;
   left: 0;
   z-index: 1;
-  width: 16.875vw;
+  width: 16.04167vw;
   padding: 3.125vw 0;
   border-radius: 20.83333vw;
   text-align: center;
@@ -844,7 +844,7 @@ textarea:focus {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1280px) {
   .problem__step {
     left: -38px;
   }
