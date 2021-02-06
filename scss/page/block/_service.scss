@@ -74,7 +74,7 @@
     }
     &-txt {
       margin-top: 10px;
-      font-size: get_vw(16);
+      font-size: get_vw(18);
       @include sm() {
         font-size: get_vw-sm(16);
       }
