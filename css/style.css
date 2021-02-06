@@ -16,18 +16,12 @@
 }
 
 .br {
-  margin-top: 3.54167vw;
+  display: block;
 }
 
 @media (min-width: 481px) {
   .br {
-    margin-top: 2.34375vw;
-  }
-}
-
-@media (min-width: 769px) {
-  .br {
-    margin-top: 19px;
+    display: none;
   }
 }
 

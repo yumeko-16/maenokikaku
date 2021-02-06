@@ -1,10 +1,7 @@
 .br {
-  margin-top: get_vw(17);
+  display: block;
   @include sm() {
-    margin-top: get_vw-sm(18);
-  }
-  @include md() {
-    margin-top: 19px;
+    display: none;
   }
   &-sm {
     display: none;
