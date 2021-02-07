@@ -1398,6 +1398,10 @@ textarea:focus {
   }
 }
 
+.flow__item-txt {
+  font-weight: 600;
+}
+
 .company__concept {
   margin-bottom: 8.33333vw;
 }
