@@ -12,10 +12,10 @@
       var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s),
         dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
   </script>
   <!-- End Google Tag Manager -->
@@ -39,8 +39,8 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <script src="/js/anime.min.js"></script>
-  <script type="text/javascript" src="/js/common.js" defer></script>
+  <!-- <script src="/js/anime.min.js"></script> -->
+  <script src="/js/home.js" defer></script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -57,7 +57,7 @@
             <li class="header__nav-item"><a class="header__btn" href="/contact/index.php">お問い合わせ</a></li>
           </ul>
         </nav>
-        <div id="js-burger" class="header__burger">
+        <div class="header__burger" data-burger-button>
           <div class="header__burger-inner">
             <span class="header__burger-line header__burger-line--1"></span>
             <span class="header__burger-line header__burger-line--2"></span>
@@ -68,7 +68,7 @@
     </header>
 
     <main class="main">
-      <section class="section mv">
+      <section class="section mv" data-target-for-show-button>
         <div class="section__inner mv__inner">
           <div class="mv__box">
             <h1 class="section__title mv__title">前野企画はご寺院さまの<br>お悩みを解決します</h1>
@@ -89,21 +89,21 @@
 
       <section class="section problem">
         <div class="section__inner">
-          <h2 class="section__title">こんなお悩み<br class="br">ありませんか？</h2>
+          <h2 class="section__title js-fade-in">こんなお悩み<br class="br">ありませんか？</h2>
           <ol class="problem__list">
-            <li class="problem__item sa sa--up">
+            <li class="problem__item js-fade-in">
               <div class="problem__step">お悩み<small class="problem__num">1</small></div>
               <p class="problem__txt">お寺で管理している資料が災害で無くなってしまう恐れがある。</p>
             </li>
-            <li class="problem__item sa sa--up">
+            <li class="problem__item js-fade-in">
               <div class="problem__step">お悩み<small class="problem__num">2</small></div>
               <p class="problem__txt">今の住職にしかわからない情報があり、引き継ぎに不安がある。</p>
             </li>
-            <li class="problem__item sa sa--up">
+            <li class="problem__item js-fade-in">
               <div class="problem__step">お悩み<small class="problem__num">3</small></div>
               <p class="problem__txt">紙やエクセルによる管理は限界。でも寺院管理ソフトは難しそうでなかなか手が出せない。</p>
             </li>
-            <li class="problem__item sa sa--up">
+            <li class="problem__item js-fade-in">
               <div class="problem__step">お悩み<small class="problem__num">4</small></div>
               <p class="problem__txt">寺院管理ソフトは種類がたくさんあって何を使ったら良いかわからない。</p>
             </li>
@@ -113,54 +113,54 @@
 
       <section class="section solution">
         <div class="section__inner">
-          <h2 class="section__title">寺院エキスパートシステム</h2>
-          <p class="solution__txt">
+          <h2 class="section__title js-fade-in">寺院エキスパートシステム</h2>
+          <p class="solution__txt js-fade-in">
             上記のお悩みは全て寺院エキスパートシステムで解決できます。
           </p>
-          <ul class="solution__list">
-            <li class="solution__item sa sa--up">
+          <ul class="solution__list js-fade-in">
+            <li class="solution__item">
               <div class="solution__icon">
                 <i class="fas fa-crown fa-2x solution__icon--color"></i>
               </div>
               <h3 class="solution__item-txt">寺院管理ソフトの決定版</h3>
             </li>
-            <li class="solution__item sa sa--up">
+            <li class="solution__item">
               <div class="solution__icon">
                 <i class="fas fa-tasks fa-2x solution__icon--color"></i>
               </div>
               <h3 class="solution__item-txt">檀家・会計の管理が連動</h3>
             </li>
-            <li class="solution__item sa sa--up">
+            <li class="solution__item">
               <div class="solution__icon">
                 <i class="fas fa-book-reader fa-2x solution__icon--color"></i>
               </div>
               <h3 class="solution__item-txt">豊富な各種帳票</h3>
             </li>
-            <li class="solution__item sa sa--up">
+            <li class="solution__item">
               <div class="solution__icon">
                 <i class="fas fa-tools fa-2x solution__icon--color"></i>
               </div>
               <h3 class="solution__item-txt">保守機能の充実</h3>
             </li>
-            <li class="solution__item sa sa--up">
+            <li class="solution__item">
               <div class="solution__icon">
                 <i class="fas fa-search-plus fa-2x solution__icon--color"></i>
               </div>
               <h3 class="solution__item-txt">寺院内LANで簡易に<br>信徒検索が可能</h3>
             </li>
           </ul>
-          <a class="solution__btn" href="/expert/index.html">もっと詳しく</a>
+          <a class="solution__btn js-fade-in" href="/expert/index.html">もっと詳しく</a>
         </div>
       </section>
 
       <section class="section service">
         <div class="section__inner">
-          <h2 class="section__title">当社のサービス</h2>
-          <p class="service__txt">
+          <h2 class="section__title js-fade-in">当社のサービス</h2>
+          <p class="service__txt js-fade-in">
             当社は寺院エキスパートシステムの他、様々なサービスをご提供しています。
           </p>
-          <ul class="service__list">
-            <li class="service__item sa sa--up">
+          <ul class="service__list js-fade-in">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_goku.png" alt="寺院エキスパートシステム">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">寺院エキスパートシステム</h3>
@@ -169,7 +169,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_map.png" alt="墓地図制作">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">墓地図制作</h3>
@@ -178,7 +178,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_book.png" alt="過去帳和綴じ制作">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">過去帳和綴じ制作</h3>
@@ -187,7 +187,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_toba.png" alt="塔婆システム支援">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">塔婆システムサポート</h3>
@@ -197,7 +197,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_scanner.png" alt="コピー(複合機）・パソコン・LANシステムサポート">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">コピー（複合機）<br>パソコン・LANシステム<br>サポート</h3>
@@ -206,7 +206,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_camera.png" alt="防犯用監視カメラ">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">防犯用監視カメラ</h3>
@@ -215,7 +215,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_phone.png" alt="ビジネスフォン">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">ビジネスフォン</h3>
@@ -224,7 +224,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_temple.png" alt="寺務支援">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">寺務支援</h3>
@@ -233,7 +233,7 @@
                 </div>
               </div>
             </li>
-            <li class="service__item sa sa--up">
+            <li class="service__item">
               <img class="service__img" src="./img/service_icon_website.png" alt="Webサイト制作サポート">
               <div class="service__explanation">
                 <h3 class="service__explanation-title">Webサイト制作サポート</h3>
@@ -248,27 +248,27 @@
 
       <section class="section flow">
         <div class="section__inner">
-          <h2 class="section__title">お取引のステップ</h2>
+          <h2 class="section__title js-fade-in">お取引のステップ</h2>
           <ul class="flow__list">
-            <li class="flow__item sa sa--up">
+            <li class="flow__item js-fade-in">
               <dl class="flow__item-inside">
                 <dt class="flow__item-title"><span class="flow__item-icon">STEP.01</span>お問い合わせ</dt>
                 <dd class="flow__item-txt">お問い合わせフォーム、またはお電話でお悩みごとをご相談ください。</dd>
               </dl>
             </li>
-            <li class="flow__item sa sa--up">
+            <li class="flow__item js-fade-in">
               <dl class="flow__item-inside">
                 <dt class="flow__item-title"><span class="flow__item-icon">STEP.02</span>調査</dt>
                 <dd class="flow__item-txt">当社にてご相談いただいた内容を精査いたします。</dd>
               </dl>
             </li>
-            <li class="flow__item sa sa--up">
+            <li class="flow__item js-fade-in">
               <dl class="flow__item-inside">
                 <dt class="flow__item-title"><span class="flow__item-icon">STEP.03</span>ご提案</dt>
                 <dd class="flow__item-txt">お客様のご相談内容に沿ったご提案をさせていただきます。</dd>
               </dl>
             </li>
-            <li class="flow__item sa sa--up">
+            <li class="flow__item js-fade-in">
               <dl class="flow__item-inside">
                 <dt class="flow__item-title"><span class="flow__item-icon">STEP.04</span>お申し込み<br>ご契約</dt>
                 <dd class="flow__item-txt">仕様、見積り等を納得していただいた上でお申し込み・ご契約をしていただきます。</dd>
@@ -280,13 +280,13 @@
 
       <section class="section company">
         <div class="section__inner">
-          <h2 class="section__title">会社情報</h2>
-          <div class="company__concept">
+          <h2 class="section__title js-fade-in">会社情報</h2>
+          <div class="company__concept js-fade-in">
             <p>当社は株式会社エクシオテック（旧_大東工業株式会社）の指定販売店として、寺院用ソフト（<span class="txt-bold">寺院エキスパートシステム</span>）の販売から導入指導およびサポートをおこなっております。</p>
             <p>IT業界をとりまく環境の変化は著しいものがあります。そうした中でメーカーと販売店、そしてユーザーさまのご要望を取り入れることで改善を積み重ねてまいりました。</p>
             <p>これからもユーザーさまのお役に立てるよう努めてまいります。</p>
           </div>
-          <div class="company__content">
+          <div class="company__content js-fade-in">
             <div class="company__summary">
               <h3 class="company__name">株式会社前野企画</h3>
               <address>
@@ -308,16 +308,16 @@
 
       <section class="section contact">
         <div class="section__inner">
-          <h2 class="section__title">お問い合わせ</h2>
-          <div class="contact__txt">
+          <h2 class="section__title js-fade-in">お問い合わせ</h2>
+          <div class="contact__txt js-fade-in">
             <p>サービスに関するお問い合わせは、お電話又はメールフォームより承っております。</p>
             <p>どうぞ、お気軽にお問い合わせください。</p>
           </div>
-          <div class="contact__phone">
+          <div class="contact__phone js-fade-in">
             <i class="fas fa-phone-alt fa-3x contact__icon"></i>
             <p class="contact__num">090-2679-3570</p>
           </div>
-          <a class="contact__btn" href="/contact/index.php">メールフォームでお問い合わせ</a>
+          <a class="contact__btn js-fade-in" href="/contact/index.php">メールフォームでお問い合わせ</a>
         </div>
       </section>
     </main>
@@ -328,9 +328,9 @@
       </div>
     </footer>
 
-    <a id="js-pagetop" class="pagetop" href="#top">
+    <div class="pagetop" data-scroll-to-top-button>
       <i class="fas fa-chevron-up"></i>
-    </a>
+    </div>
   </div>
 </body>
 </html>
