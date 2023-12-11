@@ -1,26 +1,26 @@
-@import './mixin/colors';
-@import './mixin/btn';
-@import './mixin/breakpoint';
-@import './mixin/conversion';
-@import './mixin/scroll-animation';
-@import './mixin/br';
-@import './mixin/section';
-@import './mixin/txt';
-@import './mixin/wrapper';
+@import './module/colors';
+@import './module/btn';
+@import './module/breakpoint';
+@import './module/conversion';
+@import './module/scroll-animation';
+@import './module/br';
+@import './module/section';
+@import './module/txt';
+@import './module/wrapper';
 
-@import './base/base';
+@import './module/base';
 
 @import './module/header';
 @import './module/main';
 @import './module/footer';
 @import './module/pagetop';
 
-@import './page/block/mv';
-@import './page/block/problem';
-@import './page/block/solution';
-@import './page/block/service';
-@import './page/block/flow';
-@import './page/block/company';
-@import './page/block/contact';
-@import './page/contact/block/mail';
-@import './page/expert/block/expert';
+@import './module/mv';
+@import './module/problem';
+@import './module/solution';
+@import './module/service';
+@import './module/flow';
+@import './module/company';
+@import './module/contact';
+@import './module/mail';
+@import './module/expert';
