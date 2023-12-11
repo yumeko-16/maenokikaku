@@ -1,140 +1,144 @@
 .flow {
   background-color: $bgc;
-  &__item {
-    position: relative;
-    &:not(:last-child) {
-      margin-bottom: get_vw(40);
-      @include sm() {
-        margin-bottom: get_vw-sm(40);
-      }
-      @include md() {
-        margin-bottom: 40px;
-      }
+}
+
+.flow__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: get_vw(40);
+    @include sm() {
+      margin-bottom: get_vw-sm(40);
     }
-    &:not(:first-child)::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: get_vw(-40);
-      left: calc(10% + 5.21vw - .42vw);
-      z-index: 10;
-      height: get_vw(60);
-      border-left: get_vw(4) dotted #e5e5e5;
-      @include sm() {
-        top: get_vw-sm(-40);
-        left: calc(10% + 3.26vw - .26vw);
-        height: get_vw-sm(60);
-        border-left: get_vw-sm(4) dotted #e5e5e5;
-      }
-      @include md() {
-        top: -40px;
-        left: calc(10% + 25px - 2px);
-        height: 60px;
-        border-left: 4px dotted #e5e5e5;
-      }
+    @include md() {
+      margin-bottom: 40px;
     }
-    &:last-child > dl::before,
-    &:last-child > dl::after {
-      content: "";
-      border: solid transparent;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
+  }
+  &:not(:first-child)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: get_vw(-40);
+    left: calc(10% + 5.21vw - .42vw);
+    z-index: 10;
+    height: get_vw(60);
+    border-left: get_vw(4) dotted #e5e5e5;
+    @include sm() {
+      top: get_vw-sm(-40);
+      left: calc(10% + 3.26vw - .26vw);
+      height: get_vw-sm(60);
+      border-left: get_vw-sm(4) dotted #e5e5e5;
     }
-    &-inside {
-      display: flex;
-      align-items: center;
-      position: relative;
-      width: 100%;
-      padding: get_vw(20) get_vw(30);
-      border-radius: get_vw(8);
-      background-color: #fff;
-      box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
-      @include sm() {
-        padding: get_vw-sm(20) get_vw-sm(30);
-        border-radius: get_vw-sm(8);
-        box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
-      }
-      @include md() {
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
-      }
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        border: solid transparent;
-        transform: translateX(-50%);
-      }
-      &::last-child::before,
-      &::last-child::after {
-        border: none;
-      }
-      &::before {
-        border-width: get_vw(22);
-        @include sm() {
-          border-width: get_vw-sm(22);
-        }
-        @include md() {
-          border-width: 22px;
-        }
-      }
-      &::after {
-        border-width: get_vw(20);
-        border-top-color: #fff;
-        @include sm() {
-          border-width: get_vw-sm(20);
-        }
-        @include md() {
-          border-width: 20px;
-        }
-      }
+    @include md() {
+      top: -40px;
+      left: calc(10% + 25px - 2px);
+      height: 60px;
+      border-left: 4px dotted #e5e5e5;
     }
-    &-title {
-      flex-basis: 20%;
-      margin-right: 2vw;
-      text-align: center;
-      font-size: get_vw(20);
-      font-weight: 600;
-      color: $main;
-      @include sm() {
-        font-size: get_vw-sm(20);
-      }
-      @include md() {
-        font-size: 20px;
-      }
+  }
+  &:last-child > dl::before,
+  &:last-child > dl::after {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.flow__item-inside {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: get_vw(20) get_vw(30);
+  border-radius: get_vw(8);
+  background-color: #fff;
+  box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+  @include sm() {
+    padding: get_vw-sm(20) get_vw-sm(30);
+    border-radius: get_vw-sm(8);
+    box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+  }
+  @include md() {
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    transform: translateX(-50%);
+  }
+  &::last-child::before,
+  &::last-child::after {
+    border: none;
+  }
+  &::before {
+    border-width: get_vw(22);
+    @include sm() {
+      border-width: get_vw-sm(22);
     }
-    &-icon {
-      display: block;
-      position: relative;
-      z-index: 50;
-      margin-bottom: get_vw(10);
-      padding: get_vw(5) get_vw(10);
-      border-radius: get_vw(20);
-      font-size: get_vw(12);
-      color: #fff;
-      background: -o-linear-gradient(315deg, $main, #5067c5);
-      background: linear-gradient(135deg, $main, #5067c5);
-      @include sm() {
-        margin-bottom: get_vw-sm(10);
-        padding: get_vw-sm(5) get_vw-sm(10);
-        border-radius: get_vw-sm(20);
-        font-size: get_vw-sm(12);
-      }
-      @include md() {
-        margin-bottom: 10px;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 12px;
-      }
+    @include md() {
+      border-width: 22px;
     }
-    &-txt {
-      font-weight: 600;
+  }
+  &::after {
+    border-width: get_vw(20);
+    border-top-color: #fff;
+    @include sm() {
+      border-width: get_vw-sm(20);
+    }
+    @include md() {
+      border-width: 20px;
     }
   }
 }
 
+.flow__item-title {
+  flex-basis: 20%;
+  margin-right: 2vw;
+  text-align: center;
+  font-size: get_vw(20);
+  font-weight: 600;
+  color: $main;
+  @include sm() {
+    font-size: get_vw-sm(20);
+  }
+  @include md() {
+    font-size: 20px;
+  }
+}
+
+.flow__item-icon {
+  display: block;
+  position: relative;
+  z-index: 50;
+  margin-bottom: get_vw(10);
+  padding: get_vw(5) get_vw(10);
+  border-radius: get_vw(20);
+  font-size: get_vw(12);
+  color: #fff;
+  background: -o-linear-gradient(315deg, $main, #5067c5);
+  background: linear-gradient(135deg, $main, #5067c5);
+  @include sm() {
+    margin-bottom: get_vw-sm(10);
+    padding: get_vw-sm(5) get_vw-sm(10);
+    border-radius: get_vw-sm(20);
+    font-size: get_vw-sm(12);
+  }
+  @include md() {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+}
+
+.flow__item-txt {
+  font-weight: 600;
+}

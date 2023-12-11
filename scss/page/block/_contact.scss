@@ -1,43 +1,48 @@
 .contact {
   background-color: #edf2f7;
-  &__txt {
-    margin: 0 auto get_vw(40);
-    @include sm() {
-      margin: 0 auto get_vw-sm(40);
-    }
-    @include md() {
-      margin: 0 auto 40px;
-    }
+}
+
+.contact__txt {
+  margin: 0 auto get_vw(40);
+  @include sm() {
+    margin: 0 auto get_vw-sm(40);
   }
-  &__phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: get_vw(20);
-    @include sm() {
-      margin-bottom: get_vw-sm(20);
-    }
-    @include md() {
-      margin-bottom: 20px;
-    }
+  @include md() {
+    margin: 0 auto 40px;
   }
-  &__icon {
-    color: #333;
+}
+
+.contact__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: get_vw(20);
+  @include sm() {
+    margin-bottom: get_vw-sm(20);
   }
-  &__num {
-    margin-left: get_vw(20);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: get_vw(50);
-    @include sm() {
-      margin-left: get_vw-sm(20);
-      font-size: get_vw-sm(50);
-    }
-    @include md() {
-      margin-left: 20px;
-      font-size: 50px;
-    }
+  @include md() {
+    margin-bottom: 20px;
   }
-  &__btn {
-    @include _btn('contact');
+}
+
+.contact__icon {
+  color: #333;
+}
+
+.contact__num {
+  margin-left: get_vw(20);
+  font-family: 'Fjalla One', sans-serif;
+  font-size: get_vw(50);
+  @include sm() {
+    margin-left: get_vw-sm(20);
+    font-size: get_vw-sm(50);
   }
+  @include md() {
+    margin-left: 20px;
+    font-size: 50px;
+  }
+}
+
+.contact__btn {
+  @include _btn('contact');
 }
