@@ -1,0 +1,59 @@
+.mv {
+  background: linear-gradient(135deg, $main, #5067c5);
+  @include md() {
+    border-radius: 0 0 50% 50%/0 0 8% 8%;
+  }
+}
+
+.mv__inner {
+  @include md() {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.mv__box {
+  display: flex;
+  flex-direction: column;
+  @include md() {
+    width: 50%;
+  }
+}
+
+.mv__title {
+  color: #eee;
+  @include md() {
+    margin: 0 0 40px;
+  }
+}
+
+.mv__txt {
+  margin: 0 auto get_vw(40);
+  color: #eee;
+  @include sm() {
+    margin-bottom: get_vw-sm(40);
+  }
+  @include md() {
+    margin-bottom: 40px;
+  }
+}
+
+.mv__btn-pc {
+  display: none;
+  @include md() {
+    @include _btn('contact');
+  }
+}
+
+.mv__btn-sp {
+  @include _btn('contact');
+  background-color: #22bc92;
+  @include md() {
+    display: none;
+  }
+}
+
+.mv__img {
+  display: block;
+  width: 100%;
+}

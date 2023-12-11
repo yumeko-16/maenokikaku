@@ -9,18 +9,19 @@
   @include md() {
     padding: 20px 0;
   }
-  &__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 get_vw(20);
-    @include sm() {
-      padding: 0 get_vw-sm(20);
-    }
-    @include md() {
-      padding: 20px 0;
-    }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 get_vw(20);
+  @include sm() {
+    padding: 0 get_vw-sm(20);
+  }
+  @include md() {
+    padding: 20px 0;
   }
 }
