@@ -4,25 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "run-p serve watch js",
-    "build": "run-s js:build",
-    "js": "webpack --mode development",
-    "js:build": "webpack --mode production",
+    "dev": "run-p serve sass js",
+    "build": "run-s sass:build js:build",
     "serve": "webpack serve",
-    "watch": "webpack --watch"
+    "sass": "sass src/scss/:dist/css/ --style=compressed --no-source-map --no-charset --watch",
+    "sass:build": "sass src/scss:dist/css/ --style=compressed --no-source-map --no-charset",
+    "js": "webpack --mode development -w",
+    "js:build": "webpack --mode production -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sihoo-milk/maenokikaku.git"
+    "url": "git+https://github.com/yumeko-16/maenokikaku.git"
   },
   "author": "Tomohiro Maeno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sihoo-milk/maenokikaku/issues"
+    "url": "https://github.com/yumeko-16/maenokikaku/issues"
   },
-  "homepage": "https://github.com/Sihoo-milk/maenokikaku#readme",
+  "homepage": "https://github.com/yumeko-16/maenokikaku#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "babel-loader": "^9.1.3",
     "npm-run-all": "^4.1.5",
+    "sass": "^1.69.5",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
