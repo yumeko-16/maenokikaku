@@ -133,7 +133,7 @@ function validation($data) {
   <meta name="description" content="寺院管理ソフト「寺院エキスパート」の導入、その他サービスについてはこちらのお問い合わせフォームからお気軽にご連絡ください。">
   <meta name=”keywords” content="前野企画, 寺院, エキスパート, システム, お問い合わせ">
   <link rel="stylesheet" href="/css/ress.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d45c93bc1b.js" crossorigin="anonymous"></script>
   <script>
