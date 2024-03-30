@@ -7,9 +7,11 @@ body {
   line-height: 2;
   letter-spacing: .1em;
   color: #333;
+
   @include sm() {
     font-size: get_vw-sm(18);
   }
+
   @include md() {
     font-size: 18px;
   }

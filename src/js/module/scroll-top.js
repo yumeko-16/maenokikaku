@@ -5,7 +5,7 @@
  */
 export const ScrollToTop = (() => {
   const SCROLL_TO_TOP_BUTTON = document.querySelector(
-    "[data-scroll-to-top-button]"
+    "[data-scroll-to-top-button]",
   );
 
   SCROLL_TO_TOP_BUTTON.addEventListener("click", (e) => {
@@ -22,7 +22,7 @@ export const ScrollToTop = (() => {
  */
 export const ShowScrollToTopButton = (() => {
   const SCROLL_TO_TOP_BUTTON = document.querySelector(
-    "[data-scroll-to-top-button]"
+    "[data-scroll-to-top-button]",
   );
 
   const TARGET = document.querySelector("[data-target-for-show-button]");
@@ -36,5 +36,6 @@ export const ShowScrollToTopButton = (() => {
       }
     }
   });
+
   OBSERVER.observe(TARGET);
 })();

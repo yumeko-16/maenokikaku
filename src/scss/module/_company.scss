@@ -1,58 +1,74 @@
 .company__concept {
   margin-bottom: get_vw(40);
+
   @include sm() {
     margin-bottom: get_vw-sm(40);
   }
+
   @include md() {
     margin-bottom: 40px;
   }
 }
+
 .company__content {
   @include md() {
     display: flex;
     align-items: center;
   }
 }
+
 .company__summary {
   margin-bottom: get_vw(40);
+
   @include sm() {
     margin-bottom: get_vw-sm(40);
   }
+
   @include md() {
     width: 50%;
     margin-bottom: 0;
   }
 }
+
 .company__name {
   margin-bottom: get_vw(20);
   font-size: get_vw(22);
+
   @include sm() {
     margin-bottom: get_vw-sm(20);
     font-size: get_vw-sm(22);
   }
+
   @include md() {
     margin-bottom: 20px;
     font-size: 22px;
   }
 }
+
 .company__address {
   margin-bottom: get_vw(20);
+
   @include sm() {
     margin-bottom: get_vw-sm(20);
   }
+
   @include md() {
     margin-bottom: 20px;
   }
 }
+
 .company__map {
   width: 100%;
+
   @include md() {
     width: 50%;
   }
 }
+
 .company__google {
   display: block;
   width: 100%;
+
   @include md() {
     height: 300px;
   }

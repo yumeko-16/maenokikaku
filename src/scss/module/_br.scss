@@ -1,5 +1,6 @@
 .br {
   display: block;
+
   @include sm() {
     display: none;
   }
@@ -7,6 +8,7 @@
 
 .br-sm {
   display: none;
+
   @include sm() {
     display: block;
   }
@@ -14,6 +16,7 @@
 
 .br-md {
   display: none;
+
   @include md() {
     display: block;
   }
@@ -21,6 +24,7 @@
 
 .br-lg {
   display: none;
+
   @include lg() {
     display: block;
   }
