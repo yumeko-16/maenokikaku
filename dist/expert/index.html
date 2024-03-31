@@ -1,416 +1,500 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
-  </script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>寺院管理ソフト「寺院エキスパート」｜株式会社前野企画</title>
-  <meta name="description" content="寺院管理ソフト「寺院エキスパート」は多彩な機能を備えています。檀家管理、終始計算、入金管理、郵便振替、法名・戒名作成、棚経管理を簡単に実現できます。">
-  <meta name="keywords" content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家">
-  <link rel="stylesheet" href="/css/ress.css">
-  <link rel="stylesheet" href="/css/expert.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d45c93bc1b.js" crossorigin="anonymous"></script>
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'hnd7lsp',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-    })(document);
-  </script>
-  <script src="/js/expert.js" defer></script>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBLZ3KD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__inner">
-        <a
-          class="header__logo"
-          href="/index.html"
-        >株式会社前野企画</a>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="/">ホーム</a></li>
-            <li class="header__nav-item"><a href="/expert/index.html">寺院エキスパート</a></li>
-            <li class="header__nav-item"><a
-                class="header__btn"
-                href="/contact/index.php"
-              >お問い合わせ</a></li>
-          </ul>
-        </nav>
-        <div
-          class="header__burger"
-          data-burger-button
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
+    <title>寺院管理ソフト「寺院エキスパート」｜株式会社前野企画</title>
+    <meta
+      name="description"
+      content="寺院管理ソフト「寺院エキスパート」は多彩な機能を備えています。檀家管理、終始計算、入金管理、郵便振替、法名・戒名作成、棚経管理を簡単に実現できます。"
+    />
+    <meta
+      name="keywords"
+      content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/ress.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/expert.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d45c93bc1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'hnd7lsp',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <script
+      src="/js/expert.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WBLZ3KD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <a
+            class="header__logo"
+            href="/index.html"
+            >株式会社前野企画</a
+          >
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link"
+                  href="/"
+                  >ホーム</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link"
+                  href="/expert/index.html"
+                  >寺院エキスパート</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__btn"
+                  href="/contact/index.php"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            id="burger-btn"
+            class="burger-btn header__burger"
+          >
+            <i class="burger-btn__line burger-btn__line--1"></i>
+            <i class="burger-btn__line burger-btn__line--2"></i>
+            <i class="burger-btn__line burger-btn__line--3"></i>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <section
+          class="section expert"
+          data-target-for-show-button
         >
-          <div class="header__burger-inner">
-            <span class="header__burger-line header__burger-line--1"></span>
-            <span class="header__burger-line header__burger-line--2"></span>
-            <span class="header__burger-line header__burger-line--3"></span>
+          <div class="section__inner">
+            <h2 class="section__title">寺院エキスパートシステム</h2>
+            <ul class="expert__tab-list">
+              <li
+                class="expert__tab-item is-active"
+                data-tab-id="tab01"
+              >
+                檀家管理
+              </li>
+              <li
+                class="expert__tab-item"
+                data-tab-id="tab02"
+              >
+                収支計算
+              </li>
+              <li
+                class="expert__tab-item"
+                data-tab-id="tab03"
+              >
+                入金管理
+              </li>
+              <li
+                class="expert__tab-item"
+                data-tab-id="tab04"
+              >
+                郵便振替
+              </li>
+              <li
+                class="expert__tab-item"
+                data-tab-id="tab05"
+              >
+                戒名作成
+              </li>
+              <li
+                class="expert__tab-item"
+                data-tab-id="tab06"
+              >
+                棚経管理
+              </li>
+            </ul>
+            <div
+              id="tab01"
+              class="expert__tab-target is-active"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_supporter-01.png"
+                    alt="檀家台帳での一元管理画面"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>
+                      檀家台帳で「戸主情報」「準戸主」「家族」「過去帳」「日記」「行事」「回忌」「行事」「入金」「墓地」の一元管理が可能
+                    </p>
+                    <p>檀家情報の検索・登録・修正・削除が可能</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_supporter-02.png"
+                    alt="画面文字の拡大・縮小"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>画面文字の拡大、縮小ができ、見やすく調整が可能</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab02"
+              class="expert__tab-target"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_payment-01.png"
+                    alt="収支計算メニュー"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>家計簿方式で簡単に入力可能</p>
+                    <p>データ入力期間の拡張（18ヶ月）</p>
+                    <p>檀家管理と連動</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_payment-02.png"
+                    alt="帳票出力"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>宗教法人に対応した帳票出力</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_payment-03.png"
+                    alt="収支計算書の書式をカスタマイズ"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>収支計算書の書式がカスタマイズ可能</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab03"
+              class="expert__tab-target"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_deposit-01.png"
+                    alt="入金管理メニュー"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>家計簿方式で簡単に入力可能</p>
+                    <p>データ入力期間の拡張（18ヶ月）</p>
+                    <p>収支計算と連動</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_deposit-02.png"
+                    alt="導入年度以前のデータ入力"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>導入年度以前のデータが入力可能</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_deposit-03.png"
+                    alt="各種案内発行"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>各種案内発行が可能</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_deposit-04.png"
+                    alt="他年度検索"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>多年度集計による入金履歴の参照が可能</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_deposit-05.png"
+                    alt="簡単な領収書発行"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>領収書発行システムを追加</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab04"
+              class="expert__tab-target"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_postalTransfer-01.png"
+                    alt="郵便振替メニュー"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>自由に編集できる書式作成機能</p>
+                    <p>檀家管理と連動</p>
+                    <p>入金管理と連動（会費・寄付情報の参照）</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_postalTransfer-02.png"
+                    alt="複数の書式に対応"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>郵政公社配布の振込用紙およびA4単票用紙に対応</p>
+                    <p>印刷対象者の保存機能による再利用可能</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_postalTransfer-03.png"
+                    alt="条件設定による印刷対象者の選択"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>条件設定により任意の印刷対象者の選択可能</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab05"
+              class="expert__tab-target"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_buddhistName-01.png"
+                    alt="戒名作成メニュー"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>50,000語の二字熟字辞書機能で全宗派に対応</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_buddhistName-02.png"
+                    alt="戒名簡単作成"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>作成法名・戒名を過去帳へコピー</p>
+                    <p>平仄・重複戒名・適合性など評価機能の充実</p>
+                    <p>対句・性格・趣味・季節なども考慮</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab06"
+              class="expert__tab-target"
+              data-panel
+            >
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_tanagyo-01.png"
+                    alt="棚経管理メニュー"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>お盆棚経やお彼岸廻りの行動予定表を作成</p>
+                  </div>
+                </div>
+              </div>
+              <div class="expert__info">
+                <div class="expert__box">
+                  <img
+                    class="expert__img"
+                    src="/img/expert/expert_pic_tanagyo-02.png"
+                    alt="予定表の登録と出力"
+                  />
+                </div>
+                <div class="expert__box">
+                  <div class="expert__summary">
+                    <p>僧侶「99」人まで登録管理が可能</p>
+                    <p>檀信徒カナ順による予定表出力</p>
+                    <p>
+                      檀信徒（訪問先）への案内に日付・順番・予定時間の出力が可能
+                    </p>
+                    <p>檀信徒（訪問先）へのラベル出力が可能</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+        </section>
+      </main>
 
-    <main class="main">
-      <section
-        class="section expert"
-        data-target-for-show-button
+      <footer class="footer">
+        <div class="footer__inner">
+          <small>© 2020 前野企画</small>
+        </div>
+      </footer>
+
+      <div
+        class="pagetop"
+        data-scroll-to-top-button
       >
-        <div class="section__inner">
-          <h2 class="section__title">寺院エキスパートシステム</h2>
-          <ul class="expert__tab-list">
-            <li
-              class="expert__tab-item is-active"
-              data-tab-id="tab01"
-            >檀家管理</li>
-            <li
-              class="expert__tab-item"
-              data-tab-id="tab02"
-            >収支計算</li>
-            <li
-              class="expert__tab-item"
-              data-tab-id="tab03"
-            >入金管理</li>
-            <li
-              class="expert__tab-item"
-              data-tab-id="tab04"
-            >郵便振替</li>
-            <li
-              class="expert__tab-item"
-              data-tab-id="tab05"
-            >戒名作成</li>
-            <li
-              class="expert__tab-item"
-              data-tab-id="tab06"
-            >棚経管理</li>
-          </ul>
-          <div
-            id="tab01"
-            class="expert__tab-target is-active"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_supporter-01.png"
-                  alt="檀家台帳での一元管理画面"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>檀家台帳で「戸主情報」「準戸主」「家族」「過去帳」「日記」「行事」「回忌」「行事」「入金」「墓地」の一元管理が可能</p>
-                  <p>檀家情報の検索・登録・修正・削除が可能</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_supporter-02.png"
-                  alt="画面文字の拡大・縮小"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>画面文字の拡大、縮小ができ、見やすく調整が可能</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="tab02"
-            class="expert__tab-target"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_payment-01.png"
-                  alt="収支計算メニュー"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>家計簿方式で簡単に入力可能</p>
-                  <p>データ入力期間の拡張（18ヶ月）</p>
-                  <p>檀家管理と連動</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_payment-02.png"
-                  alt="帳票出力"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>宗教法人に対応した帳票出力</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_payment-03.png"
-                  alt="収支計算書の書式をカスタマイズ"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>収支計算書の書式がカスタマイズ可能</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="tab03"
-            class="expert__tab-target"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_deposit-01.png"
-                  alt="入金管理メニュー"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>家計簿方式で簡単に入力可能</p>
-                  <p>データ入力期間の拡張（18ヶ月）</p>
-                  <p>収支計算と連動</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_deposit-02.png"
-                  alt="導入年度以前のデータ入力"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>導入年度以前のデータが入力可能</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_deposit-03.png"
-                  alt="各種案内発行"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>各種案内発行が可能</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_deposit-04.png"
-                  alt="他年度検索"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>多年度集計による入金履歴の参照が可能</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_deposit-05.png"
-                  alt="簡単な領収書発行"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>領収書発行システムを追加</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="tab04"
-            class="expert__tab-target"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_postalTransfer-01.png"
-                  alt="郵便振替メニュー"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>自由に編集できる書式作成機能</p>
-                  <p>檀家管理と連動</p>
-                  <p>入金管理と連動（会費・寄付情報の参照）</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_postalTransfer-02.png"
-                  alt="複数の書式に対応"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>郵政公社配布の振込用紙およびA4単票用紙に対応</p>
-                  <p>印刷対象者の保存機能による再利用可能</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_postalTransfer-03.png"
-                  alt="条件設定による印刷対象者の選択"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>条件設定により任意の印刷対象者の選択可能</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="tab05"
-            class="expert__tab-target"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_buddhistName-01.png"
-                  alt="戒名作成メニュー"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>50,000語の二字熟字辞書機能で全宗派に対応</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_buddhistName-02.png"
-                  alt="戒名簡単作成"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>作成法名・戒名を過去帳へコピー</p>
-                  <p>平仄・重複戒名・適合性など評価機能の充実</p>
-                  <p>対句・性格・趣味・季節なども考慮</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="tab06"
-            class="expert__tab-target"
-            data-panel
-          >
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_tanagyo-01.png"
-                  alt="棚経管理メニュー"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>お盆棚経やお彼岸廻りの行動予定表を作成</p>
-                </div>
-              </div>
-            </div>
-            <div class="expert__info">
-              <div class="expert__box">
-                <img
-                  class="expert__img"
-                  src="/img/expert/expert_pic_tanagyo-02.png"
-                  alt="予定表の登録と出力"
-                >
-              </div>
-              <div class="expert__box">
-                <div class="expert__summary">
-                  <p>僧侶「99」人まで登録管理が可能</p>
-                  <p>檀信徒カナ順による予定表出力</p>
-                  <p>檀信徒（訪問先）への案内に日付・順番・予定時間の出力が可能</p>
-                  <p>檀信徒（訪問先）へのラベル出力が可能</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <small>© 2020 前野企画</small>
+        <i class="fas fa-chevron-up"></i>
       </div>
-    </footer>
-
-    <div
-      class="pagetop"
-      data-scroll-to-top-button
-    >
-      <i class="fas fa-chevron-up"></i>
     </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,411 +1,551 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
-  </script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>寺院管理は前野企画｜株式会社前野企画</title>
-  <meta name="description" content="前野企画は寺院管理でお悩みのご寺院さまをサポートします。寺院管理ソフト「寺院エキスパート」の導入に力を入れており、シンプルでお手軽な寺院管理をご提供いたします。">
-  <meta name="keywords" content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家">
-  <link rel="stylesheet" href="/css/ress.css">
-  <link rel="stylesheet" href="/css/home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d45c93bc1b.js" crossorigin="anonymous"></script>
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'hnd7lsp',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-    })(document);
-  </script>
-  <!-- <script src="/js/anime.min.js"></script> -->
-  <script src="/js/home.js" defer></script>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBLZ3KD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__inner">
-        <a
-          class="header__logo"
-          href="/index.html"
-        >株式会社前野企画</a>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="/">ホーム</a></li>
-            <li class="header__nav-item"><a href="/expert/index.html">寺院エキスパート</a></li>
-            <li class="header__nav-item"><a
-                class="header__btn"
-                href="/contact/index.php"
-              >お問い合わせ</a></li>
-          </ul>
-        </nav>
-        <div
-          class="header__burger"
-          data-burger-button
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
+    <title>寺院管理は前野企画｜株式会社前野企画</title>
+    <meta
+      name="description"
+      content="前野企画は寺院管理でお悩みのご寺院さまをサポートします。寺院管理ソフト「寺院エキスパート」の導入に力を入れており、シンプルでお手軽な寺院管理をご提供いたします。"
+    />
+    <meta
+      name="keywords"
+      content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/ress.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/home.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d45c93bc1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: 'hnd7lsp',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- <script src="/js/anime.min.js"></script> -->
+    <script
+      src="/js/home.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WBLZ3KD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <a
+            class="header__logo"
+            href="/index.html"
+            >株式会社前野企画</a
+          >
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/">ホーム</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/expert/index.html">寺院エキスパート</a>
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__btn"
+                  href="/contact/index.php"
+                  >お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="header__burger"
+            data-burger-button
+          >
+            <div class="header__burger-inner">
+              <span class="header__burger-line header__burger-line--1"></span>
+              <span class="header__burger-line header__burger-line--2"></span>
+              <span class="header__burger-line header__burger-line--3"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section
+          class="section mv"
+          data-target-for-show-button
         >
-          <div class="header__burger-inner">
-            <span class="header__burger-line header__burger-line--1"></span>
-            <span class="header__burger-line header__burger-line--2"></span>
-            <span class="header__burger-line header__burger-line--3"></span>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <section
-        class="section mv"
-        data-target-for-show-button
-      >
-        <div class="section__inner mv__inner">
-          <div class="mv__box">
-            <h1 class="section__title mv__title">前野企画はご寺院さまの<br>お悩みを解決します</h1>
-            <div class="mv__txt">
-              <p>当社は、ご寺院さまの運営発展にお役立てできる商品を開発・提供いたします。</p>
-              <p>商品のご案内から日常業務のお手伝いなど幅広く活動しております。</p>
-            </div>
-            <a
-              class="mv__btn-pc"
-              href="/contact/index.php"
-            >メールフォームからお問い合わせ</a>
-          </div>
-          <div class="mv__box">
-            <p>
-              <img
-                class="mv__img"
-                src="/img/mv_pic.png"
-                alt="寺院エキスパートシステム"
+          <div class="section__inner mv__inner">
+            <div class="mv__box">
+              <h1 class="section__title mv__title">
+                前野企画はご寺院さまの<br />お悩みを解決します
+              </h1>
+              <div class="mv__txt">
+                <p>
+                  当社は、ご寺院さまの運営発展にお役立てできる商品を開発・提供いたします。
+                </p>
+                <p>
+                  商品のご案内から日常業務のお手伝いなど幅広く活動しております。
+                </p>
+              </div>
+              <a
+                class="mv__btn-pc"
+                href="/contact/index.php"
+                >メールフォームからお問い合わせ</a
               >
+            </div>
+            <div class="mv__box">
+              <p>
+                <img
+                  class="mv__img"
+                  src="/img/mv_pic.png"
+                  alt="寺院エキスパートシステム"
+                />
+              </p>
+              <a
+                class="mv__btn-sp"
+                href="/contact/index.php"
+                >メールフォームからお問い合わせ</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="section problem">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">
+              こんなお悩み<br class="br" />ありませんか？
+            </h2>
+            <ol class="problem__list">
+              <li class="problem__item js-fade-in">
+                <div class="problem__step">
+                  お悩み<small class="problem__num">1</small>
+                </div>
+                <p class="problem__txt">
+                  お寺で管理している資料が災害で無くなってしまう恐れがある。
+                </p>
+              </li>
+              <li class="problem__item js-fade-in">
+                <div class="problem__step">
+                  お悩み<small class="problem__num">2</small>
+                </div>
+                <p class="problem__txt">
+                  今の住職にしかわからない情報があり、引き継ぎに不安がある。
+                </p>
+              </li>
+              <li class="problem__item js-fade-in">
+                <div class="problem__step">
+                  お悩み<small class="problem__num">3</small>
+                </div>
+                <p class="problem__txt">
+                  紙やエクセルによる管理は限界。でも寺院管理ソフトは難しそうでなかなか手が出せない。
+                </p>
+              </li>
+              <li class="problem__item js-fade-in">
+                <div class="problem__step">
+                  お悩み<small class="problem__num">4</small>
+                </div>
+                <p class="problem__txt">
+                  寺院管理ソフトは種類がたくさんあって何を使ったら良いかわからない。
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section solution">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">寺院エキスパートシステム</h2>
+            <p class="solution__txt js-fade-in">
+              上記のお悩みは全て寺院エキスパートシステムで解決できます。
             </p>
+            <ul class="solution__list js-fade-in">
+              <li class="solution__item">
+                <div class="solution__icon">
+                  <i class="fas fa-crown fa-2x solution__icon--color"></i>
+                </div>
+                <h3 class="solution__item-txt">寺院管理ソフトの決定版</h3>
+              </li>
+              <li class="solution__item">
+                <div class="solution__icon">
+                  <i class="fas fa-tasks fa-2x solution__icon--color"></i>
+                </div>
+                <h3 class="solution__item-txt">檀家・会計の管理が連動</h3>
+              </li>
+              <li class="solution__item">
+                <div class="solution__icon">
+                  <i class="fas fa-book-reader fa-2x solution__icon--color"></i>
+                </div>
+                <h3 class="solution__item-txt">豊富な各種帳票</h3>
+              </li>
+              <li class="solution__item">
+                <div class="solution__icon">
+                  <i class="fas fa-tools fa-2x solution__icon--color"></i>
+                </div>
+                <h3 class="solution__item-txt">保守機能の充実</h3>
+              </li>
+              <li class="solution__item">
+                <div class="solution__icon">
+                  <i class="fas fa-search-plus fa-2x solution__icon--color"></i>
+                </div>
+                <h3 class="solution__item-txt">
+                  寺院内LANで簡易に<br />信徒検索が可能
+                </h3>
+              </li>
+            </ul>
             <a
-              class="mv__btn-sp"
+              class="solution__btn js-fade-in"
+              href="/expert/index.html"
+              >もっと詳しく</a
+            >
+          </div>
+        </section>
+
+        <section class="section service">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">当社のサービス</h2>
+            <p class="service__txt js-fade-in">
+              当社は寺院エキスパートシステムの他、様々なサービスをご提供しています。
+            </p>
+            <ul class="service__list js-fade-in">
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_goku.png"
+                  alt="寺院エキスパートシステム"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">
+                    寺院エキスパートシステム
+                  </h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      寺院管理に必要な機能を多数備えた寺院エキスパートシステムの導入及び導入後のサポートをいたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_map.png"
+                  alt="墓地図制作"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">墓地図制作</h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      現在お持ちの墓地図面の有無を問わず電子図面を作成いたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_book.png"
+                  alt="過去帳和綴じ制作"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">過去帳和綴じ制作</h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      寺院に所属している檀家で亡くなった人の戒名（法号・法名）、俗名、死亡年月日、享年などが書かれている帳簿を作成いたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_toba.png"
+                  alt="塔婆システム支援"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">
+                    塔婆システムサポート
+                  </h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      誰でも簡単に塔婆への印刷ができるように作られた印刷ユーティリティーソフトウェアのサポートをいたします。
+                    </p>
+                    <p>塔婆の他、白木位牌・木札のレイアウトも可能です。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_scanner.png"
+                  alt="コピー（複合機）・パソコン・LANシステムサポート"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">
+                    コピー（複合機）<br />パソコン・LANシステム<br />サポート
+                  </h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      コピー（複合機）・パソコン・LANシステム導入及び導入後をサポートいたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_camera.png"
+                  alt="防犯用監視カメラ"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">防犯用監視カメラ</h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      防犯用監視カメラの導入及び導入後をサポートいたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_phone.png"
+                  alt="ビジネスフォン"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">ビジネスフォン</h3>
+                  <div class="service__explanation-txt">
+                    <p>ビジネスフォンの導入及び導入後をサポートいたします。</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_temple.png"
+                  alt="寺務支援"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">寺務支援</h3>
+                  <div class="service__explanation-txt">
+                    <p>
+                      寺院用パソコンソフト導入後の運用指導およびメンテナンスサポートの他、檀信徒管理・経理事務処理・行事案内・その他の業務など、事務処理をスムーズに行うためのサポートをいたします。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="service__item">
+                <img
+                  class="service__img"
+                  src="./img/service_icon_website.png"
+                  alt="Webサイト制作サポート"
+                />
+                <div class="service__explanation">
+                  <h3 class="service__explanation-title">
+                    Webサイト制作サポート
+                  </h3>
+                  <div class="service__explanation-txt">
+                    <p>Webサイトの制作をおこないます。</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section flow">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">お取引のステップ</h2>
+            <ul class="flow__list">
+              <li class="flow__item js-fade-in">
+                <dl class="flow__item-inside">
+                  <dt class="flow__item-title">
+                    <span class="flow__item-icon">STEP.01</span>お問い合わせ
+                  </dt>
+                  <dd class="flow__item-txt">
+                    お問い合わせフォーム、またはお電話でお悩みごとをご相談ください。
+                  </dd>
+                </dl>
+              </li>
+              <li class="flow__item js-fade-in">
+                <dl class="flow__item-inside">
+                  <dt class="flow__item-title">
+                    <span class="flow__item-icon">STEP.02</span>調査
+                  </dt>
+                  <dd class="flow__item-txt">
+                    当社にてご相談いただいた内容を精査いたします。
+                  </dd>
+                </dl>
+              </li>
+              <li class="flow__item js-fade-in">
+                <dl class="flow__item-inside">
+                  <dt class="flow__item-title">
+                    <span class="flow__item-icon">STEP.03</span>ご提案
+                  </dt>
+                  <dd class="flow__item-txt">
+                    お客様のご相談内容に沿ったご提案をさせていただきます。
+                  </dd>
+                </dl>
+              </li>
+              <li class="flow__item js-fade-in">
+                <dl class="flow__item-inside">
+                  <dt class="flow__item-title">
+                    <span class="flow__item-icon">STEP.04</span
+                    >お申し込み<br />ご契約
+                  </dt>
+                  <dd class="flow__item-txt">
+                    仕様、見積り等を納得していただいた上でお申し込み・ご契約をしていただきます。
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section company">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">会社情報</h2>
+            <div class="company__concept js-fade-in">
+              <p>
+                当社は株式会社エクシオテック（旧_大東工業株式会社）の指定販売店として、寺院用ソフト（<span
+                  class="txt-bold"
+                  >寺院エキスパートシステム</span
+                >）の販売から導入指導およびサポートをおこなっております。
+              </p>
+              <p>
+                IT業界をとりまく環境の変化は著しいものがあります。そうした中でメーカーと販売店、そしてユーザーさまのご要望を取り入れることで改善を積み重ねてまいりました。
+              </p>
+              <p>これからもユーザーさまのお役に立てるよう努めてまいります。</p>
+            </div>
+            <div class="company__content js-fade-in">
+              <div class="company__summary">
+                <h3 class="company__name">株式会社前野企画</h3>
+                <address>
+                  <div class="company__address">
+                    <p>〒350-0405</p>
+                    <p>埼玉県入間郡越生町津久根672-4</p>
+                  </div>
+                  <p>FAX：049-292-5186</p>
+                  <p>TEL：090-2679-3570</p>
+                  <p>MAIL：maenokikaku@email.plala.or.jp</p>
+                </address>
+              </div>
+              <div class="company__map">
+                <iframe
+                  class="company__google"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.9922032128884!2d139.28256401526082!3d35.97161608012751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60192b7dfb36647d%3A0xde55bd5dd4051c17!2z44CSMzUwLTA0MDUg5Z-8546J55yM5YWl6ZaT6YOh6LaK55Sf55S65aSn5a2X5rSl5LmF5qC577yW77yX77yS4oiS77yU!5e0!3m2!1sja!2sjp!4v1596107085486!5m2!1sja!2sjp"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section contact">
+          <div class="section__inner">
+            <h2 class="section__title js-fade-in">お問い合わせ</h2>
+            <div class="contact__txt js-fade-in">
+              <p>
+                サービスに関するお問い合わせは、お電話又はメールフォームより承っております。
+              </p>
+              <p>どうぞ、お気軽にお問い合わせください。</p>
+            </div>
+            <div class="contact__phone js-fade-in">
+              <i class="fas fa-phone-alt fa-3x contact__icon"></i>
+              <p class="contact__num">090-2679-3570</p>
+            </div>
+            <a
+              class="contact__btn js-fade-in"
               href="/contact/index.php"
-            >メールフォームからお問い合わせ</a>
+              >メールフォームでお問い合わせ</a
+            >
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <section class="section problem">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">こんなお悩み<br class="br">ありませんか？</h2>
-          <ol class="problem__list">
-            <li class="problem__item js-fade-in">
-              <div class="problem__step">お悩み<small class="problem__num">1</small></div>
-              <p class="problem__txt">お寺で管理している資料が災害で無くなってしまう恐れがある。</p>
-            </li>
-            <li class="problem__item js-fade-in">
-              <div class="problem__step">お悩み<small class="problem__num">2</small></div>
-              <p class="problem__txt">今の住職にしかわからない情報があり、引き継ぎに不安がある。</p>
-            </li>
-            <li class="problem__item js-fade-in">
-              <div class="problem__step">お悩み<small class="problem__num">3</small></div>
-              <p class="problem__txt">紙やエクセルによる管理は限界。でも寺院管理ソフトは難しそうでなかなか手が出せない。</p>
-            </li>
-            <li class="problem__item js-fade-in">
-              <div class="problem__step">お悩み<small class="problem__num">4</small></div>
-              <p class="problem__txt">寺院管理ソフトは種類がたくさんあって何を使ったら良いかわからない。</p>
-            </li>
-          </ol>
+      <footer class="footer">
+        <div class="footer__inner">
+          <small>© 2020 前野企画</small>
         </div>
-      </section>
+      </footer>
 
-      <section class="section solution">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">寺院エキスパートシステム</h2>
-          <p class="solution__txt js-fade-in">
-            上記のお悩みは全て寺院エキスパートシステムで解決できます。
-          </p>
-          <ul class="solution__list js-fade-in">
-            <li class="solution__item">
-              <div class="solution__icon">
-                <i class="fas fa-crown fa-2x solution__icon--color"></i>
-              </div>
-              <h3 class="solution__item-txt">寺院管理ソフトの決定版</h3>
-            </li>
-            <li class="solution__item">
-              <div class="solution__icon">
-                <i class="fas fa-tasks fa-2x solution__icon--color"></i>
-              </div>
-              <h3 class="solution__item-txt">檀家・会計の管理が連動</h3>
-            </li>
-            <li class="solution__item">
-              <div class="solution__icon">
-                <i class="fas fa-book-reader fa-2x solution__icon--color"></i>
-              </div>
-              <h3 class="solution__item-txt">豊富な各種帳票</h3>
-            </li>
-            <li class="solution__item">
-              <div class="solution__icon">
-                <i class="fas fa-tools fa-2x solution__icon--color"></i>
-              </div>
-              <h3 class="solution__item-txt">保守機能の充実</h3>
-            </li>
-            <li class="solution__item">
-              <div class="solution__icon">
-                <i class="fas fa-search-plus fa-2x solution__icon--color"></i>
-              </div>
-              <h3 class="solution__item-txt">寺院内LANで簡易に<br>信徒検索が可能</h3>
-            </li>
-          </ul>
-          <a
-            class="solution__btn js-fade-in"
-            href="/expert/index.html"
-          >もっと詳しく</a>
-        </div>
-      </section>
-
-      <section class="section service">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">当社のサービス</h2>
-          <p class="service__txt js-fade-in">
-            当社は寺院エキスパートシステムの他、様々なサービスをご提供しています。
-          </p>
-          <ul class="service__list js-fade-in">
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_goku.png"
-                alt="寺院エキスパートシステム"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">寺院エキスパートシステム</h3>
-                <div class="service__explanation-txt">
-                  <p>寺院管理に必要な機能を多数備えた寺院エキスパートシステムの導入及び導入後のサポートをいたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_map.png"
-                alt="墓地図制作"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">墓地図制作</h3>
-                <div class="service__explanation-txt">
-                  <p>現在お持ちの墓地図面の有無を問わず電子図面を作成いたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_book.png"
-                alt="過去帳和綴じ制作"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">過去帳和綴じ制作</h3>
-                <div class="service__explanation-txt">
-                  <p>寺院に所属している檀家で亡くなった人の戒名（法号・法名）、俗名、死亡年月日、享年などが書かれている帳簿を作成いたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_toba.png"
-                alt="塔婆システム支援"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">塔婆システムサポート</h3>
-                <div class="service__explanation-txt">
-                  <p>誰でも簡単に塔婆への印刷ができるように作られた印刷ユーティリティーソフトウェアのサポートをいたします。</p>
-                  <p>塔婆の他、白木位牌・木札のレイアウトも可能です。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_scanner.png"
-                alt="コピー（複合機）・パソコン・LANシステムサポート"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">コピー（複合機）<br>パソコン・LANシステム<br>サポート</h3>
-                <div class="service__explanation-txt">
-                  <p>コピー（複合機）・パソコン・LANシステム導入及び導入後をサポートいたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_camera.png"
-                alt="防犯用監視カメラ"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">防犯用監視カメラ</h3>
-                <div class="service__explanation-txt">
-                  <p>防犯用監視カメラの導入及び導入後をサポートいたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_phone.png"
-                alt="ビジネスフォン"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">ビジネスフォン</h3>
-                <div class="service__explanation-txt">
-                  <p>ビジネスフォンの導入及び導入後をサポートいたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_temple.png"
-                alt="寺務支援"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">寺務支援</h3>
-                <div class="service__explanation-txt">
-                  <p>寺院用パソコンソフト導入後の運用指導およびメンテナンスサポートの他、檀信徒管理・経理事務処理・行事案内・その他の業務など、事務処理をスムーズに行うためのサポートをいたします。</p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <img
-                class="service__img"
-                src="./img/service_icon_website.png"
-                alt="Webサイト制作サポート"
-              >
-              <div class="service__explanation">
-                <h3 class="service__explanation-title">Webサイト制作サポート</h3>
-                <div class="service__explanation-txt">
-                  <p>Webサイトの制作をおこないます。</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section flow">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">お取引のステップ</h2>
-          <ul class="flow__list">
-            <li class="flow__item js-fade-in">
-              <dl class="flow__item-inside">
-                <dt class="flow__item-title"><span class="flow__item-icon">STEP.01</span>お問い合わせ</dt>
-                <dd class="flow__item-txt">お問い合わせフォーム、またはお電話でお悩みごとをご相談ください。</dd>
-              </dl>
-            </li>
-            <li class="flow__item js-fade-in">
-              <dl class="flow__item-inside">
-                <dt class="flow__item-title"><span class="flow__item-icon">STEP.02</span>調査</dt>
-                <dd class="flow__item-txt">当社にてご相談いただいた内容を精査いたします。</dd>
-              </dl>
-            </li>
-            <li class="flow__item js-fade-in">
-              <dl class="flow__item-inside">
-                <dt class="flow__item-title"><span class="flow__item-icon">STEP.03</span>ご提案</dt>
-                <dd class="flow__item-txt">お客様のご相談内容に沿ったご提案をさせていただきます。</dd>
-              </dl>
-            </li>
-            <li class="flow__item js-fade-in">
-              <dl class="flow__item-inside">
-                <dt class="flow__item-title"><span class="flow__item-icon">STEP.04</span>お申し込み<br>ご契約</dt>
-                <dd class="flow__item-txt">仕様、見積り等を納得していただいた上でお申し込み・ご契約をしていただきます。</dd>
-              </dl>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section company">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">会社情報</h2>
-          <div class="company__concept js-fade-in">
-            <p>当社は株式会社エクシオテック（旧_大東工業株式会社）の指定販売店として、寺院用ソフト（<span class="txt-bold">寺院エキスパートシステム</span>）の販売から導入指導およびサポートをおこなっております。</p>
-            <p>IT業界をとりまく環境の変化は著しいものがあります。そうした中でメーカーと販売店、そしてユーザーさまのご要望を取り入れることで改善を積み重ねてまいりました。</p>
-            <p>これからもユーザーさまのお役に立てるよう努めてまいります。</p>
-          </div>
-          <div class="company__content js-fade-in">
-            <div class="company__summary">
-              <h3 class="company__name">株式会社前野企画</h3>
-              <address>
-                <div class="company__address">
-                  <p>〒350-0405</p>
-                  <p>埼玉県入間郡越生町津久根672-4</p>
-                </div>
-                <p>FAX：049-292-5186</p>
-                <p>TEL：090-2679-3570</p>
-                <p>MAIL：maenokikaku@email.plala.or.jp</p>
-              </address>
-            </div>
-            <div class="company__map">
-              <iframe
-                class="company__google"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.9922032128884!2d139.28256401526082!3d35.97161608012751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60192b7dfb36647d%3A0xde55bd5dd4051c17!2z44CSMzUwLTA0MDUg5Z-8546J55yM5YWl6ZaT6YOh6LaK55Sf55S65aSn5a2X5rSl5LmF5qC577yW77yX77yS4oiS77yU!5e0!3m2!1sja!2sjp!4v1596107085486!5m2!1sja!2sjp"
-                frameborder="0"
-                style="border:0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact">
-        <div class="section__inner">
-          <h2 class="section__title js-fade-in">お問い合わせ</h2>
-          <div class="contact__txt js-fade-in">
-            <p>サービスに関するお問い合わせは、お電話又はメールフォームより承っております。</p>
-            <p>どうぞ、お気軽にお問い合わせください。</p>
-          </div>
-          <div class="contact__phone js-fade-in">
-            <i class="fas fa-phone-alt fa-3x contact__icon"></i>
-            <p class="contact__num">090-2679-3570</p>
-          </div>
-          <a
-            class="contact__btn js-fade-in"
-            href="/contact/index.php"
-          >メールフォームでお問い合わせ</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <small>© 2020 前野企画</small>
+      <div
+        class="pagetop"
+        data-scroll-to-top-button
+      >
+        <i class="fas fa-chevron-up"></i>
       </div>
-    </footer>
-
-    <div
-      class="pagetop"
-      data-scroll-to-top-button
-    >
-      <i class="fas fa-chevron-up"></i>
     </div>
-  </div>
-</body>
+  </body>
 </html>
