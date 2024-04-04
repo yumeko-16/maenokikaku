@@ -1,8 +1,10 @@
 .main {
   margin-top: get_vw(81);
+
   @include sm() {
     margin-top: get_vw-sm(81);
   }
+
   @include md() {
     margin-top: 81px;
   }

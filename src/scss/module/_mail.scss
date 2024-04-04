@@ -1,6 +1,7 @@
 .mail__visited {
   background-color: $main;
   color: #fff;
+
   &:before {
     border-left-color: $main;
   }
@@ -8,9 +9,11 @@
 
 .mail__item {
   margin-bottom: get_vw(40);
+
   @include sm() {
     margin-bottom: get_vw-sm(40);
   }
+
   @include md() {
     margin-bottom: 40px;
   }
@@ -20,9 +23,11 @@
   display: flex;
   align-items: center;
   margin-bottom: get_vw(20);
+
   @include sm() {
     margin-bottom: get_vw-sm(20);
   }
+
   @include md() {
     margin-bottom: 20px;
   }
@@ -30,9 +35,11 @@
 
 .mail__description {
   margin: 0 auto get_vw(40);
+
   @include sm() {
     margin: 0 auto get_vw-sm(40);
   }
+
   @include md() {
     margin: 0 auto 40px;
   }
@@ -40,6 +47,7 @@
 
 .mail__step-completion {
   margin-right: 0;
+
   &:before {
     content: none;
   }
@@ -50,9 +58,11 @@
   justify-content: center;
   margin-bottom: get_vw(40);
   text-align: center;
+
   @include sm() {
     margin-bottom: get_vw-sm(40);
   }
+
   @include md() {
     margin-bottom: 40px;
   }
@@ -69,20 +79,23 @@
   font-size: get_vw(15);
   color: #666;
   background-color: #edf2f7;
+
   @include sm() {
     width: get_vw-sm(220);
     margin-right: get_vw-sm(18);
     padding: get_vw(12) get_vw-sm(8);
     font-size: get_vw-sm(15);
   }
+
   @include md() {
     width: 220px;
     margin-right: 18px;
     padding: 12px 8px;
     font-size: 15px;
   }
+
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 0;
@@ -104,6 +117,7 @@
   line-height: get_vw(30);
   color: #fff;
   background-color: #f63a52;
+
   @include sm() {
     height: get_vw-sm(30);
     margin-left: get_vw-sm(10);
@@ -112,6 +126,7 @@
     font-size: get_vw-sm(12);
     line-height: get_vw-sm(30);
   }
+
   @include md() {
     height: 30px;
     margin-left: 10px;
@@ -128,18 +143,21 @@
   padding: 0 get_vw(17);
   border-radius: get_vw(8);
   background-color: #edf2f7;
+
   @include sm() {
     height: get_vw-sm(50);
     padding: 0 get_vw-sm(17);
     border-radius: get_vw-sm(8);
   }
+
   @include md() {
     height: 50px;
     padding: 0 17px;
     border-radius: 8px;
   }
+
   &::placeholder {
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     color: #ccc;
   }
 }
@@ -151,18 +169,21 @@
   resize: none;
   border-radius: get_vw(8);
   background-color: #edf2f7;
+
   @include sm() {
     height: get_vw-sm(260);
     padding: get_vw-sm(17);
     border-radius: get_vw-sm(8);
   }
+
   @include md() {
     height: 260px;
     padding: 17px;
     border-radius: 8px;
   }
+
   &::placeholder {
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     color: #ccc;
   }
 }
@@ -170,23 +191,27 @@
 .mail__btns {
   display: flex;
   flex-direction: column-reverse;
+
   @include sm() {
     flex-direction: row;
   }
 }
 
 .mail__btn {
-  @include _btn('normal');
+  @include _btn("normal");
+
   &--back {
-    @include _btn('back');
+    @include _btn("back");
   }
 }
 
 .mail__error-list {
   margin: 0 auto get_vw(40);
+
   @include sm() {
     margin-bottom: get_vw-sm(40);
   }
+
   @include md() {
     margin-bottom: 40px;
   }

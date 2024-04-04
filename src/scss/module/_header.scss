@@ -5,12 +5,14 @@
   z-index: 100;
   width: 100%;
   background: #fff;
-  box-shadow: 0 get_vw(3) get_vw(25) rgba(77,77,99,0.1);
+  box-shadow: 0 get_vw(3) get_vw(25) rgba(77, 77, 99, 0.1);
+
   @include sm() {
-    box-shadow: 0 get_vw-sm(3) get_vw-sm(25) rgba(77,77,99,0.1);
+    box-shadow: 0 get_vw-sm(3) get_vw-sm(25) rgba(77, 77, 99, 0.1);
   }
+
   @include md() {
-    box-shadow: 0 3px 25px rgba(77,77,99,0.1);
+    box-shadow: 0 3px 25px rgba(77, 77, 99, 0.1);
   }
 }
 
@@ -20,9 +22,11 @@
   align-items: center;
   width: 100%;
   padding: get_vw(20);
+
   @include sm() {
     padding: get_vw-sm(20);
   }
+
   @include md() {
     padding: 20px;
   }
@@ -31,9 +35,11 @@
 .header__logo {
   font-size: get_vw(22);
   font-weight: 600;
+
   @include sm() {
     font-size: get_vw-sm(22);
   }
+
   @include md() {
     font-size: 22px;
   }
@@ -47,8 +53,9 @@
   height: 100vh;
   padding-top: get_vw(92);
   background-color: $bgc;
-  transition: all .4s;
+  transition: all 0.4s;
   z-index: 200;
+
   @include sm() {
     position: static;
     right: auto;
@@ -72,18 +79,22 @@
   text-align: center;
   font-size: get_vw(22);
   font-weight: 600;
+
   @include sm() {
     padding-bottom: 0;
     font-size: get_vw-sm(18);
   }
+
   @include md() {
     padding-bottom: 0;
     font-size: 18px;
   }
+
   &:not(:last-child) {
     @include sm() {
       margin-right: get_vw-sm(20);
     }
+
     @include md() {
       margin-right: 20px;
     }
@@ -91,7 +102,7 @@
 }
 
 .header__btn {
-  @include _btn('header');
+  @include _btn("header");
 }
 
 .header__burger {
@@ -100,6 +111,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: 300;
+
   @include sm() {
     display: none;
   }
@@ -117,14 +129,17 @@
   width: get_vw(40);
   height: get_vw(5);
   background: #636363;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: get_vw(50);
+
   &--1 {
     top: 0;
   }
+
   &--2 {
     top: get_vw(13);
   }
+
   &--3 {
     top: get_vw(26);
   }
@@ -134,14 +149,17 @@
   & .header__nav {
     right: 0;
   }
+
   & .header__burger-line {
     &--1 {
       transform: rotate(225deg);
       top: get_vw(13);
     }
+
     &--2 {
       opacity: 0;
     }
+
     &--3 {
       transform: rotate(-225deg);
       top: get_vw(13);
