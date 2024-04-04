@@ -4,6 +4,9 @@
   "singleAttributePerLine": true,
   "overrides": [
     {
+      "doctype": "<!DOCTYPE html>"
+    },
+    {
       "files": "*.scss",
       "options": {
         "parser": "scss",
