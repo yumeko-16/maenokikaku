@@ -1,12 +1,18 @@
-.js-fade-in {
+.sa {
   opacity: 0;
+  -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  transform: translateY(30px);
 }
 
-.js-fade-in.is-show {
+.sa.show {
   opacity: 1;
-  transform: translateY(0);
+  -webkit-transform: none;
+          transform: none;
+}
+
+.sa--up {
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
 }
 
 .br {
@@ -529,45 +535,50 @@ textarea:focus {
   }
 }
 
-.pagetop {
-  background: #7db4e6;
-  border-radius: 50%;
-  bottom: 6.25vw;
-  font-size: 0;
-  height: 10.41667vw;
-  line-height: 10.41667vw;
+#js-pagetop {
   opacity: 0;
-  position: fixed;
-  right: 3.125vw;
-  text-align: center;
-  transition: .5s;
-  width: 10.41667vw;
-}
-@media (min-width: 481px) {
-  .pagetop {
-    bottom: 3.90625vw;
-    height: 6.51042vw;
-    line-height: 6.51042vw;
-    right: 1.95313vw;
-    width: 6.51042vw;
-  }
-}
-@media (min-width: 769px) {
-  .pagetop {
-    bottom: 30px;
-    height: 50px;
-    line-height: 50px;
-    right: 15px;
-    width: 50px;
-  }
 }
 
-.pagetop:hover {
+#js-pagetop.fadein {
+  opacity: 1;
+}
+
+#js-pagetop:hover {
   opacity: .8;
 }
 
-.pagetop.is-active {
-  opacity: 1;
+.pagetop {
+  display: block;
+  position: fixed;
+  right: 3.125vw;
+  bottom: 6.25vw;
+  width: 10.41667vw;
+  height: 10.41667vw;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+  line-height: 10.41667vw;
+  background: #7db4e6;
+}
+
+@media (min-width: 481px) {
+  .pagetop {
+    right: 1.95313vw;
+    bottom: 3.90625vw;
+    width: 6.51042vw;
+    height: 6.51042vw;
+    line-height: 6.51042vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .pagetop {
+    right: 15px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 
 .pagetop i {
@@ -575,12 +586,14 @@ textarea:focus {
   color: #fff;
   line-height: 10.41667vw;
 }
+
 @media (min-width: 481px) {
   .pagetop i {
     font-size: 2.60417vw;
     line-height: 6.51042vw;
   }
 }
+
 @media (min-width: 769px) {
   .pagetop i {
     font-size: 20px;
@@ -2063,17 +2076,26 @@ textarea:focus {
 }
 
 .expert__tab-item {
-  align-items: center;
-  background-color: #fff;
-  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
   padding: 2.5vw 1.66667vw;
   border-bottom: solid 0.20833vw #edf2f7;
   text-align: center;
   font-size: 3.125vw;
   color: #666;
-  width: 50%;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 @media (min-width: 481px) {

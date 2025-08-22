@@ -12,10 +12,10 @@
       var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s),
         dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
   </script>
   <!-- End Google Tag Manager -->
@@ -24,7 +24,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>寺院管理ソフト「寺院エキスパート」｜株式会社前野企画</title>
   <meta name="description" content="寺院管理ソフト「寺院エキスパート」は多彩な機能を備えています。檀家管理、終始計算、入金管理、郵便振替、法名・戒名作成、棚経管理を簡単に実現できます。">
-  <meta name="keywords" content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家">
+  <meta name=”keywords” content="前野企画, 寺院, エキスパート, システム, 管理, ソフト, 寺務, 檀家">
   <link rel="stylesheet" href="/css/ress.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -39,7 +39,8 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <script src="/js/expert.js" defer></script>
+  <script src="/js/anime.min.js"></script>
+  <script type="text/javascript" src="/js/common.js" defer></script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -56,7 +57,7 @@
             <li class="header__nav-item"><a class="header__btn" href="/contact/index.php">お問い合わせ</a></li>
           </ul>
         </nav>
-        <div class="header__burger" data-burger-button>
+        <div id="js-burger" class="header__burger">
           <div class="header__burger-inner">
             <span class="header__burger-line header__burger-line--1"></span>
             <span class="header__burger-line header__burger-line--2"></span>
@@ -67,18 +68,18 @@
     </header>
 
     <main class="main">
-      <section class="section expert" data-target-for-show-button>
+      <section class="section expert">
         <div class="section__inner">
           <h2 class="section__title">寺院エキスパートシステム</h2>
           <ul class="expert__tab-list">
-            <li class="expert__tab-item is-active" data-tab-id="tab01">檀家管理</li>
-            <li class="expert__tab-item" data-tab-id="tab02">収支計算</li>
-            <li class="expert__tab-item" data-tab-id="tab03">入金管理</li>
-            <li class="expert__tab-item" data-tab-id="tab04">郵便振替</li>
-            <li class="expert__tab-item" data-tab-id="tab05">戒名作成</li>
-            <li class="expert__tab-item" data-tab-id="tab06">棚経管理</li>
+            <li class="expert__tab-item js-tab-trigger is-active" data-id="tab01">檀家管理</li>
+            <li class="expert__tab-item js-tab-trigger" data-id="tab02">収支計算</li>
+            <li class="expert__tab-item js-tab-trigger" data-id="tab03">入金管理</li>
+            <li class="expert__tab-item js-tab-trigger" data-id="tab04">郵便振替</li>
+            <li class="expert__tab-item js-tab-trigger" data-id="tab05">戒名作成</li>
+            <li class="expert__tab-item js-tab-trigger" data-id="tab06">棚経管理</li>
           </ul>
-          <div id="tab01" class="expert__tab-target is-active" data-panel>
+          <div class="expert__tab-target js-tab-target is-active" id="tab01">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_supporter-01.png" alt="檀家台帳での一元管理画面">
@@ -101,7 +102,7 @@
               </div>
             </div>
           </div>
-          <div id="tab02" class="expert__tab-target" data-panel>
+          <div class="expert__tab-target js-tab-target" id="tab02">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_payment-01.png" alt="収支計算メニュー">
@@ -135,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div id="tab03" class="expert__tab-target" data-panel>
+          <div class="expert__tab-target js-tab-target" id="tab03">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_deposit-01.png" alt="入金管理メニュー">
@@ -189,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div id="tab04" class="expert__tab-target" data-panel>
+          <div class="expert__tab-target js-tab-target" id="tab04">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_postalTransfer-01.png" alt="郵便振替メニュー">
@@ -224,7 +225,7 @@
               </div>
             </div>
           </div>
-          <div id="tab05" class="expert__tab-target" data-panel>
+          <div class="expert__tab-target js-tab-target" id="tab05">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_buddhistName-01.png" alt="戒名作成メニュー">
@@ -248,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div id="tab06" class="expert__tab-target" data-panel>
+          <div class="expert__tab-target js-tab-target" id="tab06">
             <div class="expert__info">
               <div class="expert__box">
                 <img class="expert__img" src="/img/expert/expert_pic_tanagyo-01.png" alt="棚経管理メニュー">
@@ -283,9 +284,9 @@
       </div>
     </footer>
 
-    <div class="pagetop" data-scroll-to-top-button>
+    <a id="js-pagetop" class="pagetop" href="#top">
       <i class="fas fa-chevron-up"></i>
-    </div>
+    </a>
   </div>
 </body>
 </html>
