@@ -1,10 +1,12 @@
 #js-pagetop {
   opacity: 0;
-  &.fadein{
+
+  &.fadein {
     opacity: 1;
   }
-  &:hover{
-    opacity: .8;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -20,6 +22,7 @@
   font-size: 0;
   line-height: get_vw(50);
   background: $pagetop;
+
   @include sm() {
     right: get_vw-sm(15);
     bottom: get_vw-sm(30);
@@ -27,6 +30,7 @@
     height: get_vw-sm(50);
     line-height: get_vw-sm(50);
   }
+
   @include md() {
     right: 15px;
     bottom: 30px;
@@ -34,14 +38,17 @@
     height: 50px;
     line-height: 50px;
   }
+
   & i {
     font-size: get_vw(20);
-    color:#fff;
+    color: #fff;
     line-height: get_vw(50);
+
     @include sm() {
       font-size: get_vw-sm(20);
       line-height: get_vw-sm(50);
     }
+
     @include md() {
       font-size: 20px;
       line-height: 50px;
