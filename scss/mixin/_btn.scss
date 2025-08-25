@@ -1,76 +1,86 @@
 $initType: 'normal';
 
-@mixin _btn($type:$initType) {
+@mixin _btn($type: $initType) {
   display: block;
   min-width: get_vw(180);
   margin: 0 auto;
   padding: get_vw(12) get_vw(40);
   border-radius: get_vw(30);
-  box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, .5);
+  box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
   outline: none;
+
   @include sm() {
     min-width: get_vw-sm(180);
     padding: get_vw-sm(12) get_vw-sm(40);
     border-radius: get_vw-sm(30);
-    box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, .5);
+    box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, 0.5);
   }
+
   @include md() {
     min-width: 180px;
     padding: 12px 40px;
     border-radius: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
 
-  @if( $type == 'normal' ) {
+  @if ($type == 'normal') {
     background-color: $btn__normal;
+
     &:hover {
       background-color: $btn__normal--hover;
     }
   }
 
-  @if( $type == 'header' ) {
+  @if ($type == 'header') {
     display: inline-block;
     padding: get_vw(8) get_vw(40);
     box-shadow: initial;
     font-size: get_vw(22);
     background-color: $accent;
+
     @include sm() {
       padding: get_vw-sm(8) get_vw-sm(40);
       box-shadow: initial;
       font-size: get_vw-sm(14);
     }
+
     @include md() {
       padding: 8px 40px;
       box-shadow: initial;
       font-size: 16px;
     }
+
     &:hover {
       background-color: $accent--hover;
     }
   }
 
-  @if( $type == 'contact' ) {
+  @if ($type == 'contact') {
     background-color: $accent;
+
     &:hover {
       background-color: $accent--hover;
     }
   }
 
-  @if( $type == 'back' ) {
+  @if ($type == 'back') {
     margin: get_vw(40) auto 0;
     color: $txt;
     background-color: $btn--back;
+
     @include sm() {
       margin-top: 0;
       margin-right: get_vw-sm(40);
     }
+
     @include md() {
       margin: 0 auto;
     }
+
     &:hover {
       background-color: $btn__back--hover;
       color: #fff;

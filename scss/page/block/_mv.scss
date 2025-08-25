@@ -1,52 +1,66 @@
 .mv {
   background: linear-gradient(135deg, $main, #5067c5);
+
   @include md() {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
   }
+
   &__inner {
     @include md() {
       flex-direction: row;
       align-items: center;
     }
   }
+
   &__box {
     display: flex;
     flex-direction: column;
+
     @include md() {
       width: 50%;
     }
   }
+
   &__title {
     color: #eee;
+
     @include md() {
       margin: 0 0 40px;
     }
   }
+
   &__txt {
     margin: 0 auto get_vw(40);
     color: #eee;
+
     @include sm() {
       margin-bottom: get_vw-sm(40);
     }
+
     @include md() {
       margin-bottom: 40px;
     }
   }
+
   &__btn {
     &-pc {
       display: none;
+
       @include md() {
         @include _btn('contact');
       }
     }
+
     &-sp {
       @include _btn('contact');
       background-color: #22bc92;
+
       @include md() {
         display: none;
       }
     }
   }
+
   &__img {
     display: block;
     width: 100%;

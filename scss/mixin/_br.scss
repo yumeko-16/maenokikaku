@@ -1,22 +1,29 @@
 .br {
   display: block;
+
   @include sm() {
     display: none;
   }
+
   &-sm {
     display: none;
+
     @include sm() {
       display: block;
     }
   }
+
   &-md {
     display: none;
+
     @include md() {
       display: block;
     }
   }
+
   &-lg {
     display: none;
+
     @include lg() {
       display: block;
     }

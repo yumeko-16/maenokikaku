@@ -7,11 +7,13 @@ $lg: 1280px;
     @content;
   }
 }
+
 @mixin md {
   @media (min-width: ($md)) {
     @content;
   }
 }
+
 @mixin lg {
   @media (min-width: ($lg)) {
     @content;
