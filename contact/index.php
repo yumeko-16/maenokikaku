@@ -138,8 +138,8 @@ function validation($data) {
       name="keywords"
       content="前野企画, 寺院, エキスパート, システム, お問い合わせ"
     />
-    <link rel="stylesheet" href="/css/ress.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/ress.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
@@ -179,8 +179,8 @@ function validation($data) {
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
-    <script src="/js/anime.min.js"></script>
-    <script type="text/javascript" src="/js/common.js" defer></script>
+    <script src="/assets/js/anime.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js" defer></script>
   </head>
 
   <body>
