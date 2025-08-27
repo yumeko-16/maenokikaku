@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/yumeko-16/maenokikaku/issues"
   },
-  "homepage": "https://github.com/yumeko-16/maenokikaku#readme"
+  "homepage": "https://github.com/yumeko-16/maenokikaku#readme",
+  "volta": {
+    "node": "22.18.0"
+  }
 }
