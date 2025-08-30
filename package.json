@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "prettier": "^3.6.2"
   },
   "scripts": {
+    "dev": "live-server . --host=192.168.1.107 --port=8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
