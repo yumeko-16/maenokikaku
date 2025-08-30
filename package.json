@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/yumeko-16/maenokikaku#readme",
   "volta": {
-    "node": "22.18.0"
+    "node": "22.18.0",
+    "npm": "11.5.2"
   }
 }
