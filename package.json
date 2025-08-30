@@ -5,10 +5,16 @@
   "main": "index.js",
   "devDependencies": {
     "live-server": "^1.2.2",
-    "prettier": "^3.6.2"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
+    "sass": "^1.91.0"
   },
   "scripts": {
-    "dev": "live-server ./dist --host=192.168.1.107 --port=8080",
+    "serve": "live-server ./dist --host=192.168.1.107 --port=8080",
+    "sass": "sass src/assets/scss/:dist/assets/css --watch",
+    "sass:build": "sass src/assets/scss/:dist/assets/css --style compressed --no-source-map",
+    "dev": "npm-run-all --parallel serve sass",
+    "build": "npm run sass:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
