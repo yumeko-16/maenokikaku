@@ -179,7 +179,6 @@ function validation($data) {
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
-    <script src="/assets/js/anime.min.js"></script>
     <script type="text/javascript" src="/assets/js/common.js" defer></script>
   </head>
 

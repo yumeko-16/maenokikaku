@@ -1,47 +1,54 @@
 /* ========================================================
 バーガーメニュー
 =========================================================*/
-const toggleNav = () => {
+document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const burger = document.querySelector('#js-burger');
+
+  if (!burger) return;
 
   burger.addEventListener('click', () => {
     body.classList.toggle('nav-open');
   });
-};
-
-toggleNav();
+});
 
 /* ========================================================
 スクロールでトップに戻るボタンを表示
 =========================================================*/
 // スクロールして何ピクセルでアニメーションさせるか
-var px_change = 1;
+const px_change = 1;
+
 // スクロールのイベントハンドラを登録
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   // 変化するポイントまでスクロールしたらクラスを追加
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const pageTop = document.getElementById('js-pagetop');
+
+  if (!pageTop) return;
+
   if (scrollTop > px_change) {
-    document.querySelector('#js-pagetop').classList.add('fadein');
+    pageTop.classList.add('fadein');
     // 変化するポイント以前であればクラスを削除
   } else {
-    document.querySelector('#js-pagetop').classList.remove('fadein');
+    pageTop.classList.remove('fadein');
   }
 });
 
 /* ========================================================
 トップに戻るボタンのスムーズスクロール
 =========================================================*/
-document.querySelector('#js-pagetop').addEventListener('click', (e) => {
-  anime.remove('html, body');
-  anime({
-    targets: 'html, body',
-    scrollTop: 0,
-    dulation: 600,
-    easing: 'easeOutCubic',
+const pageTop = document.getElementById('js-pagetop');
+
+if (pageTop) {
+  pageTop.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   });
-  return false;
-});
+}
 
 /* ========================================================
 スクロールフェードイン
@@ -68,23 +75,21 @@ window.addEventListener('scroll', scrollAnimationFunc);
 const tabTriggers = document.querySelectorAll('.js-tab-trigger');
 const tabTargets = document.querySelectorAll('.js-tab-target');
 
-for (let i = 0; i < tabTriggers.length; i++) {
-  tabTriggers[i].addEventListener('click', (e) => {
-    let currentMenu = e.currentTarget;
-    let currentContent = document.getElementById(currentMenu.dataset.id);
+tabTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', (e) => {
+    const currentMenu = e.currentTarget as HTMLElement | null;
+    if (!currentMenu) return;
 
-    for (let i = 0; i < tabTriggers.length; i++) {
-      tabTriggers[i].classList.remove('is-active');
-    }
+    const currentContent = currentMenu.dataset.id
+      ? document.getElementById(currentMenu.dataset.id)
+      : null;
 
+    tabTriggers.forEach((t) => t.classList.remove('is-active'));
     currentMenu.classList.add('is-active');
 
-    for (let i = 0; i < tabTargets.length; i++) {
-      tabTargets[i].classList.remove('is-active');
-    }
-
-    if (currentContent !== null) {
+    tabTargets.forEach((t) => t.classList.remove('is-active'));
+    if (currentContent) {
       currentContent.classList.add('is-active');
     }
   });
-}
+});
