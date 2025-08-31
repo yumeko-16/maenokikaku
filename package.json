@@ -16,18 +16,20 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.6.2",
     "sass": "^1.91.0",
-    "typescript-eslint": "^8.41.0"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0",
+    "vite": "^7.1.3"
   },
   "scripts": {
     "serve": "live-server ./dist --host=192.168.1.107 --port=8080",
     "sass": "sass src/assets/scss/:dist/assets/css --watch",
-    "sass:build": "sass src/assets/scss/:dist/assets/css --style compressed --no-source-map",
+    "build:sass": "sass src/assets/scss/:dist/assets/css --style compressed --no-source-map",
     "format": "prettier --write src",
-    "lint": "eslint --ext ts,js dist/assets/js/**/*",
-    "lint:fix": "eslint --ext ts,js --fix dist/assets/js/**/*",
+    "lint": "eslint --ext ts,js src/assets/ts/**/*",
+    "lint:fix": "eslint --ext ts,js --fix src/assets/ts/**/*",
+    "build:vite": "vite build",
     "dev": "npm-run-all --parallel serve sass",
-    "build": "npm run sass:build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:sass && npm run build:vite"
   },
   "repository": {
     "type": "git",
