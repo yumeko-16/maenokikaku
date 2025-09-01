@@ -1,3 +1,6 @@
+@use '../mixin/breakpoint';
+@use '../mixin/colors';
+
 #js-pagetop {
   opacity: 0;
 
@@ -21,9 +24,9 @@
   text-align: center;
   font-size: 0;
   line-height: get_vw(50);
-  background: $pagetop;
+  background: colors.$pagetop;
 
-  @include sm() {
+  @include breakpoint.sm() {
     right: get_vw-sm(15);
     bottom: get_vw-sm(30);
     width: get_vw-sm(50);
@@ -31,7 +34,7 @@
     line-height: get_vw-sm(50);
   }
 
-  @include md() {
+  @include breakpoint.md() {
     right: 15px;
     bottom: 30px;
     width: 50px;
@@ -44,12 +47,12 @@
     color: #fff;
     line-height: get_vw(50);
 
-    @include sm() {
+    @include breakpoint.sm() {
       font-size: get_vw-sm(20);
       line-height: get_vw-sm(50);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       font-size: 20px;
       line-height: 50px;
     }

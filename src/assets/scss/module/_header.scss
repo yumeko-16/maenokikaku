@@ -1,3 +1,7 @@
+@use '../mixin/breakpoint';
+@use '../mixin/btn';
+@use '../mixin/colors';
+
 .header {
   position: fixed;
   top: 0;
@@ -7,11 +11,11 @@
   background: #fff;
   box-shadow: 0 get_vw(3) get_vw(25) rgba(77, 77, 99, 0.1);
 
-  @include sm() {
+  @include breakpoint.sm() {
     box-shadow: 0 get_vw-sm(3) get_vw-sm(25) rgba(77, 77, 99, 0.1);
   }
 
-  @include md() {
+  @include breakpoint.md() {
     box-shadow: 0 3px 25px rgba(77, 77, 99, 0.1);
   }
 
@@ -22,11 +26,11 @@
     width: 100%;
     padding: get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       padding: get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       padding: 20px;
     }
   }
@@ -35,11 +39,11 @@
     font-size: get_vw(22);
     font-weight: 600;
 
-    @include sm() {
+    @include breakpoint.sm() {
       font-size: get_vw-sm(22);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       font-size: 22px;
     }
   }
@@ -51,11 +55,11 @@
     width: 100%;
     height: 100vh;
     padding-top: get_vw(92);
-    background-color: $bgc;
+    background-color: colors.$bgc;
     transition: all 0.4s;
     z-index: 200;
 
-    @include sm() {
+    @include breakpoint.sm() {
       position: static;
       right: auto;
       top: auto;
@@ -66,7 +70,7 @@
     }
 
     &-list {
-      @include sm() {
+      @include breakpoint.sm() {
         display: flex;
         align-items: center;
       }
@@ -78,22 +82,22 @@
       font-size: get_vw(22);
       font-weight: 600;
 
-      @include sm() {
+      @include breakpoint.sm() {
         padding-bottom: 0;
         font-size: get_vw-sm(18);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         padding-bottom: 0;
         font-size: 18px;
       }
 
       &:not(:last-child) {
-        @include sm() {
+        @include breakpoint.sm() {
           margin-right: get_vw-sm(20);
         }
 
-        @include md() {
+        @include breakpoint.md() {
           margin-right: 20px;
         }
       }
@@ -107,7 +111,7 @@
     cursor: pointer;
     z-index: 300;
 
-    @include sm() {
+    @include breakpoint.sm() {
       display: none;
     }
 
@@ -141,7 +145,7 @@
   }
 
   &__btn {
-    @include _btn('header');
+    @include btn.btn('header');
   }
 }
 

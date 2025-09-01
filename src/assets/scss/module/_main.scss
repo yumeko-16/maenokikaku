@@ -1,11 +1,13 @@
+@use '../mixin/breakpoint';
+
 .main {
   margin-top: get_vw(81);
 
-  @include sm() {
+  @include breakpoint.sm() {
     margin-top: get_vw-sm(81);
   }
 
-  @include md() {
+  @include breakpoint.md() {
     margin-top: 81px;
   }
 }

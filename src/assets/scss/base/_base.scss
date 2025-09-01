@@ -1,3 +1,5 @@
+@use '../mixin/breakpoint';
+
 body {
   box-sizing: border-box;
   font-family: dnp-shuei-mgothic-std, sans-serif;
@@ -8,11 +10,11 @@ body {
   letter-spacing: 0.1em;
   color: #333;
 
-  @include sm() {
+  @include breakpoint.sm() {
     font-size: get_vw-sm(18);
   }
 
-  @include md() {
+  @include breakpoint.md() {
     font-size: 18px;
   }
 }

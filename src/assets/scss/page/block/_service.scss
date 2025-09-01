@@ -1,12 +1,14 @@
+@use '../../mixin/breakpoint';
+
 .service {
   &__txt {
     margin: 0 auto get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 40px;
     }
   }
@@ -14,7 +16,7 @@
   &__list {
     margin: 0 auto;
 
-    @include sm() {
+    @include breakpoint.sm() {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -30,7 +32,7 @@
     box-shadow: 0 get_vw(4) get_vw(8) rgba(33, 35, 37, 0.12);
     background-color: #fff;
 
-    @include sm() {
+    @include breakpoint.sm() {
       width: calc((100% - 64px) / 2);
       margin-bottom: get_vw-sm(20);
       padding: get_vw-sm(20);
@@ -38,7 +40,7 @@
       box-shadow: 0 get_vw-sm(4) get_vw-sm(8) rgba(33, 35, 37, 0.12);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       width: calc((100% - 64px) / 3);
       min-height: 353px;
       margin-bottom: 20px;
@@ -56,11 +58,11 @@
     border-radius: 50%;
     box-shadow: 0 get_vw(2) get_vw(4) get_vw(-1) rgba(0, 0, 0, 0.2);
 
-    @include sm() {
+    @include breakpoint.sm() {
       box-shadow: 0 get_vw-sm(2) get_vw-sm(4) get_vw-sm(-1) rgba(0, 0, 0, 0.2);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     }
   }
@@ -68,11 +70,11 @@
   &__explanation {
     margin-top: get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-top: get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-top: 20px;
     }
 
@@ -80,11 +82,11 @@
       text-align: center;
       font-size: get_vw(20);
 
-      @include sm() {
+      @include breakpoint.sm() {
         font-size: get_vw-sm(20);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         font-size: 20px;
       }
     }
@@ -93,11 +95,11 @@
       margin-top: 10px;
       font-size: get_vw(18);
 
-      @include sm() {
+      @include breakpoint.sm() {
         font-size: get_vw-sm(16);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         font-size: 16px;
       }
     }

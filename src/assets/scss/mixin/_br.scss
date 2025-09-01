@@ -1,14 +1,16 @@
+@use '../mixin/breakpoint';
+
 .br {
   display: block;
 
-  @include sm() {
+  @include breakpoint.sm() {
     display: none;
   }
 
   &-sm {
     display: none;
 
-    @include sm() {
+    @include breakpoint.sm() {
       display: block;
     }
   }
@@ -16,7 +18,7 @@
   &-md {
     display: none;
 
-    @include md() {
+    @include breakpoint.md() {
       display: block;
     }
   }
@@ -24,7 +26,7 @@
   &-lg {
     display: none;
 
-    @include lg() {
+    @include breakpoint.lg() {
       display: block;
     }
   }

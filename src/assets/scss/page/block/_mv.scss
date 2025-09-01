@@ -1,12 +1,16 @@
-.mv {
-  background: linear-gradient(135deg, $main, #5067c5);
+@use '../../mixin/breakpoint';
+@use '../../mixin/btn';
+@use '../../mixin/colors';
 
-  @include md() {
+.mv {
+  background: linear-gradient(135deg, colors.$main, #5067c5);
+
+  @include breakpoint.md() {
     border-radius: 0 0 50% 50%/0 0 8% 8%;
   }
 
   &__inner {
-    @include md() {
+    @include breakpoint.md() {
       flex-direction: row;
       align-items: center;
     }
@@ -16,7 +20,7 @@
     display: flex;
     flex-direction: column;
 
-    @include md() {
+    @include breakpoint.md() {
       width: 50%;
     }
   }
@@ -24,7 +28,7 @@
   &__title {
     color: #eee;
 
-    @include md() {
+    @include breakpoint.md() {
       margin: 0 0 40px;
     }
   }
@@ -33,29 +37,34 @@
     margin: 0 auto get_vw(40);
     color: #eee;
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 40px;
     }
   }
 
   &__btn {
     &-pc {
-      display: none;
+      & {
+        display: none;
+      }
 
-      @include md() {
-        @include _btn('contact');
+      @include breakpoint.md() {
+        @include btn.btn('contact');
       }
     }
 
     &-sp {
-      @include _btn('contact');
-      background-color: #22bc92;
+      @include btn.btn('contact');
 
-      @include md() {
+      & {
+        background-color: #22bc92;
+      }
+
+      @include breakpoint.md() {
         display: none;
       }
     }

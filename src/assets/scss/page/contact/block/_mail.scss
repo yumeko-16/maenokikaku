@@ -1,12 +1,16 @@
+@use '../../../mixin/breakpoint';
+@use '../../../mixin/btn';
+@use '../../../mixin/colors';
+
 .mail {
   &__description {
     margin: 0 auto get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin: 0 auto get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin: 0 auto 40px;
     }
   }
@@ -18,11 +22,11 @@
       margin-bottom: get_vw(40);
       text-align: center;
 
-      @include sm() {
+      @include breakpoint.sm() {
         margin-bottom: get_vw-sm(40);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         margin-bottom: 40px;
       }
     }
@@ -39,14 +43,14 @@
       color: #666;
       background-color: #edf2f7;
 
-      @include sm() {
+      @include breakpoint.sm() {
         width: get_vw-sm(220);
         margin-right: get_vw-sm(18);
         padding: get_vw(12) get_vw-sm(8);
         font-size: get_vw-sm(15);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         width: 220px;
         margin-right: 18px;
         padding: 12px 8px;
@@ -77,22 +81,22 @@
   }
 
   &__visited {
-    background-color: $main;
+    background-color: colors.$main;
     color: #fff;
 
     &:before {
-      border-left-color: $main;
+      border-left-color: colors.$main;
     }
   }
 
   &__item {
     margin-bottom: get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 40px;
     }
 
@@ -101,11 +105,11 @@
       align-items: center;
       margin-bottom: get_vw(20);
 
-      @include sm() {
+      @include breakpoint.sm() {
         margin-bottom: get_vw-sm(20);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         margin-bottom: 20px;
       }
     }
@@ -126,7 +130,7 @@
     color: #fff;
     background-color: #f63a52;
 
-    @include sm() {
+    @include breakpoint.sm() {
       height: get_vw-sm(30);
       margin-left: get_vw-sm(10);
       padding: 0 get_vw-sm(9);
@@ -135,7 +139,7 @@
       line-height: get_vw-sm(30);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       height: 30px;
       margin-left: 10px;
       padding: 0 9px;
@@ -152,13 +156,13 @@
     border-radius: get_vw(8);
     background-color: #edf2f7;
 
-    @include sm() {
+    @include breakpoint.sm() {
       height: get_vw-sm(50);
       padding: 0 get_vw-sm(17);
       border-radius: get_vw-sm(8);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       height: 50px;
       padding: 0 17px;
       border-radius: 8px;
@@ -178,13 +182,13 @@
     border-radius: get_vw(8);
     background-color: #edf2f7;
 
-    @include sm() {
+    @include breakpoint.sm() {
       height: get_vw-sm(260);
       padding: get_vw-sm(17);
       border-radius: get_vw-sm(8);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       height: 260px;
       padding: 17px;
       border-radius: 8px;
@@ -200,16 +204,16 @@
     display: flex;
     flex-direction: column-reverse;
 
-    @include sm() {
+    @include breakpoint.sm() {
       flex-direction: row;
     }
   }
 
   &__btn {
-    @include _btn('normal');
+    @include btn.btn('normal');
 
     &--back {
-      @include _btn('back');
+      @include btn.btn('back');
     }
   }
 
@@ -217,11 +221,11 @@
     &-list {
       margin: 0 auto get_vw(40);
 
-      @include sm() {
+      @include breakpoint.sm() {
         margin-bottom: get_vw-sm(40);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         margin-bottom: 40px;
       }
     }

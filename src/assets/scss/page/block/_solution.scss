@@ -1,14 +1,18 @@
+@use '../../mixin/breakpoint';
+@use '../../mixin/btn';
+@use '../../mixin/colors';
+
 .solution {
-  background-color: $bgc;
+  background-color: colors.$bgc;
 
   &__txt {
     margin: 0 auto get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 40px;
     }
   }
@@ -20,12 +24,12 @@
     justify-content: center;
     margin: 0 auto get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       justify-content: space-between;
       margin: 0 auto get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       justify-content: center;
       margin: 0 auto 40px;
     }
@@ -35,12 +39,12 @@
     width: 100%;
     margin-bottom: get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       width: calc((100% - 64px) / 2);
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       width: calc((100% - 64px) / 3);
       margin-bottom: 40px;
     }
@@ -53,11 +57,11 @@
       text-align: center;
       font-size: get_vw(20);
 
-      @include sm() {
+      @include breakpoint.sm() {
         font-size: get_vw-sm(20);
       }
 
-      @include md() {
+      @include breakpoint.md() {
         font-size: 20px;
       }
     }
@@ -74,15 +78,15 @@
     margin-bottom: get_vw(35);
     margin-left: auto;
     border-radius: 50%;
-    background: $main;
+    background: colors.$main;
 
-    @include sm() {
+    @include breakpoint.sm() {
       width: get_vw-sm(100);
       height: get_vw-sm(100);
       margin-bottom: get_vw-sm(35);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       width: 100px;
       height: 100px;
       margin-bottom: 20px;
@@ -94,6 +98,6 @@
   }
 
   &__btn {
-    @include _btn('normal');
+    @include btn.btn('normal');
   }
 }

@@ -1,18 +1,20 @@
+@use '../../mixin/breakpoint';
+
 .company {
   &__concept {
     margin-bottom: get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 40px;
     }
   }
 
   &__content {
-    @include md() {
+    @include breakpoint.md() {
       display: flex;
       align-items: center;
     }
@@ -21,11 +23,11 @@
   &__summary {
     margin-bottom: get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       width: 50%;
       margin-bottom: 0;
     }
@@ -35,12 +37,12 @@
     margin-bottom: get_vw(20);
     font-size: get_vw(22);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(20);
       font-size: get_vw-sm(22);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 20px;
       font-size: 22px;
     }
@@ -49,11 +51,11 @@
   &__address {
     margin-bottom: get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 20px;
     }
   }
@@ -61,7 +63,7 @@
   &__map {
     width: 100%;
 
-    @include md() {
+    @include breakpoint.md() {
       width: 50%;
     }
   }
@@ -70,7 +72,7 @@
     display: block;
     width: 100%;
 
-    @include md() {
+    @include breakpoint.md() {
       height: 300px;
     }
   }
