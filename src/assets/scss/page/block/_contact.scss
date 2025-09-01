@@ -1,14 +1,17 @@
+@use '../../mixin/breakpoint';
+@use '../../mixin/btn';
+
 .contact {
   background-color: #edf2f7;
 
   &__txt {
     margin: 0 auto get_vw(40);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin: 0 auto get_vw-sm(40);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin: 0 auto 40px;
     }
   }
@@ -19,11 +22,11 @@
     align-items: center;
     margin-bottom: get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-bottom: get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-bottom: 20px;
     }
   }
@@ -37,18 +40,18 @@
     font-family: 'Fjalla One', sans-serif;
     font-size: get_vw(50);
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin-left: get_vw-sm(20);
       font-size: get_vw-sm(50);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin-left: 20px;
       font-size: 50px;
     }
   }
 
   &__btn {
-    @include _btn('contact');
+    @include btn.btn('contact');
   }
 }

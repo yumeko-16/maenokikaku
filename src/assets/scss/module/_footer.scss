@@ -1,14 +1,16 @@
+@use '../mixin/breakpoint';
+
 .footer {
   margin-top: auto;
   padding: get_vw(20) 0;
   background: #232b33;
   color: rgba(255, 255, 255, 0.4);
 
-  @include sm() {
+  @include breakpoint.sm() {
     padding: get_vw-sm(20) 0;
   }
 
-  @include md() {
+  @include breakpoint.md() {
     padding: 20px 0;
   }
 
@@ -20,11 +22,11 @@
     margin: 0 auto;
     padding: 0 get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       padding: 0 get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       padding: 20px 0;
     }
   }

@@ -1,11 +1,14 @@
+@use '../mixin/breakpoint';
+@use '../mixin/colors.scss';
+
 .section {
   padding: get_vw(50) 0;
 
-  @include sm() {
+  @include breakpoint.sm() {
     padding: get_vw-sm(50) 0;
   }
 
-  @include md() {
+  @include breakpoint.md() {
     padding: 80px 0;
   }
 
@@ -17,11 +20,11 @@
     margin: 0 auto;
     padding: 0 get_vw(20);
 
-    @include sm() {
+    @include breakpoint.sm() {
       padding: 0 get_vw-sm(20);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       padding: 0 20px;
     }
   }
@@ -31,14 +34,14 @@
     font-size: get_vw(32);
     font-weight: 600;
     line-height: 1.8;
-    color: $main;
+    color: colors.$main;
 
-    @include sm() {
+    @include breakpoint.sm() {
       margin: 0 auto get_vw-sm(40);
       font-size: get_vw-sm(32);
     }
 
-    @include md() {
+    @include breakpoint.md() {
       margin: 0 auto 40px;
       font-size: 32px;
     }
