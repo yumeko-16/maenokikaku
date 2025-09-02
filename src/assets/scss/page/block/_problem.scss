@@ -1,14 +1,16 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/colors';
+@use '../../mixin/conversion';
 
 .problem {
   &__item {
     position: relative;
     width: 100%;
-    margin: get_vw(70) 0;
-    padding: get_vw(20);
-    border-radius: get_vw(8);
-    box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+    margin: conversion.get_vw(70) 0;
+    padding: conversion.get_vw(20);
+    border-radius: conversion.get_vw(8);
+    box-shadow: 0 conversion.get_vw(7) conversion.get_vw(16) 0
+      rgba(0, 0, 0, 0.07);
     background: #fff;
 
     &:last-child {
@@ -16,10 +18,11 @@
     }
 
     @include breakpoint.sm() {
-      margin: get_vw-sm(60) 0;
-      padding: get_vw-sm(27) get_vw-sm(132);
-      border-radius: get_vw-sm(8);
-      box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+      margin: conversion.get_vw-sm(60) 0;
+      padding: conversion.get_vw-sm(27) conversion.get_vw-sm(132);
+      border-radius: conversion.get_vw-sm(8);
+      box-shadow: 0 conversion.get_vw-sm(7) conversion.get_vw-sm(16) 0
+        rgba(0, 0, 0, 0.07);
     }
 
     @include breakpoint.md() {
@@ -32,23 +35,23 @@
 
   &__step {
     position: absolute;
-    top: get_vw(-60);
+    top: conversion.get_vw(-60);
     left: 0;
     z-index: 1;
-    width: get_vw(77);
-    padding: get_vw(15) 0;
+    width: conversion.get_vw(77);
+    padding: conversion.get_vw(15) 0;
     border-radius: 50%;
     text-align: center;
-    font-size: get_vw(13);
+    font-size: conversion.get_vw(13);
     color: #fff;
     background: colors.$main;
 
     @include breakpoint.sm() {
-      top: get_vw-sm(-38);
+      top: conversion.get_vw-sm(-38);
       left: 0;
-      width: get_vw-sm(77);
-      padding: get_vw-sm(15) 0;
-      font-size: get_vw-sm(13);
+      width: conversion.get_vw-sm(77);
+      padding: conversion.get_vw-sm(15) 0;
+      font-size: conversion.get_vw-sm(13);
     }
 
     @include breakpoint.md() {
@@ -66,11 +69,11 @@
 
   &__num {
     display: block;
-    font-size: get_vw(22);
+    font-size: conversion.get_vw(22);
     line-height: 1;
 
     @include breakpoint.sm() {
-      font-size: get_vw-sm(22);
+      font-size: conversion.get_vw-sm(22);
     }
 
     @include breakpoint.md() {

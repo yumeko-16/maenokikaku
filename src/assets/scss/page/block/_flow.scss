@@ -1,5 +1,6 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/colors';
+@use '../../mixin/conversion';
 
 .flow {
   background-color: colors.$bgc;
@@ -8,10 +9,10 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: get_vw(40);
+      margin-bottom: conversion.get_vw(40);
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(40);
+        margin-bottom: conversion.get_vw-sm(40);
       }
 
       @include breakpoint.md() {
@@ -23,17 +24,17 @@
       content: '';
       display: block;
       position: absolute;
-      top: get_vw(-40);
+      top: conversion.get_vw(-40);
       left: calc(10% + 5.21vw - 0.42vw);
       z-index: 10;
-      height: get_vw(60);
-      border-left: get_vw(4) dotted #e5e5e5;
+      height: conversion.get_vw(60);
+      border-left: conversion.get_vw(4) dotted #e5e5e5;
 
       @include breakpoint.sm() {
-        top: get_vw-sm(-40);
+        top: conversion.get_vw-sm(-40);
         left: calc(10% + 3.26vw - 0.26vw);
-        height: get_vw-sm(60);
-        border-left: get_vw-sm(4) dotted #e5e5e5;
+        height: conversion.get_vw-sm(60);
+        border-left: conversion.get_vw-sm(4) dotted #e5e5e5;
       }
 
       @include breakpoint.md() {
@@ -59,15 +60,17 @@
       align-items: center;
       position: relative;
       width: 100%;
-      padding: get_vw(20) get_vw(30);
-      border-radius: get_vw(8);
+      padding: conversion.get_vw(20) conversion.get_vw(30);
+      border-radius: conversion.get_vw(8);
       background-color: #fff;
-      box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+      box-shadow: 0 conversion.get_vw(7) conversion.get_vw(16) 0
+        rgba(0, 0, 0, 0.07);
 
       @include breakpoint.sm() {
-        padding: get_vw-sm(20) get_vw-sm(30);
-        border-radius: get_vw-sm(8);
-        box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+        padding: conversion.get_vw-sm(20) conversion.get_vw-sm(30);
+        border-radius: conversion.get_vw-sm(8);
+        box-shadow: 0 conversion.get_vw-sm(7) conversion.get_vw-sm(16) 0
+          rgba(0, 0, 0, 0.07);
       }
 
       @include breakpoint.md() {
@@ -92,10 +95,10 @@
       }
 
       &::before {
-        border-width: get_vw(22);
+        border-width: conversion.get_vw(22);
 
         @include breakpoint.sm() {
-          border-width: get_vw-sm(22);
+          border-width: conversion.get_vw-sm(22);
         }
 
         @include breakpoint.md() {
@@ -104,11 +107,11 @@
       }
 
       &::after {
-        border-width: get_vw(20);
+        border-width: conversion.get_vw(20);
         border-top-color: #fff;
 
         @include breakpoint.sm() {
-          border-width: get_vw-sm(20);
+          border-width: conversion.get_vw-sm(20);
         }
 
         @include breakpoint.md() {
@@ -121,12 +124,12 @@
       flex-basis: 20%;
       margin-right: 2vw;
       text-align: center;
-      font-size: get_vw(20);
+      font-size: conversion.get_vw(20);
       font-weight: 600;
       color: colors.$main;
 
       @include breakpoint.sm() {
-        font-size: get_vw-sm(20);
+        font-size: conversion.get_vw-sm(20);
       }
 
       @include breakpoint.md() {
@@ -138,19 +141,19 @@
       display: block;
       position: relative;
       z-index: 50;
-      margin-bottom: get_vw(10);
-      padding: get_vw(5) get_vw(10);
-      border-radius: get_vw(20);
-      font-size: get_vw(12);
+      margin-bottom: conversion.get_vw(10);
+      padding: conversion.get_vw(5) conversion.get_vw(10);
+      border-radius: conversion.get_vw(20);
+      font-size: conversion.get_vw(12);
       color: #fff;
       background: -o-linear-gradient(315deg, colors.$main, #5067c5);
       background: linear-gradient(135deg, colors.$main, #5067c5);
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(10);
-        padding: get_vw-sm(5) get_vw-sm(10);
-        border-radius: get_vw-sm(20);
-        font-size: get_vw-sm(12);
+        margin-bottom: conversion.get_vw-sm(10);
+        padding: conversion.get_vw-sm(5) conversion.get_vw-sm(10);
+        border-radius: conversion.get_vw-sm(20);
+        font-size: conversion.get_vw-sm(12);
       }
 
       @include breakpoint.md() {

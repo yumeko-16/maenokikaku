@@ -1,13 +1,14 @@
 @use '../../../mixin/breakpoint';
 @use '../../../mixin/btn';
 @use '../../../mixin/colors';
+@use '../../../mixin/conversion';
 
 .mail {
   &__description {
-    margin: 0 auto get_vw(40);
+    margin: 0 auto conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin: 0 auto get_vw-sm(40);
+      margin: 0 auto conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -19,11 +20,11 @@
     &-bar {
       display: flex;
       justify-content: center;
-      margin-bottom: get_vw(40);
+      margin-bottom: conversion.get_vw(40);
       text-align: center;
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(40);
+        margin-bottom: conversion.get_vw-sm(40);
       }
 
       @include breakpoint.md() {
@@ -36,18 +37,18 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      width: get_vw(220);
-      margin-right: get_vw(18);
-      padding: get_vw(12) get_vw(8);
-      font-size: get_vw(15);
+      width: conversion.get_vw(220);
+      margin-right: conversion.get_vw(18);
+      padding: conversion.get_vw(12) conversion.get_vw(8);
+      font-size: conversion.get_vw(15);
       color: #666;
       background-color: #edf2f7;
 
       @include breakpoint.sm() {
-        width: get_vw-sm(220);
-        margin-right: get_vw-sm(18);
-        padding: get_vw(12) get_vw-sm(8);
-        font-size: get_vw-sm(15);
+        width: conversion.get_vw-sm(220);
+        margin-right: conversion.get_vw-sm(18);
+        padding: conversion.get_vw(12) conversion.get_vw-sm(8);
+        font-size: conversion.get_vw-sm(15);
       }
 
       @include breakpoint.md() {
@@ -90,10 +91,10 @@
   }
 
   &__item {
-    margin-bottom: get_vw(40);
+    margin-bottom: conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -103,10 +104,10 @@
     &-name {
       display: flex;
       align-items: center;
-      margin-bottom: get_vw(20);
+      margin-bottom: conversion.get_vw(20);
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(20);
+        margin-bottom: conversion.get_vw-sm(20);
       }
 
       @include breakpoint.md() {
@@ -121,22 +122,22 @@
   }
 
   &__required {
-    height: get_vw(30);
-    margin-left: get_vw(10);
-    padding: 0 get_vw(9);
-    border-radius: get_vw(30);
-    font-size: get_vw(12);
-    line-height: get_vw(30);
+    height: conversion.get_vw(30);
+    margin-left: conversion.get_vw(10);
+    padding: 0 conversion.get_vw(9);
+    border-radius: conversion.get_vw(30);
+    font-size: conversion.get_vw(12);
+    line-height: conversion.get_vw(30);
     color: #fff;
     background-color: #f63a52;
 
     @include breakpoint.sm() {
-      height: get_vw-sm(30);
-      margin-left: get_vw-sm(10);
-      padding: 0 get_vw-sm(9);
-      border-radius: get_vw-sm(30);
-      font-size: get_vw-sm(12);
-      line-height: get_vw-sm(30);
+      height: conversion.get_vw-sm(30);
+      margin-left: conversion.get_vw-sm(10);
+      padding: 0 conversion.get_vw-sm(9);
+      border-radius: conversion.get_vw-sm(30);
+      font-size: conversion.get_vw-sm(12);
+      line-height: conversion.get_vw-sm(30);
     }
 
     @include breakpoint.md() {
@@ -151,15 +152,15 @@
 
   &__input {
     width: 100%;
-    height: get_vw(50);
-    padding: 0 get_vw(17);
-    border-radius: get_vw(8);
+    height: conversion.get_vw(50);
+    padding: 0 conversion.get_vw(17);
+    border-radius: conversion.get_vw(8);
     background-color: #edf2f7;
 
     @include breakpoint.sm() {
-      height: get_vw-sm(50);
-      padding: 0 get_vw-sm(17);
-      border-radius: get_vw-sm(8);
+      height: conversion.get_vw-sm(50);
+      padding: 0 conversion.get_vw-sm(17);
+      border-radius: conversion.get_vw-sm(8);
     }
 
     @include breakpoint.md() {
@@ -176,16 +177,16 @@
 
   &__txtarea {
     width: 100%;
-    height: get_vw(260);
-    padding: get_vw(17);
+    height: conversion.get_vw(260);
+    padding: conversion.get_vw(17);
     resize: none;
-    border-radius: get_vw(8);
+    border-radius: conversion.get_vw(8);
     background-color: #edf2f7;
 
     @include breakpoint.sm() {
-      height: get_vw-sm(260);
-      padding: get_vw-sm(17);
-      border-radius: get_vw-sm(8);
+      height: conversion.get_vw-sm(260);
+      padding: conversion.get_vw-sm(17);
+      border-radius: conversion.get_vw-sm(8);
     }
 
     @include breakpoint.md() {
@@ -219,10 +220,10 @@
 
   &__error {
     &-list {
-      margin: 0 auto get_vw(40);
+      margin: 0 auto conversion.get_vw(40);
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(40);
+        margin-bottom: conversion.get_vw-sm(40);
       }
 
       @include breakpoint.md() {

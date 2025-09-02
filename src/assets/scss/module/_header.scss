@@ -1,6 +1,7 @@
 @use '../mixin/breakpoint';
 @use '../mixin/btn';
 @use '../mixin/colors';
+@use '../mixin/conversion';
 
 .header {
   position: fixed;
@@ -9,10 +10,11 @@
   z-index: 100;
   width: 100%;
   background: #fff;
-  box-shadow: 0 get_vw(3) get_vw(25) rgba(77, 77, 99, 0.1);
+  box-shadow: 0 conversion.get_vw(3) conversion.get_vw(25) rgba(77, 77, 99, 0.1);
 
   @include breakpoint.sm() {
-    box-shadow: 0 get_vw-sm(3) get_vw-sm(25) rgba(77, 77, 99, 0.1);
+    box-shadow: 0 conversion.get_vw-sm(3) conversion.get_vw-sm(25)
+      rgba(77, 77, 99, 0.1);
   }
 
   @include breakpoint.md() {
@@ -24,10 +26,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: get_vw(20);
+    padding: conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      padding: get_vw-sm(20);
+      padding: conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {
@@ -36,11 +38,11 @@
   }
 
   &__logo {
-    font-size: get_vw(22);
+    font-size: conversion.get_vw(22);
     font-weight: 600;
 
     @include breakpoint.sm() {
-      font-size: get_vw-sm(22);
+      font-size: conversion.get_vw-sm(22);
     }
 
     @include breakpoint.md() {
@@ -54,7 +56,7 @@
     right: -100%;
     width: 100%;
     height: 100vh;
-    padding-top: get_vw(92);
+    padding-top: conversion.get_vw(92);
     background-color: colors.$bgc;
     transition: all 0.4s;
     z-index: 200;
@@ -77,14 +79,14 @@
     }
 
     &-item {
-      padding-bottom: get_vw(40);
+      padding-bottom: conversion.get_vw(40);
       text-align: center;
-      font-size: get_vw(22);
+      font-size: conversion.get_vw(22);
       font-weight: 600;
 
       @include breakpoint.sm() {
         padding-bottom: 0;
-        font-size: get_vw-sm(18);
+        font-size: conversion.get_vw-sm(18);
       }
 
       @include breakpoint.md() {
@@ -94,7 +96,7 @@
 
       &:not(:last-child) {
         @include breakpoint.sm() {
-          margin-right: get_vw-sm(20);
+          margin-right: conversion.get_vw-sm(20);
         }
 
         @include breakpoint.md() {
@@ -117,29 +119,29 @@
 
     &-inner {
       position: relative;
-      width: get_vw(40);
-      height: get_vw(30);
+      width: conversion.get_vw(40);
+      height: conversion.get_vw(30);
     }
 
     &-line {
       display: block;
       position: absolute;
-      width: get_vw(40);
-      height: get_vw(5);
+      width: conversion.get_vw(40);
+      height: conversion.get_vw(5);
       background: #636363;
       transition: 0.5s;
-      border-radius: get_vw(50);
+      border-radius: conversion.get_vw(50);
 
       &--1 {
         top: 0;
       }
 
       &--2 {
-        top: get_vw(13);
+        top: conversion.get_vw(13);
       }
 
       &--3 {
-        top: get_vw(26);
+        top: conversion.get_vw(26);
       }
     }
   }
@@ -157,7 +159,7 @@
   & .header__burger-line {
     &--1 {
       transform: rotate(225deg);
-      top: get_vw(13);
+      top: conversion.get_vw(13);
     }
 
     &--2 {
@@ -166,7 +168,7 @@
 
     &--3 {
       transform: rotate(-225deg);
-      top: get_vw(13);
+      top: conversion.get_vw(13);
     }
   }
 }

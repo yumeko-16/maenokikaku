@@ -1,17 +1,18 @@
 @use '../mixin/breakpoint';
+@use '../mixin/conversion';
 
 body {
   box-sizing: border-box;
   font-family: dnp-shuei-mgothic-std, sans-serif;
   font-style: normal;
-  font-size: get_vw(20);
+  font-size: conversion.get_vw(20);
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.1em;
   color: #333;
 
   @include breakpoint.sm() {
-    font-size: get_vw-sm(18);
+    font-size: conversion.get_vw-sm(18);
   }
 
   @include breakpoint.md() {

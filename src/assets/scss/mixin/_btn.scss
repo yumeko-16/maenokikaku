@@ -1,15 +1,16 @@
 @use '../mixin/breakpoint';
 @use '../mixin/colors';
+@use '../mixin/conversion';
 
 $initType: 'normal';
 
 @mixin btn($type: $initType) {
   display: block;
-  min-width: get_vw(180);
+  min-width: conversion.get_vw(180);
   margin: 0 auto;
-  padding: get_vw(12) get_vw(40);
-  border-radius: get_vw(30);
-  box-shadow: 0 get_vw(2) get_vw(8) rgba(0, 0, 0, 0.5);
+  padding: conversion.get_vw(12) conversion.get_vw(40);
+  border-radius: conversion.get_vw(30);
+  box-shadow: 0 conversion.get_vw(2) conversion.get_vw(8) rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -27,15 +28,15 @@ $initType: 'normal';
   @if ($type == 'header') {
     & {
       display: inline-block;
-      padding: get_vw(8) get_vw(40);
-      font-size: get_vw(22);
+      padding: conversion.get_vw(8) conversion.get_vw(40);
+      font-size: conversion.get_vw(22);
       box-shadow: initial;
       background-color: colors.$accent;
     }
 
     @include breakpoint.sm() {
-      padding: get_vw-sm(8) get_vw-sm(40);
-      font-size: get_vw-sm(14);
+      padding: conversion.get_vw-sm(8) conversion.get_vw-sm(40);
+      font-size: conversion.get_vw-sm(14);
     }
 
     @include breakpoint.md() {
@@ -57,13 +58,13 @@ $initType: 'normal';
   }
 
   @if ($type == 'back') {
-    margin: get_vw(40) auto 0;
+    margin: conversion.get_vw(40) auto 0;
     color: colors.$txt;
     background-color: colors.$btn--back;
 
     @include breakpoint.sm() {
       margin-top: 0;
-      margin-right: get_vw-sm(40);
+      margin-right: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -77,10 +78,11 @@ $initType: 'normal';
   }
 
   @include breakpoint.sm() {
-    min-width: get_vw-sm(180);
-    padding: get_vw-sm(12) get_vw-sm(40);
-    border-radius: get_vw-sm(30);
-    box-shadow: 0 get_vw-sm(2) get_vw-sm(8) rgba(0, 0, 0, 0.5);
+    min-width: conversion.get_vw-sm(180);
+    padding: conversion.get_vw-sm(12) conversion.get_vw-sm(40);
+    border-radius: conversion.get_vw-sm(30);
+    box-shadow: 0 conversion.get_vw-sm(2) conversion.get_vw-sm(8)
+      rgba(0, 0, 0, 0.5);
   }
 
   @include breakpoint.md() {
