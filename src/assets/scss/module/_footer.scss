@@ -1,13 +1,14 @@
 @use '../mixin/breakpoint';
+@use '../mixin/conversion';
 
 .footer {
   margin-top: auto;
-  padding: get_vw(20) 0;
+  padding: conversion.get_vw(20) 0;
   background: #232b33;
   color: rgba(255, 255, 255, 0.4);
 
   @include breakpoint.sm() {
-    padding: get_vw-sm(20) 0;
+    padding: conversion.get_vw-sm(20) 0;
   }
 
   @include breakpoint.md() {
@@ -20,10 +21,10 @@
     align-items: center;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 get_vw(20);
+    padding: 0 conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      padding: 0 get_vw-sm(20);
+      padding: 0 conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {

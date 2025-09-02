@@ -1,14 +1,15 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/btn';
+@use '../../mixin/conversion';
 
 .contact {
   background-color: #edf2f7;
 
   &__txt {
-    margin: 0 auto get_vw(40);
+    margin: 0 auto conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin: 0 auto get_vw-sm(40);
+      margin: 0 auto conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -20,10 +21,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: get_vw(20);
+    margin-bottom: conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(20);
+      margin-bottom: conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {
@@ -36,13 +37,13 @@
   }
 
   &__num {
-    margin-left: get_vw(20);
+    margin-left: conversion.get_vw(20);
     font-family: 'Fjalla One', sans-serif;
-    font-size: get_vw(50);
+    font-size: conversion.get_vw(50);
 
     @include breakpoint.sm() {
-      margin-left: get_vw-sm(20);
-      font-size: get_vw-sm(50);
+      margin-left: conversion.get_vw-sm(20);
+      font-size: conversion.get_vw-sm(50);
     }
 
     @include breakpoint.md() {

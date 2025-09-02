@@ -1,15 +1,16 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/btn';
 @use '../../mixin/colors';
+@use '../../mixin/conversion';
 
 .solution {
   background-color: colors.$bgc;
 
   &__txt {
-    margin: 0 auto get_vw(40);
+    margin: 0 auto conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -22,11 +23,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 auto get_vw(40);
+    margin: 0 auto conversion.get_vw(40);
 
     @include breakpoint.sm() {
       justify-content: space-between;
-      margin: 0 auto get_vw-sm(40);
+      margin: 0 auto conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -37,11 +38,11 @@
 
   &__item {
     width: 100%;
-    margin-bottom: get_vw(40);
+    margin-bottom: conversion.get_vw(40);
 
     @include breakpoint.sm() {
       width: calc((100% - 64px) / 2);
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -55,10 +56,10 @@
 
     &-txt {
       text-align: center;
-      font-size: get_vw(20);
+      font-size: conversion.get_vw(20);
 
       @include breakpoint.sm() {
-        font-size: get_vw-sm(20);
+        font-size: conversion.get_vw-sm(20);
       }
 
       @include breakpoint.md() {
@@ -72,18 +73,18 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: get_vw(100);
-    height: get_vw(100);
+    width: conversion.get_vw(100);
+    height: conversion.get_vw(100);
     margin-right: auto;
-    margin-bottom: get_vw(35);
+    margin-bottom: conversion.get_vw(35);
     margin-left: auto;
     border-radius: 50%;
     background: colors.$main;
 
     @include breakpoint.sm() {
-      width: get_vw-sm(100);
-      height: get_vw-sm(100);
-      margin-bottom: get_vw-sm(35);
+      width: conversion.get_vw-sm(100);
+      height: conversion.get_vw-sm(100);
+      margin-bottom: conversion.get_vw-sm(35);
     }
 
     @include breakpoint.md() {

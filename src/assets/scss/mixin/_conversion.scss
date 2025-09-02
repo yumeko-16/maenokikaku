@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @function get_vw($size, $viewport: 480) {
   $rate: math.div(100, $viewport);
   @return $rate * $size * 1vw;

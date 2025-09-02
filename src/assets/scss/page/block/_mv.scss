@@ -1,6 +1,7 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/btn';
 @use '../../mixin/colors';
+@use '../../mixin/conversion';
 
 .mv {
   background: linear-gradient(135deg, colors.$main, #5067c5);
@@ -34,11 +35,11 @@
   }
 
   &__txt {
-    margin: 0 auto get_vw(40);
+    margin: 0 auto conversion.get_vw(40);
     color: #eee;
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {

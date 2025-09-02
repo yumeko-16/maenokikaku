@@ -1,5 +1,6 @@
 @use '../../../mixin/breakpoint';
 @use '../../../mixin/colors';
+@use '../../../mixin/conversion';
 
 .expert {
   background-color: colors.$bgc;
@@ -9,12 +10,14 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: get_vw(80);
-      box-shadow: 0 get_vw(7) get_vw(16) 0 rgba(0, 0, 0, 0.07);
+      margin-bottom: conversion.get_vw(80);
+      box-shadow: 0 conversion.get_vw(7) conversion.get_vw(16) 0
+        rgba(0, 0, 0, 0.07);
 
       @include breakpoint.sm() {
-        margin-bottom: get_vw-sm(80);
-        box-shadow: 0 get_vw-sm(7) get_vw-sm(16) 0 rgba(0, 0, 0, 0.07);
+        margin-bottom: conversion.get_vw-sm(80);
+        box-shadow: 0 conversion.get_vw-sm(7) conversion.get_vw-sm(16) 0
+          rgba(0, 0, 0, 0.07);
       }
 
       @include breakpoint.md() {
@@ -29,18 +32,18 @@
       align-items: center;
       justify-content: center;
       width: 50%;
-      padding: get_vw(12) get_vw(8);
-      border-bottom: solid get_vw(1) colors.$bgc;
+      padding: conversion.get_vw(12) conversion.get_vw(8);
+      border-bottom: solid conversion.get_vw(1) colors.$bgc;
       text-align: center;
-      font-size: get_vw(15);
+      font-size: conversion.get_vw(15);
       color: #666;
       background-color: #fff;
       cursor: pointer;
 
       @include breakpoint.sm() {
-        padding: get_vw-sm(12) get_vw-sm(8);
-        border-bottom: solid get_vw-sm(1) colors.$bgc;
-        font-size: get_vw-sm(15);
+        padding: conversion.get_vw-sm(12) conversion.get_vw-sm(8);
+        border-bottom: solid conversion.get_vw-sm(1) colors.$bgc;
+        font-size: conversion.get_vw-sm(15);
       }
 
       @include breakpoint.md() {
@@ -51,10 +54,10 @@
       }
 
       &:not(:last-child) {
-        border-right: solid get_vw(1) colors.$bgc;
+        border-right: solid conversion.get_vw(1) colors.$bgc;
 
         @include breakpoint.sm() {
-          border-right: solid get_vw-sm(1) colors.$bgc;
+          border-right: solid conversion.get_vw-sm(1) colors.$bgc;
         }
 
         @include breakpoint.md() {
@@ -84,10 +87,10 @@
   }
 
   &__info {
-    margin-bottom: get_vw(80);
+    margin-bottom: conversion.get_vw(80);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(80);
+      margin-bottom: conversion.get_vw-sm(80);
     }
 
     @include breakpoint.md() {
@@ -115,10 +118,10 @@
   }
 
   &__summary {
-    padding: get_vw(20);
+    padding: conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      padding: get_vw-sm(20);
+      padding: conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {

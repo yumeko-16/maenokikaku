@@ -1,11 +1,12 @@
 @use '../../mixin/breakpoint';
+@use '../../mixin/conversion';
 
 .company {
   &__concept {
-    margin-bottom: get_vw(40);
+    margin-bottom: conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -21,10 +22,10 @@
   }
 
   &__summary {
-    margin-bottom: get_vw(40);
+    margin-bottom: conversion.get_vw(40);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(40);
+      margin-bottom: conversion.get_vw-sm(40);
     }
 
     @include breakpoint.md() {
@@ -34,12 +35,12 @@
   }
 
   &__name {
-    margin-bottom: get_vw(20);
-    font-size: get_vw(22);
+    margin-bottom: conversion.get_vw(20);
+    font-size: conversion.get_vw(22);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(20);
-      font-size: get_vw-sm(22);
+      margin-bottom: conversion.get_vw-sm(20);
+      font-size: conversion.get_vw-sm(22);
     }
 
     @include breakpoint.md() {
@@ -49,10 +50,10 @@
   }
 
   &__address {
-    margin-bottom: get_vw(20);
+    margin-bottom: conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      margin-bottom: get_vw-sm(20);
+      margin-bottom: conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {

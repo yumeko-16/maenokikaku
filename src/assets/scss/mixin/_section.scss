@@ -1,11 +1,12 @@
 @use '../mixin/breakpoint';
 @use '../mixin/colors.scss';
+@use '../mixin/conversion';
 
 .section {
-  padding: get_vw(50) 0;
+  padding: conversion.get_vw(50) 0;
 
   @include breakpoint.sm() {
-    padding: get_vw-sm(50) 0;
+    padding: conversion.get_vw-sm(50) 0;
   }
 
   @include breakpoint.md() {
@@ -18,10 +19,10 @@
     justify-content: center;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 get_vw(20);
+    padding: 0 conversion.get_vw(20);
 
     @include breakpoint.sm() {
-      padding: 0 get_vw-sm(20);
+      padding: 0 conversion.get_vw-sm(20);
     }
 
     @include breakpoint.md() {
@@ -30,15 +31,15 @@
   }
 
   &__title {
-    margin: 0 auto get_vw(40);
-    font-size: get_vw(32);
+    margin: 0 auto conversion.get_vw(40);
+    font-size: conversion.get_vw(32);
     font-weight: 600;
     line-height: 1.8;
     color: colors.$main;
 
     @include breakpoint.sm() {
-      margin: 0 auto get_vw-sm(40);
-      font-size: get_vw-sm(32);
+      margin: 0 auto conversion.get_vw-sm(40);
+      font-size: conversion.get_vw-sm(32);
     }
 
     @include breakpoint.md() {
