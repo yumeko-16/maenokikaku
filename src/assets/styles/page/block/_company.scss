@@ -1,0 +1,80 @@
+@use '../../mixin/breakpoint';
+@use '../../mixin/conversion';
+
+.company {
+  &__concept {
+    margin-bottom: conversion.get_vw(40);
+
+    @include breakpoint.sm() {
+      margin-bottom: conversion.get_vw-sm(40);
+    }
+
+    @include breakpoint.md() {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    @include breakpoint.md() {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__summary {
+    margin-bottom: conversion.get_vw(40);
+
+    @include breakpoint.sm() {
+      margin-bottom: conversion.get_vw-sm(40);
+    }
+
+    @include breakpoint.md() {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    margin-bottom: conversion.get_vw(20);
+    font-size: conversion.get_vw(22);
+
+    @include breakpoint.sm() {
+      margin-bottom: conversion.get_vw-sm(20);
+      font-size: conversion.get_vw-sm(22);
+    }
+
+    @include breakpoint.md() {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+  }
+
+  &__address {
+    margin-bottom: conversion.get_vw(20);
+
+    @include breakpoint.sm() {
+      margin-bottom: conversion.get_vw-sm(20);
+    }
+
+    @include breakpoint.md() {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+
+    @include breakpoint.md() {
+      width: 50%;
+    }
+  }
+
+  &__google {
+    display: block;
+    width: 100%;
+
+    @include breakpoint.md() {
+      height: 300px;
+    }
+  }
+}

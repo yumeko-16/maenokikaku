@@ -1,0 +1,61 @@
+@use '../mixin/breakpoint';
+@use '../mixin/colors';
+@use '../mixin/conversion';
+
+#js-pagetop {
+  opacity: 0;
+
+  &.fadein {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pagetop {
+  display: block;
+  position: fixed;
+  right: conversion.get_vw(15);
+  bottom: conversion.get_vw(30);
+  width: conversion.get_vw(50);
+  height: conversion.get_vw(50);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+  line-height: conversion.get_vw(50);
+  background: colors.$pagetop;
+
+  @include breakpoint.sm() {
+    right: conversion.get_vw-sm(15);
+    bottom: conversion.get_vw-sm(30);
+    width: conversion.get_vw-sm(50);
+    height: conversion.get_vw-sm(50);
+    line-height: conversion.get_vw-sm(50);
+  }
+
+  @include breakpoint.md() {
+    right: 15px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  & i {
+    font-size: conversion.get_vw(20);
+    color: #fff;
+    line-height: conversion.get_vw(50);
+
+    @include breakpoint.sm() {
+      font-size: conversion.get_vw-sm(20);
+      line-height: conversion.get_vw-sm(50);
+    }
+
+    @include breakpoint.md() {
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+}

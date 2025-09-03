@@ -1,0 +1,50 @@
+@use '../mixin/breakpoint';
+@use '../mixin/colors.scss';
+@use '../mixin/conversion';
+
+.section {
+  padding: conversion.get_vw(50) 0;
+
+  @include breakpoint.sm() {
+    padding: conversion.get_vw-sm(50) 0;
+  }
+
+  @include breakpoint.md() {
+    padding: 80px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 conversion.get_vw(20);
+
+    @include breakpoint.sm() {
+      padding: 0 conversion.get_vw-sm(20);
+    }
+
+    @include breakpoint.md() {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto conversion.get_vw(40);
+    font-size: conversion.get_vw(32);
+    font-weight: 600;
+    line-height: 1.8;
+    color: colors.$main;
+
+    @include breakpoint.sm() {
+      margin: 0 auto conversion.get_vw-sm(40);
+      font-size: conversion.get_vw-sm(32);
+    }
+
+    @include breakpoint.md() {
+      margin: 0 auto 40px;
+      font-size: 32px;
+    }
+  }
+}
