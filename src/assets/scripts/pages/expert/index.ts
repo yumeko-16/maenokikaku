@@ -1,5 +1,5 @@
 import '../../../styles/ress.scss';
-import '../../../styles/pages/expert/index.scss';
+import '../../../styles/pages/expert/style.scss';
 
 /* ========================================================
 タブメニュー
