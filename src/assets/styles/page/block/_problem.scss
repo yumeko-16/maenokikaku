@@ -2,86 +2,82 @@
 @use '../../mixin/colors';
 @use '../../mixin/conversion';
 
-.problem {
-  &__item {
-    position: relative;
-    width: 100%;
-    margin: conversion.get_vw(70) 0;
-    padding: conversion.get_vw(20);
-    border-radius: conversion.get_vw(8);
-    box-shadow: 0 conversion.get_vw(7) conversion.get_vw(16) 0
-      rgba(0, 0, 0, 0.07);
-    background: #fff;
+.problem__item {
+  position: relative;
+  width: 100%;
+  padding: conversion.vw(20);
+  margin: conversion.vw(70) 0;
+  background: #fff;
+  border-radius: conversion.vw(8);
+  box-shadow: 0 conversion.vw(7) conversion.vw(16) 0 rgb(0 0 0 / 7%);
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @include breakpoint.sm() {
-      margin: conversion.get_vw-sm(60) 0;
-      padding: conversion.get_vw-sm(27) conversion.get_vw-sm(132);
-      border-radius: conversion.get_vw-sm(8);
-      box-shadow: 0 conversion.get_vw-sm(7) conversion.get_vw-sm(16) 0
-        rgba(0, 0, 0, 0.07);
-    }
-
-    @include breakpoint.md() {
-      margin: 60px 0;
-      padding: 27px 132px;
-      border-radius: 8px;
-      box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.07);
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  &__step {
-    position: absolute;
-    top: conversion.get_vw(-60);
+  @include breakpoint.sm {
+    padding: conversion.vw-sm(27) conversion.vw-sm(132);
+    margin: conversion.vw-sm(60) 0;
+    border-radius: conversion.vw-sm(8);
+    box-shadow: 0 conversion.vw-sm(7) conversion.vw-sm(16) 0 rgb(0 0 0 / 7%);
+  }
+
+  @include breakpoint.md {
+    padding: 27px 132px;
+    margin: 60px 0;
+    border-radius: 8px;
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 7%);
+  }
+}
+
+.problem__step {
+  position: absolute;
+  top: conversion.vw(-60);
+  left: 0;
+  z-index: 1;
+  width: conversion.vw(77);
+  padding: conversion.vw(15) 0;
+  font-size: conversion.vw(13);
+  color: #fff;
+  text-align: center;
+  background: colors.$main;
+  border-radius: 50%;
+
+  @include breakpoint.sm {
+    top: conversion.vw-sm(-38);
     left: 0;
-    z-index: 1;
-    width: conversion.get_vw(77);
-    padding: conversion.get_vw(15) 0;
-    border-radius: 50%;
-    text-align: center;
-    font-size: conversion.get_vw(13);
-    color: #fff;
-    background: colors.$main;
-
-    @include breakpoint.sm() {
-      top: conversion.get_vw-sm(-38);
-      left: 0;
-      width: conversion.get_vw-sm(77);
-      padding: conversion.get_vw-sm(15) 0;
-      font-size: conversion.get_vw-sm(13);
-    }
-
-    @include breakpoint.md() {
-      top: -38px;
-      left: 0;
-      width: 78px;
-      padding: 15px 0;
-      font-size: 13px;
-    }
-
-    @include breakpoint.lg() {
-      left: -38px;
-    }
+    width: conversion.vw-sm(77);
+    padding: conversion.vw-sm(15) 0;
+    font-size: conversion.vw-sm(13);
   }
 
-  &__num {
-    display: block;
-    font-size: conversion.get_vw(22);
-    line-height: 1;
-
-    @include breakpoint.sm() {
-      font-size: conversion.get_vw-sm(22);
-    }
-
-    @include breakpoint.md() {
-      font-size: 22px;
-    }
+  @include breakpoint.md {
+    top: -38px;
+    left: 0;
+    width: 78px;
+    padding: 15px 0;
+    font-size: 13px;
   }
 
-  &__txt {
-    font-weight: 600;
+  @include breakpoint.lg {
+    left: -38px;
   }
+}
+
+.problem__num {
+  display: block;
+  font-size: conversion.vw(22);
+  line-height: 1;
+
+  @include breakpoint.sm {
+    font-size: conversion.vw-sm(22);
+  }
+
+  @include breakpoint.md {
+    font-size: 22px;
+  }
+}
+
+.problem__txt {
+  font-weight: 600;
 }

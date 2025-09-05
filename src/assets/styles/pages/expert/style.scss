@@ -1,5 +1,4 @@
 @use '../../mixin/colors';
-@use '../../mixin/font';
 @use '../../mixin/btn';
 @use '../../mixin/breakpoint';
 @use '../../mixin/conversion';
@@ -8,12 +7,9 @@
 @use '../../mixin/section';
 @use '../../mixin/txt';
 @use '../../mixin/wrapper';
-
 @use '../../base/base';
-
 @use '../../module/header';
 @use '../../module/main';
 @use '../../module/footer';
 @use '../../module/pagetop';
-
 @use '../../page/expert/block/expert';

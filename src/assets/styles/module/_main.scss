@@ -2,13 +2,13 @@
 @use '../mixin/conversion';
 
 .main {
-  margin-top: conversion.get_vw(81);
+  margin-top: conversion.vw(81);
 
-  @include breakpoint.sm() {
-    margin-top: conversion.get_vw-sm(81);
+  @include breakpoint.sm {
+    margin-top: conversion.vw-sm(81);
   }
 
-  @include breakpoint.md() {
+  @include breakpoint.md {
     margin-top: 81px;
   }
 }
