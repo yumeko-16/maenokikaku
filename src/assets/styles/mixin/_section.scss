@@ -5,11 +5,11 @@
 .section {
   padding: conversion.vw(50) 0;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding: conversion.vw-sm(50) 0;
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding: 80px 0;
   }
 }
@@ -22,11 +22,11 @@
   padding: 0 conversion.vw(20);
   margin: 0 auto;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding: 0 conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding: 0 20px;
   }
 }
@@ -38,12 +38,12 @@
   line-height: 1.8;
   color: colors.$main;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin: 0 auto conversion.vw-sm(40);
     font-size: conversion.vw-sm(32);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin: 0 auto 40px;
     font-size: 32px;
   }

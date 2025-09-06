@@ -2,9 +2,9 @@
 @use '../mixin/colors';
 @use '../mixin/conversion';
 
-$initType: 'normal';
+$init-type: 'normal';
 
-@mixin btn($type: $initType) {
+@mixin btn($type: $init-type) {
   display: block;
   min-width: conversion.vw(180);
   padding: conversion.vw(12) conversion.vw(40);
@@ -18,10 +18,10 @@ $initType: 'normal';
   transition: all 0.3s;
 
   @if $type == 'normal' {
-    background-color: colors.$btnNormal;
+    background-color: colors.$btn-normal;
 
     &:hover {
-      background-color: colors.$btnNormalHover;
+      background-color: colors.$btn-normal-hover;
     }
   }
 
@@ -34,18 +34,18 @@ $initType: 'normal';
       box-shadow: initial;
     }
 
-    @include breakpoint.sm {
+    @include breakpoint.smartphone-screen {
       padding: conversion.vw-sm(8) conversion.vw-sm(40);
       font-size: conversion.vw-sm(14);
     }
 
-    @include breakpoint.md {
+    @include breakpoint.tablet-screen {
       padding: 8px 40px;
       font-size: 16px;
     }
 
     &:hover {
-      background-color: colors.$accentHover;
+      background-color: colors.$accent-hover;
     }
   }
 
@@ -53,38 +53,38 @@ $initType: 'normal';
     background-color: colors.$accent;
 
     &:hover {
-      background-color: colors.$accentHover;
+      background-color: colors.$accent-hover;
     }
   }
 
   @if $type == 'back' {
     margin: conversion.vw(40) auto 0;
     color: colors.$txt;
-    background-color: colors.$btnBack;
+    background-color: colors.$btn-back;
 
-    @include breakpoint.sm {
+    @include breakpoint.smartphone-screen {
       margin-top: 0;
       margin-right: conversion.vw-sm(40);
     }
 
-    @include breakpoint.md {
+    @include breakpoint.tablet-screen {
       margin: 0 auto;
     }
 
     &:hover {
       color: #fff;
-      background-color: colors.$btnBackHover;
+      background-color: colors.$btn-back-hover;
     }
   }
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     min-width: conversion.vw-sm(180);
     padding: conversion.vw-sm(12) conversion.vw-sm(40);
     border-radius: conversion.vw-sm(30);
     box-shadow: 0 conversion.vw-sm(2) conversion.vw-sm(8) rgb(0 0 0 / 50%);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     min-width: 180px;
     padding: 12px 40px;
     border-radius: 30px;

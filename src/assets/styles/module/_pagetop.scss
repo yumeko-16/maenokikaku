@@ -2,10 +2,10 @@
 @use '../mixin/colors';
 @use '../mixin/conversion';
 
-#js-pagetop {
+#jsPageTop {
   opacity: 0;
 
-  &.fadein {
+  &.fadeIn {
     opacity: 1;
   }
 
@@ -14,7 +14,7 @@
   }
 }
 
-.pagetop {
+.pageTop {
   position: fixed;
   right: conversion.vw(15);
   bottom: conversion.vw(30);
@@ -24,10 +24,10 @@
   font-size: 0;
   line-height: conversion.vw(50);
   text-align: center;
-  background: colors.$pagetop;
+  background: colors.$page-top;
   border-radius: 50%;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     right: conversion.vw-sm(15);
     bottom: conversion.vw-sm(30);
     width: conversion.vw-sm(50);
@@ -35,7 +35,7 @@
     line-height: conversion.vw-sm(50);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     right: 15px;
     bottom: 30px;
     width: 50px;
@@ -48,12 +48,12 @@
     line-height: conversion.vw(50);
     color: #fff;
 
-    @include breakpoint.sm {
+    @include breakpoint.smartphone-screen {
       font-size: conversion.vw-sm(20);
       line-height: conversion.vw-sm(50);
     }
 
-    @include breakpoint.md {
+    @include breakpoint.tablet-screen {
       font-size: 20px;
       line-height: 50px;
     }

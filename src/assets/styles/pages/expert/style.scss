@@ -3,7 +3,7 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/conversion';
 @use '../../mixin/scroll-animation';
-@use '../../mixin/br';
+@use '../../mixin/lineBreak';
 @use '../../mixin/section';
 @use '../../mixin/txt';
 @use '../../mixin/wrapper';
@@ -11,5 +11,5 @@
 @use '../../module/header';
 @use '../../module/main';
 @use '../../module/footer';
-@use '../../module/pagetop';
+@use '../../module/pageTop';
 @use '../../page/expert/block/expert';

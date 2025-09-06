@@ -4,17 +4,17 @@
 .company__concept {
   margin-bottom: conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 40px;
   }
 }
 
 .company__content {
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     display: flex;
     align-items: center;
   }
@@ -23,11 +23,11 @@
 .company__summary {
   margin-bottom: conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     width: 50%;
     margin-bottom: 0;
   }
@@ -37,12 +37,12 @@
   margin-bottom: conversion.vw(20);
   font-size: conversion.vw(22);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(20);
     font-size: conversion.vw-sm(22);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 20px;
     font-size: 22px;
   }
@@ -51,11 +51,11 @@
 .company__address {
   margin-bottom: conversion.vw(20);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 20px;
   }
 }
@@ -63,7 +63,7 @@
 .company__map {
   width: 100%;
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     width: 50%;
   }
 }
@@ -72,7 +72,7 @@
   display: block;
   width: 100%;
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     height: 300px;
   }
 }

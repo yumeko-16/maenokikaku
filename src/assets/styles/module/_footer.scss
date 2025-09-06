@@ -7,11 +7,11 @@
   color: rgb(255 255 255 / 40%);
   background: #232b33;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding: conversion.vw-sm(20) 0;
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding: 20px 0;
   }
 }
@@ -24,11 +24,11 @@
   padding: 0 conversion.vw(20);
   margin: 0 auto;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding: 0 conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding: 20px 0;
   }
 }

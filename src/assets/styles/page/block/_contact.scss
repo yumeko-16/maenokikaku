@@ -9,11 +9,11 @@
 .contact__txt {
   margin: 0 auto conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin: 0 auto conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin: 0 auto 40px;
   }
 }
@@ -24,11 +24,11 @@
   justify-content: center;
   margin-bottom: conversion.vw(20);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 20px;
   }
 }
@@ -42,12 +42,12 @@
   font-family: 'Fjalla One', sans-serif;
   font-size: conversion.vw(50);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-left: conversion.vw-sm(20);
     font-size: conversion.vw-sm(50);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-left: 20px;
     font-size: 50px;
   }
