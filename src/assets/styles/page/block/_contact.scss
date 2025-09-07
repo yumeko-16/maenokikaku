@@ -4,55 +4,55 @@
 
 .contact {
   background-color: #edf2f7;
+}
 
-  &__txt {
-    margin: 0 auto conversion.get_vw(40);
+.contact__txt {
+  margin: 0 auto conversion.vw(40);
 
-    @include breakpoint.sm() {
-      margin: 0 auto conversion.get_vw-sm(40);
-    }
-
-    @include breakpoint.md() {
-      margin: 0 auto 40px;
-    }
+  @include breakpoint.smartphone-screen {
+    margin: 0 auto conversion.vw-sm(40);
   }
 
-  &__phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: conversion.get_vw(20);
+  @include breakpoint.tablet-screen {
+    margin: 0 auto 40px;
+  }
+}
 
-    @include breakpoint.sm() {
-      margin-bottom: conversion.get_vw-sm(20);
-    }
+.contact__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: conversion.vw(20);
 
-    @include breakpoint.md() {
-      margin-bottom: 20px;
-    }
+  @include breakpoint.smartphone-screen {
+    margin-bottom: conversion.vw-sm(20);
   }
 
-  &__icon {
-    color: #333;
+  @include breakpoint.tablet-screen {
+    margin-bottom: 20px;
+  }
+}
+
+.contact__icon {
+  color: #333;
+}
+
+.contact__num {
+  margin-left: conversion.vw(20);
+  font-family: 'Fjalla One', sans-serif;
+  font-size: conversion.vw(50);
+
+  @include breakpoint.smartphone-screen {
+    margin-left: conversion.vw-sm(20);
+    font-size: conversion.vw-sm(50);
   }
 
-  &__num {
-    margin-left: conversion.get_vw(20);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: conversion.get_vw(50);
-
-    @include breakpoint.sm() {
-      margin-left: conversion.get_vw-sm(20);
-      font-size: conversion.get_vw-sm(50);
-    }
-
-    @include breakpoint.md() {
-      margin-left: 20px;
-      font-size: 50px;
-    }
+  @include breakpoint.tablet-screen {
+    margin-left: 20px;
+    font-size: 50px;
   }
+}
 
-  &__btn {
-    @include btn.btn('contact');
-  }
+.contact__btn {
+  @include btn.btn('contact');
 }

@@ -1,21 +1,17 @@
-$sm: 481px;
-$md: 769px;
-$lg: 1280px;
-
-@mixin sm {
-  @media (min-width: ($sm)) {
+@mixin smartphone-screen {
+  @media (min-width: (481px)) {
     @content;
   }
 }
 
-@mixin md {
-  @media (min-width: ($md)) {
+@mixin tablet-screen {
+  @media (min-width: (768px)) {
     @content;
   }
 }
 
-@mixin lg {
-  @media (min-width: ($lg)) {
+@mixin desktop-screen {
+  @media (min-width: (1280px)) {
     @content;
   }
 }

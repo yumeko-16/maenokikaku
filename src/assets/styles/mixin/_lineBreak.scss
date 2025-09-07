@@ -1,0 +1,33 @@
+@use '../mixin/breakpoint';
+
+.lineBreak {
+  display: block;
+
+  @include breakpoint.smartphone-screen {
+    display: none;
+  }
+}
+
+.lineBreakSm {
+  display: none;
+
+  @include breakpoint.smartphone-screen {
+    display: block;
+  }
+}
+
+.lineBreakTb {
+  display: none;
+
+  @include breakpoint.tablet-screen {
+    display: block;
+  }
+}
+
+.lineBreakLg {
+  display: none;
+
+  @include breakpoint.desktop-screen {
+    display: block;
+  }
+}

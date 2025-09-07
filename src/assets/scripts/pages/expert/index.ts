@@ -1,5 +1,5 @@
 import '../../../styles/ress.scss';
-import '../../../styles/pages/expert/index.scss';
+import '../../../styles/pages/expert/style.scss';
 
 /* ========================================================
 タブメニュー
@@ -16,12 +16,12 @@ tabTriggers.forEach((trigger) => {
       ? document.getElementById(currentMenu.dataset.id)
       : null;
 
-    tabTriggers.forEach((t) => t.classList.remove('is-active'));
-    currentMenu.classList.add('is-active');
+    tabTriggers.forEach((t) => t.classList.remove('isActive'));
+    currentMenu.classList.add('isActive');
 
-    tabTargets.forEach((t) => t.classList.remove('is-active'));
+    tabTargets.forEach((t) => t.classList.remove('isActive'));
     if (currentContent) {
-      currentContent.classList.add('is-active');
+      currentContent.classList.add('isActive');
     }
   });
 });

@@ -196,14 +196,14 @@
           <a class="header__logo" href="/index.html">株式会社前野企画</a>
 
           <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
+            <ul class="header__navList">
+              <li class="header__navItem">
                 <a href="/">ホーム</a>
               </li>
-              <li class="header__nav-item">
+              <li class="header__navItem">
                 <a href="/expert/index.html">寺院エキスパート</a>
               </li>
-              <li class="header__nav-item">
+              <li class="header__navItem">
                 <a class="header__btn" href="/contact/index.php">
                   お問い合わせ
                 </a>
@@ -211,11 +211,11 @@
             </ul>
           </nav>
 
-          <div id="js-burger" class="header__burger">
-            <div class="header__burger-inner">
-              <span class="header__burger-line header__burger-line--1"></span>
-              <span class="header__burger-line header__burger-line--2"></span>
-              <span class="header__burger-line header__burger-line--3"></span>
+          <div id="jsBurger" class="header__burger">
+            <div class="header__burgerInner">
+              <span class="header__burgerLine header__burgerLine--1"></span>
+              <span class="header__burgerLine header__burgerLine--2"></span>
+              <span class="header__burgerLine header__burgerLine--3"></span>
             </div>
           </div>
         </div>
@@ -227,42 +227,42 @@
             <h2 class="section__title">お問い合わせ</h2>
 
             <?php if ($page_flag === 1): ?>
-              <ul class="mail__step-bar">
-                <li class="mail__step-item">内容入力</li>
-                <li class="mail__step-item mail__visited">内容確認</li>
-                <li class="mail__step-item mail__step-completion">完了</li>
+              <ul class="mail__stepBar">
+                <li class="mail__stepItem">内容入力</li>
+                <li class="mail__stepItem mail__visited">内容確認</li>
+                <li class="mail__stepItem mail__stepCompletion">完了</li>
               </ul>
 
               <form method="post" action="">
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">寺院名</label>
                     <span class="mail__required">必須</span>
                   </div>
-                  <p class="txt-blue"><?php echo $clean['your_name']; ?></p>
+                  <p class="txtBlue"><?php echo $clean['your_name']; ?></p>
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">メールアドレス</label>
                     <span class="mail__required">必須</span>
                   </div>
-                  <p class="txt-blue"><?php echo $clean['email']; ?></p>
+                  <p class="txtBlue"><?php echo $clean['email']; ?></p>
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">電話番号</label>
                   </div>
-                  <p class="txt-blue"><?php echo $clean['tel']; ?></p>
+                  <p class="txtBlue"><?php echo $clean['tel']; ?></p>
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">お問い合わせ内容</label>
                     <span class="mail__required">必須</span>
                   </div>
-                  <p class="txt-blue"><?php echo nl2br($clean['contact']); ?></p>
+                  <p class="txtBlue"><?php echo nl2br($clean['contact']); ?></p>
                 </div>
 
                 <div class="mail__btns">
@@ -302,10 +302,10 @@
                 />
               </form>
             <?php elseif ( $page_flag === 2 ): ?>
-              <ul class="mail__step-bar">
-                <li class="mail__step-item">内容入力</li>
-                <li class="mail__step-item">内容確認</li>
-                <li class="mail__step-item mail__step-completion mail__visited">
+              <ul class="mail__stepBar">
+                <li class="mail__stepItem">内容入力</li>
+                <li class="mail__stepItem">内容確認</li>
+                <li class="mail__stepItem mail__stepCompletion mail__visited">
                   完了
                 </li>
               </ul>
@@ -326,29 +326,29 @@
               <div class="mail__description">
                 <p>
                   寺院エキスパートシステム・その他サービスに関するお問い合わせは、
-                  <br class="br-sm" />
+                  <br class="lineBreakSm" />
                   お電話又は下記メールフォームより承っております。
                 </p>
                 <p>どうぞ、お気軽にお問い合わせください。</p>
               </div>
 
-              <ul class="mail__step-bar">
-                <li class="mail__step-item mail__visited">内容入力</li>
-                <li class="mail__step-item">内容確認</li>
-                <li class="mail__step-item mail__step-completion">完了</li>
+              <ul class="mail__stepBar">
+                <li class="mail__stepItem mail__visited">内容入力</li>
+                <li class="mail__stepItem">内容確認</li>
+                <li class="mail__stepItem mail__stepCompletion">完了</li>
               </ul>
 
               <?php if (!empty($error)): ?>
-                <ul class="mail__error-list">
+                <ul class="mail__errorList">
                   <?php foreach($error as $value): ?>
-                    <li class="mail__error-item"><?php echo $value; ?></li>
+                    <li class="mail__errorItem"><?php echo $value; ?></li>
                   <?php endforeach; ?>
                 </ul>
               <?php endif; ?>
 
               <form action="" method="post">
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">寺院名</label>
                     <span class="mail__required">必須</span>
                   </div>
@@ -362,7 +362,7 @@
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">メールアドレス</label>
                     <span class="mail__required">必須</span>
                   </div>
@@ -376,7 +376,7 @@
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">電話番号</label>
                   </div>
                   <input
@@ -389,7 +389,7 @@
                 </div>
 
                 <div class="mail__item">
-                  <div class="mail__item-name">
+                  <div class="mail__itemName">
                     <label class="mail__label">お問い合わせ内容</label>
                     <span class="mail__required">必須</span>
                   </div>
@@ -418,7 +418,7 @@
         </div>
       </footer>
 
-      <a id="js-pagetop" class="pagetop" href="#top">
+      <a id="jsPageTop" class="pageTop" href="#top">
         <i class="fas fa-chevron-up"></i>
       </a>
     </div>
