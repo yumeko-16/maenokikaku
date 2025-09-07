@@ -4,11 +4,11 @@
 .main {
   margin-top: conversion.vw(81);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-top: conversion.vw-sm(81);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-top: 81px;
   }
 }

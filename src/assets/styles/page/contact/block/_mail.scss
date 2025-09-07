@@ -6,31 +6,31 @@
 .mail__description {
   margin: 0 auto conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin: 0 auto conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin: 0 auto 40px;
   }
 }
 
-.mail__step-bar {
+.mail__stepBar {
   display: flex;
   justify-content: center;
   margin-bottom: conversion.vw(40);
   text-align: center;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 40px;
   }
 }
 
-.mail__step-item {
+.mail__stepItem {
   position: relative;
   display: flex;
   align-items: center;
@@ -42,14 +42,14 @@
   color: #666;
   background-color: #edf2f7;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     width: conversion.vw-sm(220);
     padding: conversion.vw(12) conversion.vw-sm(8);
     margin-right: conversion.vw-sm(18);
     font-size: conversion.vw-sm(15);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     width: 220px;
     padding: 12px 8px;
     margin-right: 18px;
@@ -70,7 +70,7 @@
   }
 }
 
-.mail__step-completion {
+.mail__stepCompletion {
   margin-right: 0;
 
   &::before {
@@ -90,25 +90,25 @@
 .mail__item {
   margin-bottom: conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 40px;
   }
 }
 
-.mail__item-name {
+.mail__itemName {
   display: flex;
   align-items: center;
   margin-bottom: conversion.vw(20);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 20px;
   }
 }
@@ -128,7 +128,7 @@
   background-color: #f63a52;
   border-radius: conversion.vw(30);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     height: conversion.vw-sm(30);
     padding: 0 conversion.vw-sm(9);
     margin-left: conversion.vw-sm(10);
@@ -137,7 +137,7 @@
     border-radius: conversion.vw-sm(30);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     height: 30px;
     padding: 0 9px;
     margin-left: 10px;
@@ -154,13 +154,13 @@
   background-color: #edf2f7;
   border-radius: conversion.vw(8);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     height: conversion.vw-sm(50);
     padding: 0 conversion.vw-sm(17);
     border-radius: conversion.vw-sm(8);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     height: 50px;
     padding: 0 17px;
     border-radius: 8px;
@@ -180,13 +180,13 @@
   background-color: #edf2f7;
   border-radius: conversion.vw(8);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     height: conversion.vw-sm(260);
     padding: conversion.vw-sm(17);
     border-radius: conversion.vw-sm(8);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     height: 260px;
     padding: 17px;
     border-radius: 8px;
@@ -202,7 +202,7 @@
   display: flex;
   flex-direction: column-reverse;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     flex-direction: row;
   }
 }
@@ -215,18 +215,18 @@
   @include btn.btn('back');
 }
 
-.mail__error-list {
+.mail__errorList {
   margin: 0 auto conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 40px;
   }
 }
 
-.mail__error-item {
+.mail__errorItem {
   color: #f63a52;
 }

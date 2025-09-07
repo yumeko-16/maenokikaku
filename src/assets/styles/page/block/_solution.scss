@@ -10,11 +10,11 @@
 .solution__txt {
   margin: 0 auto conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     margin-bottom: 40px;
   }
 }
@@ -26,12 +26,12 @@
   justify-content: center;
   margin: 0 auto conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     justify-content: space-between;
     margin: 0 auto conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     justify-content: center;
     margin: 0 auto 40px;
   }
@@ -41,12 +41,12 @@
   width: 100%;
   margin-bottom: conversion.vw(40);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     width: calc((100% - 64px) / 2);
     margin-bottom: conversion.vw-sm(40);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     width: calc((100% - 64px) / 3);
     margin-bottom: 40px;
   }
@@ -56,15 +56,15 @@
   }
 }
 
-.solution__item-txt {
+.solution__itemTxt {
   font-size: conversion.vw(20);
   text-align: center;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     font-size: conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     font-size: 20px;
   }
 }
@@ -82,13 +82,13 @@
   background: colors.$main;
   border-radius: 50%;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     width: conversion.vw-sm(100);
     height: conversion.vw-sm(100);
     margin-bottom: conversion.vw-sm(35);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     width: 100px;
     height: 100px;
     margin-bottom: 20px;

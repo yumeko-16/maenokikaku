@@ -12,11 +12,11 @@
   background: #fff;
   box-shadow: 0 conversion.vw(3) conversion.vw(25) rgb(77 77 99 / 10%);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     box-shadow: 0 conversion.vw-sm(3) conversion.vw-sm(25) rgb(77 77 99 / 10%);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     box-shadow: 0 3px 25px rgb(77 77 99 / 10%);
   }
 }
@@ -28,11 +28,11 @@
   width: 100%;
   padding: conversion.vw(20);
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding: conversion.vw-sm(20);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding: 20px;
   }
 }
@@ -41,11 +41,11 @@
   font-size: conversion.vw(22);
   font-weight: 600;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     font-size: conversion.vw-sm(22);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     font-size: 22px;
   }
 }
@@ -61,7 +61,7 @@
   background-color: colors.$bgc;
   transition: all 0.4s;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     position: static;
     top: auto;
     right: auto;
@@ -71,40 +71,40 @@
     background-color: #fff;
   }
 
-  .nav-open & {
+  .navOpen & {
     right: 0;
   }
 }
 
-.header__nav-list {
-  @include breakpoint.sm {
+.header__navList {
+  @include breakpoint.smartphone-screen {
     display: flex;
     align-items: center;
   }
 }
 
-.header__nav-item {
+.header__navItem {
   padding-bottom: conversion.vw(40);
   font-size: conversion.vw(22);
   font-weight: 600;
   text-align: center;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     padding-bottom: 0;
     font-size: conversion.vw-sm(18);
   }
 
-  @include breakpoint.md {
+  @include breakpoint.tablet-screen {
     padding-bottom: 0;
     font-size: 18px;
   }
 
   &:not(:last-child) {
-    @include breakpoint.sm {
+    @include breakpoint.smartphone-screen {
       margin-right: conversion.vw-sm(20);
     }
 
-    @include breakpoint.md {
+    @include breakpoint.tablet-screen {
       margin-right: 20px;
     }
   }
@@ -117,18 +117,18 @@
   justify-content: center;
   cursor: pointer;
 
-  @include breakpoint.sm {
+  @include breakpoint.smartphone-screen {
     display: none;
   }
 }
 
-.header__burger-inner {
+.header__burgerInner {
   position: relative;
   width: conversion.vw(40);
   height: conversion.vw(30);
 }
 
-.header__burger-line {
+.header__burgerLine {
   position: absolute;
   display: block;
   width: conversion.vw(40);
@@ -140,7 +140,7 @@
   &--1 {
     top: 0;
 
-    .nav-open & {
+    .navOpen & {
       top: conversion.vw(13);
       transform: rotate(225deg);
     }
@@ -149,7 +149,7 @@
   &--2 {
     top: conversion.vw(13);
 
-    .nav-open & {
+    .navOpen & {
       opacity: 0;
     }
   }
@@ -157,7 +157,7 @@
   &--3 {
     top: conversion.vw(26);
 
-    .nav-open & {
+    .navOpen & {
       top: conversion.vw(13);
       transform: rotate(-225deg);
     }

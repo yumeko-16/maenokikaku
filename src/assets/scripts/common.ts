@@ -3,12 +3,12 @@
 =========================================================*/
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
-  const burger = document.querySelector('#js-burger');
+  const burger = document.querySelector('#jsBurger');
 
   if (!burger) return;
 
   burger.addEventListener('click', () => {
-    body.classList.toggle('nav-open');
+    body.classList.toggle('navOpen');
   });
 });
 
@@ -22,22 +22,22 @@ const px_change = 1;
 window.addEventListener('scroll', () => {
   // 変化するポイントまでスクロールしたらクラスを追加
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const pageTop = document.getElementById('js-pagetop');
+  const pageTop = document.getElementById('jsPageTop');
 
   if (!pageTop) return;
 
   if (scrollTop > px_change) {
-    pageTop.classList.add('fadein');
+    pageTop.classList.add('fadeIn');
     // 変化するポイント以前であればクラスを削除
   } else {
-    pageTop.classList.remove('fadein');
+    pageTop.classList.remove('fadeIn');
   }
 });
 
 /* ========================================================
 トップに戻るボタンのスムーズスクロール
 =========================================================*/
-const pageTop = document.getElementById('js-pagetop');
+const pageTop = document.getElementById('jsPageTop');
 
 if (pageTop) {
   pageTop.addEventListener('click', (e) => {
