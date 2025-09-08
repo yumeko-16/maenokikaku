@@ -121,22 +121,35 @@
       })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
     </script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>寺院管理のお問い合わせ｜株式会社前野企画</title>
     <meta
       name="description"
-      content="寺院管理ソフト「寺院エキスパート」の導入、その他サービスについてはこちらのお問い合わせフォームからお気軽にご連絡ください。"
+      content="寺院管理ソフト「寺院エキスパート」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
+    />
+
+    <meta
+      property="og:title"
+      content="寺院管理のお問い合わせ｜株式会社前野企画"
     />
     <meta
-      name="keywords"
-      content="前野企画, 寺院, エキスパート, システム, お問い合わせ"
+      property="og:description"
+      content="寺院管理ソフト「寺院エキスパート」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maenokikaku.co.jp/contact/" />
+    <meta property="og:site_name" content="株式会社前野企画" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <link rel="icon" href="/favicon.ico" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/d45c93bc1b.js"
       crossorigin="anonymous"
@@ -172,7 +185,9 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
+
     <script type="module" crossorigin src="/assets/modulepreload-polyfill.js"></script>
+    <script type="module" crossorigin src="/assets/scripts/common.js"></script>
     <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
     <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/index.css">
@@ -193,7 +208,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__inner">
-          <a class="header__logo" href="/index.html">株式会社前野企画</a>
+          <a class="header__logo" href="/">株式会社前野企画</a>
 
           <nav class="header__nav">
             <ul class="header__navList">
@@ -201,10 +216,10 @@
                 <a href="/">ホーム</a>
               </li>
               <li class="header__navItem">
-                <a href="/expert/index.html">寺院エキスパート</a>
+                <a href="/expert/">寺院エキスパート</a>
               </li>
               <li class="header__navItem">
-                <a class="header__btn" href="/contact/index.php">
+                <a class="header__btn" href="/contact/">
                   お問い合わせ
                 </a>
               </li>
@@ -224,7 +239,7 @@
       <main class="main">
         <section class="section mail">
           <div class="section__inner">
-            <h2 class="section__title">お問い合わせ</h2>
+            <h1 class="section__title">お問い合わせ</h1>
 
             <?php if ($page_flag === 1): ?>
               <ul class="mail__stepBar">
