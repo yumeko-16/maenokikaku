@@ -48,3 +48,15 @@
     font-size: 32px;
   }
 }
+
+.section__lead {
+  margin: 0 auto conversion.vw(40);
+
+  @include breakpoint.smartphone-screen {
+    margin-bottom: conversion.vw-sm(40);
+  }
+
+  @include breakpoint.tablet-screen {
+    margin-bottom: 40px;
+  }
+}
