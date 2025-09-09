@@ -1,18 +1,6 @@
 @use '../../mixin/breakpoint';
 @use '../../mixin/conversion';
 
-.company__concept {
-  margin-bottom: conversion.vw(40);
-
-  @include breakpoint.smartphone-screen {
-    margin-bottom: conversion.vw-sm(40);
-  }
-
-  @include breakpoint.tablet-screen {
-    margin-bottom: 40px;
-  }
-}
-
 .company__content {
   @include breakpoint.tablet-screen {
     display: flex;
