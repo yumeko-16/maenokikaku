@@ -1,15 +1,11 @@
-@use '../../mixin/colors';
-@use '../../mixin/btn';
-@use '../../mixin/breakpoint';
-@use '../../mixin/conversion';
-@use '../../mixin/scroll-animation';
-@use '../../mixin/lineBreak';
-@use '../../mixin/section';
-@use '../../mixin/txt';
+@use '../../utils/globals';
+
 @use '../../mixin/wrapper';
-@use '../../base/base';
 @use '../../module/header';
 @use '../../module/main';
+@use '../../mixin/section';
 @use '../../module/footer';
 @use '../../module/pageTop';
-@use '../../page/expert/block/expert';
+
+@use '../../modules/tab';
+@use '../../modules/expert';

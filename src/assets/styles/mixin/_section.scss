@@ -20,6 +20,10 @@
       border-radius: 0 0 50% 50% / 0 0 8% 8%;
     }
   }
+
+  &--expert {
+    background-color: var(--secondary);
+  }
 }
 
 .section__inner {

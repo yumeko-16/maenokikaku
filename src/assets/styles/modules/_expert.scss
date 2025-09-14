@@ -1,0 +1,37 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.expert {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: functions.vw(60);
+  }
+
+  @include mixins.tablet-screen {
+    gap: 80px;
+  }
+}
+
+.expert__content {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: functions.vw(15);
+  }
+
+  @include mixins.tablet-screen {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
