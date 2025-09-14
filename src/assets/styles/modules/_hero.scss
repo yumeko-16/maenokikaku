@@ -1,0 +1,68 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.hero {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: functions.vw(30);
+  }
+
+  @include mixins.tablet-screen {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+.hero__heading {
+  display: grid;
+  font-family:
+    dnp-shuei-mgothic-std,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: functions.fluid-clamp(24, 32);
+  font-weight: 600;
+  line-height: 1.4;
+  color: #eee;
+  letter-spacing: 0.05em;
+
+  @include mixins.tablet-screen {
+    grid-area: 1 / 1 / 2 / 2;
+    place-content: end;
+    justify-content: start;
+  }
+}
+
+.hero__lead {
+  color: #eee;
+
+  @include mixins.tablet-screen {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
+.hero__img {
+  display: grid;
+  place-content: center;
+
+  @include mixins.tablet-screen {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  img {
+    aspect-ratio: 700 / 500;
+  }
+}
+
+.hero__btn {
+  display: grid;
+  place-content: center;
+
+  @include mixins.tablet-screen {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
