@@ -12,6 +12,14 @@
   @include breakpoint.tablet-screen {
     padding: 80px 0;
   }
+
+  &--hero {
+    background: linear-gradient(135deg, colors.$main, #5067c5);
+
+    @include breakpoint.tablet-screen {
+      border-radius: 0 0 50% 50% / 0 0 8% 8%;
+    }
+  }
 }
 
 .section__inner {
@@ -32,25 +40,30 @@
 }
 
 .section__title {
-  margin: 0 auto conversion.vw(40);
+  display: grid;
+  place-content: center;
+  margin-bottom: conversion.vw(40);
   font-size: conversion.vw(32);
   font-weight: 600;
   line-height: 1.8;
   color: colors.$main;
 
   @include breakpoint.smartphone-screen {
-    margin: 0 auto conversion.vw-sm(40);
+    margin-bottom: conversion.vw-sm(40);
     font-size: conversion.vw-sm(32);
   }
 
   @include breakpoint.tablet-screen {
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
     font-size: 32px;
   }
 }
 
 .section__lead {
-  margin: 0 auto conversion.vw(40);
+  display: grid;
+  gap: 1em;
+  place-content: center;
+  margin-bottom: conversion.vw(40);
 
   @include breakpoint.smartphone-screen {
     margin-bottom: conversion.vw-sm(40);

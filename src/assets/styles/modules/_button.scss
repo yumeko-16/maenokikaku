@@ -1,0 +1,27 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.667em 30px 0.556em;
+  font-size: functions.fluid-clamp(18, 20);
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgb(20 19 19 / 50%);
+  transition: all 0.3s;
+
+  @include mixins.hover {
+    transform: scale(1.1);
+  }
+
+  &--accent {
+    background-color: var(--accent);
+  }
+}
