@@ -3,9 +3,9 @@
 @use '../../mixin/wrapper';
 @use '../../module/header';
 @use '../../module/main';
-@use '../../mixin/section';
 @use '../../module/footer';
 @use '../../module/pageTop';
 
+@use '../../modules/section';
 @use '../../modules/tab';
 @use '../../modules/expert';

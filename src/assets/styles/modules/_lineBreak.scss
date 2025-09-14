@@ -1,0 +1,21 @@
+@use '../utils/mixins';
+
+.lineBreakSm {
+  @include mixins.smartphone-screen {
+    display: block;
+  }
+
+  @include mixins.tablet-screen {
+    display: none;
+  }
+}
+
+.lineBreakTb {
+  @include mixins.smartphone-screen {
+    display: none;
+  }
+
+  @include mixins.tablet-screen {
+    display: block;
+  }
+}
