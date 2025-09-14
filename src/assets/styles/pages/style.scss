@@ -3,8 +3,6 @@
 @use '../mixin/btn';
 @use '../mixin/breakpoint';
 @use '../mixin/scroll-animation';
-@use '../mixin/lineBreak';
-@use '../mixin/section';
 @use '../mixin/txt';
 @use '../mixin/wrapper';
 @use '../module/header';
@@ -18,5 +16,7 @@
 @use '../page/block/company';
 @use '../page/block/contact';
 
+@use '../modules/section';
+@use '../modules/lineBreak';
 @use '../modules/button';
 @use '../modules/hero';
