@@ -192,7 +192,7 @@
     <script type="module" crossorigin src="/assets/scripts/common.js"></script>
     <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
-    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/index.css">
+    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css">
   </head>
 
   <body>
@@ -239,191 +239,193 @@
       </header>
 
       <main class="main">
-        <section class="section mail">
+        <section class="section">
           <div class="section__inner">
-            <h1 class="section__title">お問い合わせ</h1>
+            <h1 class="section__heading">お問い合わせ</h1>
 
             <?php if ($page_flag === 1): ?>
-              <ul class="mail__stepBar">
-                <li class="mail__stepItem">内容入力</li>
-                <li class="mail__stepItem mail__visited">内容確認</li>
-                <li class="mail__stepItem mail__stepCompletion">完了</li>
-              </ul>
+              <div class="mail">
+                <ul class="mail__stepBar">
+                  <li class="mail__stepItem">内容入力</li>
+                  <li class="mail__stepItem mail__visited">内容確認</li>
+                  <li class="mail__stepItem mail__stepCompletion">完了</li>
+                </ul>
 
-              <form method="post" action="">
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">寺院名</label>
-                    <span class="mail__required">必須</span>
+                <form method="post" action="">
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">寺院名</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <p class="txtBlue"><?php echo $clean['your_name']; ?></p>
                   </div>
-                  <p class="txtBlue"><?php echo $clean['your_name']; ?></p>
-                </div>
 
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">メールアドレス</label>
-                    <span class="mail__required">必須</span>
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">メールアドレス</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <p class="txtBlue"><?php echo $clean['email']; ?></p>
                   </div>
-                  <p class="txtBlue"><?php echo $clean['email']; ?></p>
-                </div>
 
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">電話番号</label>
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">電話番号</label>
+                    </div>
+                    <p class="txtBlue"><?php echo $clean['tel']; ?></p>
                   </div>
-                  <p class="txtBlue"><?php echo $clean['tel']; ?></p>
-                </div>
 
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">お問い合わせ内容</label>
-                    <span class="mail__required">必須</span>
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">お問い合わせ内容</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <p class="txtBlue"><?php echo nl2br($clean['contact']); ?></p>
                   </div>
-                  <p class="txtBlue"><?php echo nl2br($clean['contact']); ?></p>
-                </div>
 
-                <div class="mail__btns">
+                  <div class="mail__btns">
+                    <input
+                      class="mail__btn--back"
+                      type="submit"
+                      name="btn_back"
+                      value="戻る"
+                    />
+                    <input
+                      class="mail__btn"
+                      type="submit"
+                      name="btn_submit"
+                      value="入力内容を送信する"
+                    />
+                  </div>
+
                   <input
-                    class="mail__btn--back"
-                    type="submit"
-                    name="btn_back"
-                    value="戻る"
+                    type="hidden"
+                    name="your_name"
+                    value="<?php echo $clean['your_name']; ?>"
                   />
+                  <input
+                    type="hidden"
+                    name="email"
+                    value="<?php echo $clean['email']; ?>"
+                  />
+                  <input
+                    type="hidden"
+                    name="tel"
+                    value="<?php echo $clean['tel']; ?>"
+                  />
+                  <input
+                    type="hidden"
+                    name="contact"
+                    value="<?php echo $clean['contact']; ?>"
+                  />
+                </form>
+              </div>
+            <?php elseif ( $page_flag === 2 ): ?>
+              <p class="section__lead">
+                この度はお問い合わせいただき、誠にありがとうございます。
+                <br />
+                いただいた内容につきましては、入力いただいたメールアドレス宛に確認メールを送信しております。
+                <br />
+                もしメールが届かない場合は、入力いただいたメールアドレスに誤りがある可能性があります。
+                <br />
+                お問い合わせの内容には、近日中にご返信いたします。
+              </p>
+
+              <div class="mail">
+                <ul class="mail__stepBar">
+                  <li class="mail__stepItem">内容入力</li>
+                  <li class="mail__stepItem">内容確認</li>
+                  <li class="mail__stepItem mail__stepCompletion mail__visited">
+                    完了
+                  </li>
+                </ul>
+              </div>
+            <?php else: ?>
+              <p class="section__lead">
+                サービスに関するお問い合わせは、
+                <br class="lineBreakSm" />
+                お電話またはメールフォームで承っております。
+                <br />
+                お悩みやご相談は、いつでもお気軽にお問い合わせください。
+              </p>
+
+              <div class="mail">
+                <ul class="mail__stepBar">
+                  <li class="mail__stepItem mail__visited">内容入力</li>
+                  <li class="mail__stepItem">内容確認</li>
+                  <li class="mail__stepItem mail__stepCompletion">完了</li>
+                </ul>
+
+                <?php if (!empty($error)): ?>
+                  <ul class="mail__errorList">
+                    <?php foreach($error as $value): ?>
+                      <li class="mail__errorItem"><?php echo $value; ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                <?php endif; ?>
+
+                <form action="" method="post">
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">寺院名</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <input
+                      class="mail__input"
+                      type="text"
+                      name="your_name"
+                      value="<?php if (!empty($clean['your_name'])) { echo $clean['your_name']; } ?>"
+                      placeholder="例）普蔵院"
+                    />
+                  </div>
+
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">メールアドレス</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <input
+                      class="mail__input"
+                      type="text"
+                      name="email"
+                      value="<?php if (!empty($clean['email'])) { echo $clean['email']; } ?>"
+                      placeholder="例）abc@mail.co.jp"
+                    />
+                  </div>
+
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">電話番号</label>
+                    </div>
+                    <input
+                      class="mail__input"
+                      type="tel"
+                      name="tel"
+                      value="<?php if (!empty($clean['tel'])) { echo $clean['tel']; } ?>"
+                      placeholder="例）012-345-6789"
+                    />
+                  </div>
+
+                  <div class="mail__item">
+                    <div class="mail__itemName">
+                      <label class="mail__label">お問い合わせ内容</label>
+                      <span class="mail__required">必須</span>
+                    </div>
+                    <textarea
+                      class="mail__txtarea"
+                      name="contact"
+                      placeholder="お問合わせ内容をご入力ください。"
+                    ><?php if (!empty($_POST['contact'])) { echo $_POST['contact']; } ?></textarea>
+                  </div>
+
                   <input
                     class="mail__btn"
                     type="submit"
-                    name="btn_submit"
-                    value="入力内容を送信する"
+                    name="btn_confirm"
+                    value="入力内容を確認する"
                   />
-                </div>
-
-                <input
-                  type="hidden"
-                  name="your_name"
-                  value="<?php echo $clean['your_name']; ?>"
-                />
-                <input
-                  type="hidden"
-                  name="email"
-                  value="<?php echo $clean['email']; ?>"
-                />
-                <input
-                  type="hidden"
-                  name="tel"
-                  value="<?php echo $clean['tel']; ?>"
-                />
-                <input
-                  type="hidden"
-                  name="contact"
-                  value="<?php echo $clean['contact']; ?>"
-                />
-              </form>
-            <?php elseif ( $page_flag === 2 ): ?>
-              <ul class="mail__stepBar">
-                <li class="mail__stepItem">内容入力</li>
-                <li class="mail__stepItem">内容確認</li>
-                <li class="mail__stepItem mail__stepCompletion mail__visited">
-                  完了
-                </li>
-              </ul>
-
-              <div>
-                <p>この度はお問い合わせいただき、誠にありがとうございます。</p>
-                <p>
-                  いただいた内容につきましては、入力いただいたメールアドレス宛に確認メールを送信しております。
-                </p>
-                <p>
-                  もしメールが届かない場合は、入力いただいたメールアドレスに誤りがある可能性があります。
-                </p>
-                <p>
-                  お問い合わせの内容には、近日中にご返信いたします。
-                </p>
+                </form>
               </div>
-            <?php else: ?>
-              <div class="mail__description">
-                <p>
-                  サービスに関するお問い合わせは、
-                  <br class="lineBreakSm" />
-                  お電話またはメールフォームで承っております。
-                </p>
-                <p>お悩みやご相談は、いつでもお気軽にお問い合わせください。</p>
-              </div>
-
-              <ul class="mail__stepBar">
-                <li class="mail__stepItem mail__visited">内容入力</li>
-                <li class="mail__stepItem">内容確認</li>
-                <li class="mail__stepItem mail__stepCompletion">完了</li>
-              </ul>
-
-              <?php if (!empty($error)): ?>
-                <ul class="mail__errorList">
-                  <?php foreach($error as $value): ?>
-                    <li class="mail__errorItem"><?php echo $value; ?></li>
-                  <?php endforeach; ?>
-                </ul>
-              <?php endif; ?>
-
-              <form action="" method="post">
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">寺院名</label>
-                    <span class="mail__required">必須</span>
-                  </div>
-                  <input
-                    class="mail__input"
-                    type="text"
-                    name="your_name"
-                    value="<?php if (!empty($clean['your_name'])) { echo $clean['your_name']; } ?>"
-                    placeholder="例）普蔵院"
-                  />
-                </div>
-
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">メールアドレス</label>
-                    <span class="mail__required">必須</span>
-                  </div>
-                  <input
-                    class="mail__input"
-                    type="text"
-                    name="email"
-                    value="<?php if (!empty($clean['email'])) { echo $clean['email']; } ?>"
-                    placeholder="例）abc@mail.co.jp"
-                  />
-                </div>
-
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">電話番号</label>
-                  </div>
-                  <input
-                    class="mail__input"
-                    type="tel"
-                    name="tel"
-                    value="<?php if (!empty($clean['tel'])) { echo $clean['tel']; } ?>"
-                    placeholder="例）012-345-6789"
-                  />
-                </div>
-
-                <div class="mail__item">
-                  <div class="mail__itemName">
-                    <label class="mail__label">お問い合わせ内容</label>
-                    <span class="mail__required">必須</span>
-                  </div>
-                  <textarea
-                    class="mail__txtarea"
-                    name="contact"
-                    placeholder="お問合わせ内容をご入力ください。"
-                  ><?php if (!empty($_POST['contact'])) { echo $_POST['contact']; } ?></textarea>
-                </div>
-
-                <input
-                  class="mail__btn"
-                  type="submit"
-                  name="btn_confirm"
-                  value="入力内容を確認する"
-                />
-              </form>
             <?php endif; ?>
           </div>
         </section>
