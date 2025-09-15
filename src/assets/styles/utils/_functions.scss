@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+@function rem($px, $base: 16) {
+  @return math.div($px, $base) * 1rem;
+}
+
+@function fluid-clamp($min-size-px, $max-size-px, $min-vw: 375, $max-vw: 1024) {
+  $base: 16; // 1rem = 16px
+  $slope: math.div(($max-size-px - $min-size-px), ($max-vw - $min-vw)) * 100;
+  $intercept-px: $min-size-px - math.div($slope * $min-vw, 100);
+
+  @return clamp(
+    #{math.div($min-size-px, $base)}rem,
+    #{math.div($intercept-px, $base)}rem + #{$slope}vw,
+    #{math.div($max-size-px, $base)}rem
+  );
+}
+
+@function vw($size, $viewport: 375) {
+  $rate: math.div(100, $viewport);
+
+  @return $rate * $size * 1vw;
+}

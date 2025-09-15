@@ -18,10 +18,10 @@ export default defineConfig({
         'scripts/pages/contact/index':
           'src/assets/scripts/pages/contact/index.ts',
         'styles/ress': 'src/assets/styles/ress.scss',
-        'styles/pages/index': 'src/assets/styles/pages/style.scss',
-        'styles/pages/expert/index':
+        'styles/pages/style': 'src/assets/styles/pages/style.scss',
+        'styles/pages/expert/style':
           'src/assets/styles/pages/expert/style.scss',
-        'styles/pages/contact/index':
+        'styles/pages/contact/style':
           'src/assets/styles/pages/contact/style.scss',
       },
       output: {
