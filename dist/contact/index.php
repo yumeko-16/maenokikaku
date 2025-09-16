@@ -257,7 +257,7 @@
                       <label class="mail__label">寺院名</label>
                       <span class="mail__required">必須</span>
                     </div>
-                    <p class="txtBlue"><?php echo $clean['your_name']; ?></p>
+                    <p><?php echo $clean['your_name']; ?></p>
                   </div>
 
                   <div class="mail__item">
@@ -265,14 +265,14 @@
                       <label class="mail__label">メールアドレス</label>
                       <span class="mail__required">必須</span>
                     </div>
-                    <p class="txtBlue"><?php echo $clean['email']; ?></p>
+                    <p><?php echo $clean['email']; ?></p>
                   </div>
 
                   <div class="mail__item">
                     <div class="mail__itemName">
                       <label class="mail__label">電話番号</label>
                     </div>
-                    <p class="txtBlue"><?php echo $clean['tel']; ?></p>
+                    <p><?php echo $clean['tel']; ?></p>
                   </div>
 
                   <div class="mail__item">
@@ -280,18 +280,18 @@
                       <label class="mail__label">お問い合わせ内容</label>
                       <span class="mail__required">必須</span>
                     </div>
-                    <p class="txtBlue"><?php echo nl2br($clean['contact']); ?></p>
+                    <p><?php echo nl2br($clean['contact']); ?></p>
                   </div>
 
                   <div class="mail__btns">
                     <input
-                      class="mail__btn--back"
+                      class="button button--back"
                       type="submit"
                       name="btn_back"
                       value="戻る"
                     />
                     <input
-                      class="mail__btn"
+                      class="button button--submit"
                       type="submit"
                       name="btn_submit"
                       value="入力内容を送信する"
@@ -342,9 +342,7 @@
               </div>
             <?php else: ?>
               <p class="section__lead">
-                サービスに関するお問い合わせは、
-                <br class="lineBreakSm" />
-                お電話またはメールフォームで承っております。
+                サービスに関するお問い合わせは、お電話またはメールフォームで承っております。
                 <br />
                 お悩みやご相談は、いつでもお気軽にお問い合わせください。
               </p>
@@ -418,12 +416,14 @@
                     ><?php if (!empty($_POST['contact'])) { echo $_POST['contact']; } ?></textarea>
                   </div>
 
-                  <input
-                    class="mail__btn"
-                    type="submit"
-                    name="btn_confirm"
-                    value="入力内容を確認する"
-                  />
+                  <div class="mail__btns">
+                    <input
+                      class="button button--submit"
+                      type="submit"
+                      name="btn_confirm"
+                      value="入力内容を確認する"
+                    />
+                  </div>
                 </form>
               </div>
             <?php endif; ?>
