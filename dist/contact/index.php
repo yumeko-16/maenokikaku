@@ -144,6 +144,10 @@
     <meta property="og:url" content="https://maenokikaku.co.jp/contact/" />
     <meta property="og:site_name" content="株式会社前野企画" />
     <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:image"
+      content="https://maenokikaku.co.jp/assets/images/ogp.png"
+    />
 
     <link rel="icon" href="/favicon.ico" />
 
@@ -190,9 +194,9 @@
 
     <script type="module" crossorigin src="/assets/modulepreload-polyfill.js"></script>
     <script type="module" crossorigin src="/assets/scripts/common.js"></script>
-    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js"></script>
+    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js?20250921"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
-    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css">
+    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css?20250921">
   </head>
 
   <body>
