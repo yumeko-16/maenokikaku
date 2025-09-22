@@ -1,0 +1,12 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.main {
+  @include mixins.smartphone-screen {
+    margin-top: functions.vw(60);
+  }
+
+  @include mixins.tablet-screen {
+    margin-top: 91px;
+  }
+}

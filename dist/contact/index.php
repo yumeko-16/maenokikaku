@@ -194,9 +194,9 @@
 
     <script type="module" crossorigin src="/assets/modulepreload-polyfill.js"></script>
     <script type="module" crossorigin src="/assets/scripts/common.js"></script>
-    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js?20250921"></script>
+    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js?2025092202"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
-    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css?20250921">
+    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css?2025092202">
   </head>
 
   <body>
@@ -441,7 +441,7 @@
 
       <footer class="footer">
         <div class="footer__inner">
-          <small>© 2025 前野企画</small>
+          <p class="copyright">&copy; 2025 前野企画</p>
         </div>
       </footer>
 

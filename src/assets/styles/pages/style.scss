@@ -6,9 +6,6 @@
 @use '../mixin/txt';
 @use '../mixin/wrapper';
 @use '../module/header';
-@use '../module/main';
-@use '../module/footer';
-@use '../module/pageTop';
 @use '../page/block/problem';
 @use '../page/block/solution';
 @use '../page/block/service';
@@ -16,6 +13,10 @@
 @use '../page/block/company';
 @use '../page/block/contact';
 
+@use '../modules/main';
+@use '../modules/footer';
+@use '../modules/copyright';
+@use '../modules/pageTop';
 @use '../modules/section';
 @use '../modules/lineBreak';
 @use '../modules/button';
