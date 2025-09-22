@@ -2,10 +2,11 @@
 
 @use '../../mixin/wrapper';
 @use '../../module/header';
-@use '../../module/pageTop';
 
 @use '../../modules/main';
 @use '../../modules/footer';
+@use '../../modules/copyright';
+@use '../../modules/pageTop';
 @use '../../modules/section';
 @use '../../modules/button';
 @use '../../modules/mail';
