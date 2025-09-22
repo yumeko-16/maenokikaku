@@ -1,0 +1,31 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+#jsPageTop {
+  opacity: 0;
+
+  &.fadeIn {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pageTop {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  display: grid;
+  place-content: center;
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: #7db4e6;
+  border-radius: 50%;
+
+  i {
+    font-size: functions.rem(20);
+    color: #fff;
+  }
+}
