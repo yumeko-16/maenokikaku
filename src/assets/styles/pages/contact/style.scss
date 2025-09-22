@@ -2,9 +2,9 @@
 
 @use '../../mixin/wrapper';
 @use '../../module/header';
-@use '../../module/main';
 @use '../../module/pageTop';
 
+@use '../../modules/main';
 @use '../../modules/footer';
 @use '../../modules/section';
 @use '../../modules/button';
