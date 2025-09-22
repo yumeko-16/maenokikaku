@@ -441,7 +441,7 @@
 
       <footer class="footer">
         <div class="footer__inner">
-          <small>© 2025 前野企画</small>
+          <p class="copyright">&copy; 2025 前野企画</p>
         </div>
       </footer>
 
