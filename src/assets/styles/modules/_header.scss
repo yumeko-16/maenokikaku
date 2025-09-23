@@ -1,0 +1,144 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0 3px 25px rgb(77 77 99 / 10%);
+
+  @include mixins.smartphone-screen {
+    padding: 15px 0;
+  }
+
+  @include mixins.tablet-screen {
+    padding: 20px 0;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mixins.smartphone-screen {
+    padding: 0 15px;
+  }
+
+  @include mixins.tablet-screen {
+    padding: 0 20px;
+  }
+}
+
+.header__logo {
+  font-weight: 700;
+
+  @include mixins.smartphone-screen {
+    font-size: functions.rem(18);
+  }
+
+  @include mixins.tablet-screen {
+    font-size: functions.rem(22);
+  }
+}
+
+.header__nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 200;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary);
+  transition: all 0.4s;
+
+  @include mixins.laptop-screen {
+    position: static;
+    width: auto;
+    height: auto;
+    padding-top: initial;
+    background-color: var(--white);
+  }
+
+  .navOpen & {
+    right: 0;
+  }
+}
+
+.header__navList {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+
+  @include mixins.laptop-screen {
+    flex-direction: initial;
+    gap: 30px;
+  }
+}
+
+.header__navItem {
+  font-size: functions.rem(16);
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__burger {
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include mixins.laptop-screen {
+    display: none;
+  }
+}
+
+.header__burgerInner {
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+
+.header__burgerLine {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--black);
+  border-radius: 50px;
+  transition: 0.5s;
+
+  &--1 {
+    top: 0;
+
+    .navOpen & {
+      top: 10px;
+      transform: rotate(225deg);
+    }
+  }
+
+  &--2 {
+    top: 50%;
+    transform: translateY(-50%);
+
+    .navOpen & {
+      opacity: 0;
+    }
+  }
+
+  &--3 {
+    bottom: 0;
+
+    .navOpen & {
+      top: 10px;
+      transform: rotate(-225deg);
+    }
+  }
+}

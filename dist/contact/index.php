@@ -194,9 +194,9 @@
 
     <script type="module" crossorigin src="/assets/modulepreload-polyfill.js"></script>
     <script type="module" crossorigin src="/assets/scripts/common.js"></script>
-    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js?2025092202"></script>
+    <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js?2025092301"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
-    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css?2025092202">
+    <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css?2025092301">
   </head>
 
   <body>
