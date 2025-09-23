@@ -3,10 +3,10 @@
 
 .main {
   @include mixins.smartphone-screen {
-    margin-top: functions.vw(60);
+    margin-top: 61px;
   }
 
   @include mixins.tablet-screen {
-    margin-top: 91px;
+    margin-top: 77px;
   }
 }

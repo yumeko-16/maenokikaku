@@ -10,6 +10,12 @@
   }
 }
 
+@mixin laptop-screen {
+  @media (min-width: (1024px)) {
+    @content;
+  }
+}
+
 @mixin desktop-screen {
   @media (min-width: (1280px)) {
     @content;
