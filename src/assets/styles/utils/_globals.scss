@@ -2,6 +2,7 @@
   /* Color */
   --white: #fff;
   --black: #333;
+  --base: #edf2f7;
   --primary: #0079bf;
   --secondary: #edf2f7;
   --accent: #22bc92;
@@ -17,7 +18,6 @@ body {
   line-height: 1.7;
   color: var(--black);
   letter-spacing: 0.05em;
-  background-color: var(--white);
 }
 
 /* Reset */
