@@ -195,7 +195,6 @@
     <script type="module" crossorigin src="/assets/modulepreload-polyfill.js"></script>
     <script type="module" crossorigin src="/assets/scripts/common.js"></script>
     <script type="module" crossorigin src="/assets/scripts/pages/contact/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/styles/ress.css">
     <link rel="stylesheet" crossorigin href="/assets/styles/pages/contact/style.css">
   </head>
 
