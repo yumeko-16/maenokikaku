@@ -4,7 +4,6 @@
 @use '../mixin/breakpoint';
 @use '../mixin/scroll-animation';
 @use '../mixin/txt';
-@use '../mixin/wrapper';
 @use '../page/block/problem';
 @use '../page/block/solution';
 @use '../page/block/service';
@@ -12,6 +11,7 @@
 @use '../page/block/company';
 @use '../page/block/contact';
 
+@use '../modules/wrapper';
 @use '../modules/header';
 @use '../modules/main';
 @use '../modules/footer';
