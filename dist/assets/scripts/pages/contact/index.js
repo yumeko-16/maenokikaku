@@ -1,1 +1,1 @@
-/* empty css                  *//* empty css                                 */
+import"../../../styles/pages/contact/style.js";
