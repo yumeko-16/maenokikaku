@@ -6,6 +6,8 @@ https://maenokikaku.co.jp/
 
 Docker
 
+## Set up
+
 npm run dev
 
 npm run build
