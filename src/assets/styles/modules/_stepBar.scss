@@ -1,0 +1,74 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.stepBar {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: 30px;
+  }
+
+  @include mixins.tablet-screen {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+
+  & + * {
+    margin-top: 60px;
+  }
+}
+
+.stepBar__item {
+  position: relative;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0 7px 16px #00000012;
+
+  @include mixins.smartphone-screen {
+    padding: 8px;
+  }
+
+  @include mixins.tablet-screen {
+    padding: 12px 8px;
+  }
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    background-color: var(--white);
+
+    @include mixins.smartphone-screen {
+      bottom: 0;
+      left: 50%;
+      width: 24px;
+      height: 12px;
+      clip-path: polygon(0 0, 100% 0%, 50% 100%);
+      transform: translate(-50%, 96%);
+    }
+
+    @include mixins.tablet-screen {
+      top: 50%;
+      right: 0;
+      width: 12px;
+      height: 24px;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      transform: translate(96%, -50%);
+    }
+  }
+
+  &.isCurrent {
+    color: #fff;
+    background-color: var(--primary);
+
+    &::after {
+      background-color: var(--primary);
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      content: none;
+    }
+  }
+}
