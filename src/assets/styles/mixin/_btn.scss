@@ -50,11 +50,7 @@ $init-type: 'normal';
   }
 
   @if $type == 'contact' {
-    background-color: colors.$accent;
-
-    &:hover {
-      background-color: colors.$accent-hover;
-    }
+    background-color: var(--primary);
   }
 
   @if $type == 'back' {
