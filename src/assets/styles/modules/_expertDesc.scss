@@ -1,0 +1,56 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.expertDesc {
+  display: grid;
+  place-content: center;
+}
+
+.expertDesc__contets {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: 30px;
+  }
+
+  @include mixins.tablet-screen {
+    grid-template-columns: auto 1fr;
+    gap: 45px;
+    align-items: start;
+  }
+}
+
+.expertDesc__feature {
+  display: grid;
+  place-content: center;
+
+  @include mixins.tablet-screen {
+    width: 230px;
+  }
+
+  @include mixins.desktop-screen {
+    width: auto;
+  }
+
+  img {
+    aspect-ratio: 434 / 446;
+  }
+}
+
+.expertDesc__points {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: 20px;
+  }
+
+  @include mixins.tablet-screen {
+    gap: 30px;
+  }
+}
+
+.expertDesc__point {
+  i {
+    color: #63e6be;
+  }
+}
