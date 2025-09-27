@@ -205,12 +205,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092801"
+      src="/assets/scripts/pages/contact/index.js?2025092802"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092801"
+      href="/assets/styles/pages/contact/style.css?2025092802"
     />
   </head>
 
