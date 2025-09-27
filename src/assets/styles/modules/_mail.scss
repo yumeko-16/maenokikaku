@@ -1,69 +1,6 @@
 @use '../utils/functions';
 @use '../utils/mixins';
 
-.mail__stepBar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  text-align: center;
-
-  @include mixins.smartphone-screen {
-    gap: 18px;
-  }
-
-  @include mixins.tablet-screen {
-    gap: 36px;
-  }
-}
-
-.mail__stepItem {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 220px;
-  color: #666;
-  background-color: #edf2f7;
-
-  @include mixins.smartphone-screen {
-    padding: 8px;
-  }
-
-  @include mixins.tablet-screen {
-    padding: 12px 8px;
-  }
-
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    display: block;
-    width: 0;
-    height: 0;
-    margin-top: -8px;
-    content: '';
-    border: 8px solid transparent;
-    border-left: 8px solid #edf2f7;
-  }
-}
-
-.mail__stepCompletion {
-  margin-right: 0;
-
-  &::before {
-    content: none;
-  }
-}
-
-.mail__visited {
-  color: #fff;
-  background-color: var(--primary);
-
-  &::before {
-    border-left-color: var(--primary);
-  }
-}
-
 .mail__item {
   margin-bottom: 40px;
 }
@@ -92,9 +29,14 @@
 .mail__input,
 .mail__txtarea {
   width: 100%;
+  font-family: unset;
+  font-size: unset;
+  line-height: unset;
   letter-spacing: unset;
-  background-color: #edf2f7;
+  background-color: var(--white);
+  border: none;
   border-radius: 8px;
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 7%);
 
   @include mixins.smartphone-screen {
     padding: 10px 15px;

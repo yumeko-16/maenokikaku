@@ -248,10 +248,10 @@
 
             <?php if ($page_flag === 1): ?>
               <div class="mail">
-                <ul class="mail__stepBar">
-                  <li class="mail__stepItem">内容入力</li>
-                  <li class="mail__stepItem mail__visited">内容確認</li>
-                  <li class="mail__stepItem mail__stepCompletion">完了</li>
+                <ul class="stepBar">
+                  <li class="stepBar__item">内容入力</li>
+                  <li class="stepBar__item isCurrent">内容確認</li>
+                  <li class="stepBar__item">完了</li>
                 </ul>
 
                 <form method="post" action="">
@@ -337,12 +337,10 @@
               </div>
 
               <div class="mail">
-                <ul class="mail__stepBar">
-                  <li class="mail__stepItem">内容入力</li>
-                  <li class="mail__stepItem">内容確認</li>
-                  <li class="mail__stepItem mail__stepCompletion mail__visited">
-                    完了
-                  </li>
+                <ul class="stepBar">
+                  <li class="stepBar__item">内容入力</li>
+                  <li class="stepBar__item">内容確認</li>
+                  <li class="stepBar__item isCurrent">完了</li>
                 </ul>
               </div>
             <?php else: ?>
@@ -355,10 +353,10 @@
               </div>
 
               <div class="mail">
-                <ul class="mail__stepBar">
-                  <li class="mail__stepItem mail__visited">内容入力</li>
-                  <li class="mail__stepItem">内容確認</li>
-                  <li class="mail__stepItem mail__stepCompletion">完了</li>
+                <ul class="stepBar">
+                  <li class="stepBar__item isCurrent">内容入力</li>
+                  <li class="stepBar__item">内容確認</li>
+                  <li class="stepBar__item">完了</li>
                 </ul>
 
                 <?php if (!empty($error)): ?>
