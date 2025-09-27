@@ -18,6 +18,10 @@
     }
   }
 
+  &--white {
+    background-color: var(--white);
+  }
+
   &--expert {
     background-color: var(--secondary);
   }
