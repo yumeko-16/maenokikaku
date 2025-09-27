@@ -2,9 +2,6 @@
 
 @use '../mixin/btn';
 @use '../mixin/breakpoint';
-@use '../mixin/scroll-animation';
-@use '../mixin/txt';
-@use '../page/block/problem';
 @use '../page/block/solution';
 @use '../page/block/service';
 @use '../page/block/flow';
@@ -21,3 +18,5 @@
 @use '../modules/lineBreak';
 @use '../modules/button';
 @use '../modules/hero';
+@use '../modules/voice';
+@use '../modules/scrollAnimation';
