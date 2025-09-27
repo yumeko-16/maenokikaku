@@ -47,3 +47,7 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+:where(input, button, select, textarea) {
+  appearance: none;
+}
