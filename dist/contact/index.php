@@ -200,12 +200,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js"
+      src="/assets/scripts/pages/contact/index.js?2025092804"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css"
+      href="/assets/styles/pages/contact/style.css?2025092804"
     />
   </head>
 
