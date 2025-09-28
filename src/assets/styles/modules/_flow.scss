@@ -1,0 +1,81 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.flow {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: 30px;
+  }
+
+  @include mixins.tablet-screen {
+    gap: 40px;
+  }
+}
+
+.flow__item {
+  position: relative;
+  display: grid;
+  place-items: start;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 7%);
+
+  @include mixins.smartphone-screen {
+    gap: 10px;
+    padding: 20px;
+  }
+
+  @include mixins.tablet-screen {
+    gap: 15px;
+    padding: 20px 30px;
+  }
+
+  &:not(:first-child)::before {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: block;
+    content: '';
+    border-left: 4px dotted #e5e5e5;
+
+    @include mixins.smartphone-screen {
+      left: calc((86px / 2) + 20px);
+      height: 50px;
+      transform: translate(-60%, -50%);
+    }
+
+    @include mixins.tablet-screen {
+      left: calc((86px / 2) + 30px);
+      height: 60px;
+      transform: translate(-50%, -66%);
+    }
+  }
+}
+
+.flow__definitionlist {
+  display: grid;
+
+  @include mixins.smartphone-screen {
+    gap: 5px;
+  }
+
+  @include mixins.tablet-screen {
+    gap: 10px;
+  }
+}
+
+.flow__heading {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.flow__num {
+  z-index: 50;
+  padding: 4px 15px;
+  font-size: functions.rem(12);
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), #5067c5);
+  border-radius: 18px;
+}
