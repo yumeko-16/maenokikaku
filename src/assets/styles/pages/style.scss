@@ -2,7 +2,6 @@
 
 @use '../mixin/btn';
 @use '../mixin/breakpoint';
-@use '../page/block/contact';
 
 @use '../modules/wrapper';
 @use '../modules/header';
@@ -20,4 +19,5 @@
 @use '../modules/service';
 @use '../modules/company';
 @use '../modules/flow';
+@use '../modules/contact';
 @use '../modules/scrollAnimation';
