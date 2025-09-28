@@ -151,11 +151,6 @@
 
     <link rel="icon" href="/favicon.ico" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
-      rel="stylesheet"
-    />
-
     <script
       src="https://kit.fontawesome.com/d45c93bc1b.js"
       crossorigin="anonymous"
@@ -205,12 +200,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092802"
+      src="/assets/scripts/pages/contact/index.js?2025092807"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092802"
+      href="/assets/styles/pages/contact/style.css?2025092807"
     />
   </head>
 
