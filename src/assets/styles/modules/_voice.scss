@@ -45,8 +45,8 @@
 }
 
 .voice__avatar {
-  display: grid;
-  place-content: center;
+  position: relative;
+  width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
 
@@ -66,7 +66,17 @@
     background-color: #b197fc;
   }
 
-  i {
-    color: #fff;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1;
+    content: '';
+    background-image: url('/assets/images/icon_user-tie-solid-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
   }
 }

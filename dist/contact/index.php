@@ -104,24 +104,6 @@
 
 <html lang="ja">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          'gtm.start': new Date().getTime(),
-          event: 'gtm.js',
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WBLZ3KD');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>寺院管理のお問い合わせ｜株式会社前野企画</title>
@@ -152,11 +134,6 @@
     <link rel="icon" href="/favicon.ico" />
 
     <script
-      src="https://kit.fontawesome.com/d45c93bc1b.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
       type="module"
       crossorigin
       src="/assets/modulepreload-polyfill.js"
@@ -169,12 +146,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092807"
+      src="/assets/scripts/pages/contact/index.js?2025092904"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092807"
+      href="/assets/styles/pages/contact/style.css?2025092904"
     />
   </head>
 
@@ -422,9 +399,12 @@
         </div>
       </footer>
 
-      <a id="jsPageTop" class="pageTop" href="#top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
+      <a
+        id="jsPageTop"
+        class="pageTop"
+        href="#top"
+        aria-label="ページの先頭へ戻る"
+      ></a>
     </div>
   </body>
 </html>

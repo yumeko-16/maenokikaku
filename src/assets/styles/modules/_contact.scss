@@ -4,15 +4,25 @@
 .contact__phone {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 0.5em;
   place-content: center;
   align-items: center;
 
-  @include mixins.smartphone-screen {
-    gap: 15px;
-  }
+  &::before {
+    display: inline-block;
+    aspect-ratio: 1;
+    content: '';
+    background-image: url('/assets/images/icon_phone-solid-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 
-  @include mixins.tablet-screen {
-    gap: 20px;
+    @include mixins.smartphone-screen {
+      width: 40px;
+    }
+
+    @include mixins.tablet-screen {
+      width: 50px;
+    }
   }
 }
 

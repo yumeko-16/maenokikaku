@@ -50,7 +50,19 @@
 }
 
 .expertDesc__point {
-  i {
-    color: #63e6be;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em;
+  place-items: center start;
+  justify-content: start;
+
+  &::before {
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1;
+    content: '';
+    background-image: url('/assets/images/icon_circle-check-solid-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
