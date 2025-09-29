@@ -134,11 +134,6 @@
     <link rel="icon" href="/favicon.ico" />
 
     <script
-      src="https://kit.fontawesome.com/d45c93bc1b.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
       type="module"
       crossorigin
       src="/assets/modulepreload-polyfill.js"
@@ -151,12 +146,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092807"
+      src="/assets/scripts/pages/contact/index.js?2025092901"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092807"
+      href="/assets/styles/pages/contact/style.css?2025092901"
     />
   </head>
 

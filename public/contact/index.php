@@ -134,11 +134,6 @@
     <link rel="icon" href="/favicon.ico" />
 
     <script
-      src="https://kit.fontawesome.com/d45c93bc1b.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
       type="module"
       crossorigin
       src="/assets/modulepreload-polyfill.js"
