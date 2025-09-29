@@ -146,12 +146,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092901"
+      src="/assets/scripts/pages/contact/index.js?2025092902"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092901"
+      href="/assets/styles/pages/contact/style.css?2025092902"
     />
   </head>
 
@@ -399,9 +399,12 @@
         </div>
       </footer>
 
-      <a id="jsPageTop" class="pageTop" href="#top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
+      <a
+        id="jsPageTop"
+        class="pageTop"
+        href="#top"
+        aria-label="ページの先頭へ戻る"
+      ></a>
     </div>
   </body>
 </html>

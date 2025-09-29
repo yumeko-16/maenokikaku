@@ -399,9 +399,12 @@
         </div>
       </footer>
 
-      <a id="jsPageTop" class="pageTop" href="#top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
+      <a
+        id="jsPageTop"
+        class="pageTop"
+        href="#top"
+        aria-label="ページの先頭へ戻る"
+      ></a>
     </div>
   </body>
 </html>
