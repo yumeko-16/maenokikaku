@@ -146,12 +146,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092902"
+      src="/assets/scripts/pages/contact/index.js?2025092904"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092902"
+      href="/assets/styles/pages/contact/style.css?2025092904"
     />
   </head>
 
