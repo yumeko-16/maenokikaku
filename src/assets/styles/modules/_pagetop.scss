@@ -24,8 +24,12 @@
   background-color: #7db4e6;
   border-radius: 50%;
 
-  i {
-    font-size: functions.rem(20);
-    color: #fff;
+  &::before {
+    width: 24px;
+    aspect-ratio: 1;
+    content: '';
+    background-image: url('/assets/images/icon_chevron-up-solid-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
