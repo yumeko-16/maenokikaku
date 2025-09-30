@@ -141,17 +141,17 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/common.js"
+      src="/assets/scripts/common.js?2025100102"
     ></script>
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025100101"
+      src="/assets/scripts/pages/contact/index.js?2025100102"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025100101"
+      href="/assets/styles/pages/contact/style.css?2025100102"
     />
   </head>
 
