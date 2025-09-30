@@ -181,20 +181,16 @@
                 <a href="/expert/">寺院エキスパート</a>
               </li>
               <li class="header__navItem">
-                <a class="header__btn" href="/contact/">
-                  お問い合わせ
-                </a>
+                <a class="header__btn" href="/contact/">お問い合わせ</a>
               </li>
             </ul>
           </nav>
 
-          <div id="jsBurger" class="header__burger">
-            <div class="header__burgerInner">
-              <span class="header__burgerLine header__burgerLine--1"></span>
-              <span class="header__burgerLine header__burgerLine--2"></span>
-              <span class="header__burgerLine header__burgerLine--3"></span>
-            </div>
-          </div>
+          <button id="navBtn" class="navBtn">
+            <span class="navBtn__bar"></span>
+            <span class="navBtn__bar"></span>
+            <span class="navBtn__bar"></span>
+          </button>
         </div>
       </header>
 

@@ -1,16 +1,6 @@
-/* ========================================================
-バーガーメニュー
-=========================================================*/
-document.addEventListener('DOMContentLoaded', () => {
-  const body = document.body;
-  const burger = document.querySelector('#jsBurger');
+import { Nav } from './modules/nav';
 
-  if (!burger) return;
-
-  burger.addEventListener('click', () => {
-    body.classList.toggle('navOpen');
-  });
-});
+Nav();
 
 /* ========================================================
 スクロールでトップに戻るボタンを表示
