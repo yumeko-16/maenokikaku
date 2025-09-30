@@ -1,0 +1,55 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.navBtn {
+  position: relative;
+  z-index: 300;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+
+  @include mixins.laptop-screen {
+    display: none;
+  }
+}
+
+.navBtn__bar {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--black);
+  border-radius: 50px;
+  transition: 0.5s;
+
+  &:nth-child(1) {
+    top: 0;
+  }
+
+  &:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:nth-child(3) {
+    bottom: 0;
+  }
+
+  .isOpen & {
+    &:nth-child(1) {
+      top: 10px;
+      transform: rotate(225deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      top: 10px;
+      transform: rotate(-225deg);
+    }
+  }
+}

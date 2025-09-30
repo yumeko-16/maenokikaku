@@ -146,12 +146,12 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025092904"
+      src="/assets/scripts/pages/contact/index.js?2025100101"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025092904"
+      href="/assets/styles/pages/contact/style.css?2025100101"
     />
   </head>
 
@@ -181,20 +181,16 @@
                 <a href="/expert/">寺院エキスパート</a>
               </li>
               <li class="header__navItem">
-                <a class="header__btn" href="/contact/">
-                  お問い合わせ
-                </a>
+                <a class="header__btn" href="/contact/">お問い合わせ</a>
               </li>
             </ul>
           </nav>
 
-          <div id="jsBurger" class="header__burger">
-            <div class="header__burgerInner">
-              <span class="header__burgerLine header__burgerLine--1"></span>
-              <span class="header__burgerLine header__burgerLine--2"></span>
-              <span class="header__burgerLine header__burgerLine--3"></span>
-            </div>
-          </div>
+          <button id="navBtn" class="navBtn">
+            <span class="navBtn__bar"></span>
+            <span class="navBtn__bar"></span>
+            <span class="navBtn__bar"></span>
+          </button>
         </div>
       </header>
 
