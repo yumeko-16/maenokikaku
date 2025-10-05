@@ -1,0 +1,14 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.logo {
+  font-weight: 700;
+
+  @include mixins.smartphone-screen {
+    font-size: functions.rem(18);
+  }
+
+  @include mixins.tablet-screen {
+    font-size: functions.rem(22);
+  }
+}

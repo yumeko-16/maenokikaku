@@ -155,17 +155,17 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/common.js?2025100103"
+      src="/assets/scripts/common.js?2025100601"
     ></script>
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025100103"
+      src="/assets/scripts/pages/contact/index.js?2025100601"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025100103"
+      href="/assets/styles/pages/contact/style.css?2025100601"
     />
   </head>
 
@@ -183,28 +183,30 @@
 
     <div class="wrapper">
       <header class="header">
-        <div class="header__inner">
-          <a class="header__logo" href="/">株式会社前野企画</a>
+        <div class="container container--large">
+          <div class="flexContainer">
+            <a class="logo" href="/">株式会社前野企画</a>
 
-          <nav class="header__nav">
-            <ul class="header__navList">
-              <li class="header__navItem">
-                <a href="/">ホーム</a>
-              </li>
-              <li class="header__navItem">
-                <a href="/expert/">寺院エキスパートシステム</a>
-              </li>
-              <li class="header__navItem">
-                <a class="header__btn" href="/contact/">お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/">ホーム</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/expert/">寺院エキスパートシステム</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/contact/">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
 
-          <button id="navBtn" class="navBtn">
-            <span class="navBtn__bar"></span>
-            <span class="navBtn__bar"></span>
-            <span class="navBtn__bar"></span>
-          </button>
+            <button id="navBtn" class="navBtn">
+              <span class="navBtn__bar"></span>
+              <span class="navBtn__bar"></span>
+              <span class="navBtn__bar"></span>
+            </button>
+          </div>
         </div>
       </header>
 

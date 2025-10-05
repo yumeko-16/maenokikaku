@@ -1,0 +1,45 @@
+@use '../utils/functions';
+@use '../utils/mixins';
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 200;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--base);
+  transition: all 0.4s;
+
+  @include mixins.laptop-screen {
+    position: static;
+    width: auto;
+    height: auto;
+    padding-top: initial;
+    background-color: var(--white);
+  }
+
+  .isOpen & {
+    right: 0;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+
+  @include mixins.laptop-screen {
+    flex-direction: initial;
+    gap: 30px;
+  }
+}
+
+.nav__item {
+  font-size: functions.rem(16);
+  font-weight: 700;
+  text-align: center;
+}
