@@ -155,17 +155,17 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/common.js?2025100602"
+      src="/assets/scripts/common.js"
     ></script>
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js?2025100602"
+      src="/assets/scripts/pages/contact/index.js"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css?2025100602"
+      href="/assets/styles/pages/contact/style.css"
     />
   </head>
 

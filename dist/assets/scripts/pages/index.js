@@ -1,1 +1,1 @@
-/* empty css                      */
+/* empty css                      */const i=()=>{const n=document.querySelectorAll(".sa");if(n.length===0)return;const e=50;window.addEventListener("scroll",()=>{n.forEach(t=>{window.innerHeight>t.getBoundingClientRect().top+e&&t.classList.add("isShow")})})};i();
