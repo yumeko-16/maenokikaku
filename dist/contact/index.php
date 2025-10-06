@@ -155,17 +155,17 @@
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/common.js"
+      src="/assets/scripts/common.js?2025100603"
     ></script>
     <script
       type="module"
       crossorigin
-      src="/assets/scripts/pages/contact/index.js"
+      src="/assets/scripts/pages/contact/index.js?2025100603"
     ></script>
     <link
       rel="stylesheet"
       crossorigin
-      href="/assets/styles/pages/contact/style.css"
+      href="/assets/styles/pages/contact/style.css?2025100603"
     />
   </head>
 
@@ -212,8 +212,8 @@
 
       <main class="main">
         <section class="section">
-          <div class="section__inner">
-            <h1 class="section__heading">お問い合わせ</h1>
+          <div class="container">
+            <h1 class="heading">お問い合わせ</h1>
 
             <?php if ($page_flag === 1): ?>
               <div class="mail">
@@ -293,7 +293,7 @@
                 </form>
               </div>
             <?php elseif ( $page_flag === 2 ): ?>
-              <div class="section__lead">
+              <div class="lead">
                 <p>
                   この度はお問い合わせいただき、誠にありがとうございます。
                   <br />
@@ -313,7 +313,7 @@
                 </ul>
               </div>
             <?php else: ?>
-              <div class="section__lead">
+              <div class="lead">
                 <p>
                   サービスに関するお問い合わせは、お電話またはメールフォームで承っております。
                   <br />
