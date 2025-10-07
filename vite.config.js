@@ -17,6 +17,7 @@ export default defineConfig({
           'src/assets/scripts/pages/expert/index.ts',
         'scripts/pages/contact/index':
           'src/assets/scripts/pages/contact/index.ts',
+        'styles/globals': 'src/assets/styles/globals.css',
         'styles/pages/style': 'src/assets/styles/pages/style.scss',
         'styles/pages/expert/style':
           'src/assets/styles/pages/expert/style.scss',
