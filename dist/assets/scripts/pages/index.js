@@ -1,1 +1,1 @@
-/* empty css                      */const i=()=>{const n=document.querySelectorAll(".sa");if(n.length===0)return;const e=50;window.addEventListener("scroll",()=>{n.forEach(t=>{window.innerHeight>t.getBoundingClientRect().top+e&&t.classList.add("isShow")})})};i();
+/* empty css                      */const o=()=>{const e=document.querySelectorAll(".sa");if(e.length===0)return;const t=50;window.addEventListener("scroll",()=>{e.forEach(n=>{window.innerHeight>n.getBoundingClientRect().top+t&&n.classList.add("isShow")})})};document.addEventListener("DOMContentLoaded",()=>{o()});
