@@ -106,7 +106,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>寺院管理のお問い合わせ｜株式会社前野企画</title>
+    <title>寺院管理のお問い合わせ - 株式会社前野企画</title>
     <meta
       name="description"
       content="寺院管理ソフト「寺院エキスパートシステム」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
@@ -116,7 +116,7 @@
 
     <meta
       property="og:title"
-      content="寺院管理のお問い合わせ｜株式会社前野企画"
+      content="寺院管理のお問い合わせ - 株式会社前野企画"
     />
     <meta
       property="og:description"
@@ -134,7 +134,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="寺院管理のお問い合わせ｜株式会社前野企画"
+      content="寺院管理のお問い合わせ - 株式会社前野企画"
     />
     <meta
       name="twitter:description"
