@@ -1,27 +1,27 @@
-export const ScrollToTop = () => {
-  const trigger = document.getElementById('scrollTopTrigger');
-
+export const ScrollToTop = (): void => {
+  const trigger = document.getElementById(
+    'scrollTopTrigger',
+  ) as HTMLAnchorElement | null;
   if (!trigger) return;
 
-  const px_change = 1;
+  const pxChange = 1;
 
-  window.addEventListener('scroll', () => {
-    // 変化するポイントまでスクロールしたらクラスを追加
+  const handleScroll = (): void => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    trigger.classList.toggle('isShow', scrollTop > pxChange);
+  };
 
-    if (scrollTop > px_change) {
-      trigger.classList.add('isShow');
-    } else {
-      trigger.classList.remove('isShow');
-    }
-  });
-
-  trigger.addEventListener('click', (e) => {
+  const handleClick = (e: MouseEvent): void => {
     e.preventDefault();
-
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-  });
+  };
+
+  window.removeEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll);
+
+  trigger.removeEventListener('click', handleClick);
+  trigger.addEventListener('click', handleClick);
 };
