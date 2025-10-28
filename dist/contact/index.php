@@ -109,7 +109,7 @@
     <title>寺院管理のお問い合わせ - 株式会社前野企画</title>
     <meta
       name="description"
-      content="寺院管理ソフトの導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
+      content="寺院管理ソフト「寺院エキスパートシステム」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
     />
 
     <link rel="canonical" href="https://maenokikaku.co.jp/contact/" />
@@ -120,7 +120,7 @@
     />
     <meta
       property="og:description"
-      content="寺院管理ソフトの導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
+      content="寺院管理ソフト「寺院エキスパートシステム」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maenokikaku.co.jp/contact/" />
@@ -138,7 +138,7 @@
     />
     <meta
       name="twitter:description"
-      content="寺院管理ソフトの導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
+      content="寺院管理ソフト「寺院エキスパートシステム」の導入やサポートに関するお問い合わせはこちら。檀家管理や塔婆印刷など、多彩な機能についてお気軽にご相談ください。"
     />
     <meta
       name="twitter:image"
@@ -196,6 +196,9 @@
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="/">ホーム</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/expert/">寺院エキスパートシステム</a>
                 </li>
                 <li class="nav__item">
                   <a href="/contact/">お問い合わせ</a>
