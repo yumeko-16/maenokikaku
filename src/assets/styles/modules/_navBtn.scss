@@ -1,5 +1,5 @@
-@use '../utils/functions';
-@use '../utils/mixins';
+@use '../utils/function';
+@use '../utils/mixin';
 
 .navBtn {
   position: relative;
@@ -11,7 +11,7 @@
   background-color: transparent;
   border: none;
 
-  @include mixins.laptop-screen {
+  @include mixin.laptop-screen {
     display: none;
   }
 }

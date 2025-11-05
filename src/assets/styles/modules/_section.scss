@@ -1,19 +1,19 @@
-@use '../utils/functions';
-@use '../utils/mixins';
+@use '../utils/function';
+@use '../utils/mixin';
 
 .section {
-  @include mixins.smartphone-screen {
+  @include mixin.smartphone-screen {
     padding: 50px 0;
   }
 
-  @include mixins.tablet-screen {
+  @include mixin.tablet-screen {
     padding: 80px 0;
   }
 
   &--hero {
     background: linear-gradient(135deg, var(--primary), #5067c5);
 
-    @include mixins.tablet-screen {
+    @include mixin.tablet-screen {
       border-radius: 0 0 50% 50% / 0 0 8% 8%;
     }
   }

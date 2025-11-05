@@ -1,14 +1,14 @@
-@use '../utils/functions';
-@use '../utils/mixins';
+@use '../utils/function';
+@use '../utils/mixin';
 
 .expert {
   display: grid;
 
-  @include mixins.smartphone-screen {
-    gap: functions.vw(60);
+  @include mixin.smartphone-screen {
+    gap: function.vw(60);
   }
 
-  @include mixins.tablet-screen {
+  @include mixin.tablet-screen {
     gap: 80px;
   }
 }
@@ -16,11 +16,11 @@
 .expert__content {
   display: grid;
 
-  @include mixins.smartphone-screen {
-    gap: functions.vw(15);
+  @include mixin.smartphone-screen {
+    gap: function.vw(15);
   }
 
-  @include mixins.tablet-screen {
+  @include mixin.tablet-screen {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
