@@ -1,6 +1,6 @@
-@use '../utils/functions';
-@use '../utils/mixins';
+@use '../utils/function';
+@use '../utils/mixin';
 
 .copyright {
-  font-size: functions.fluid-clamp(14, 16);
+  font-size: function.fluid-clamp(14, 16);
 }

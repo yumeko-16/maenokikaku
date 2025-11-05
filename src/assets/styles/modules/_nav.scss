@@ -1,5 +1,5 @@
-@use '../utils/functions';
-@use '../utils/mixins';
+@use '../utils/function';
+@use '../utils/mixin';
 
 .nav {
   position: fixed;
@@ -13,7 +13,7 @@
   background-color: var(--base);
   transition: all 0.4s;
 
-  @include mixins.laptop-screen {
+  @include mixin.laptop-screen {
     position: static;
     width: auto;
     height: auto;
@@ -32,14 +32,14 @@
   gap: 50px;
   align-items: center;
 
-  @include mixins.laptop-screen {
+  @include mixin.laptop-screen {
     flex-direction: initial;
     gap: 30px;
   }
 }
 
 .nav__item {
-  font-size: functions.rem(16);
+  font-size: function.rem(16);
   font-weight: 700;
   text-align: center;
 }

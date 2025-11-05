@@ -1,21 +1,21 @@
-@use '../utils/mixins';
+@use '../utils/mixin';
 
 .lineBreakSm {
-  @include mixins.smartphone-screen {
+  @include mixin.smartphone-screen {
     display: block;
   }
 
-  @include mixins.tablet-screen {
+  @include mixin.tablet-screen {
     display: none;
   }
 }
 
 .lineBreakTb {
-  @include mixins.smartphone-screen {
+  @include mixin.smartphone-screen {
     display: none;
   }
 
-  @include mixins.tablet-screen {
+  @include mixin.tablet-screen {
     display: block;
   }
 }
