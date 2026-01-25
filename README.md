@@ -1,4 +1,4 @@
-# Maeno Planning Co., Ltd. Official Website
+# Maeno Kikaku Co., Ltd.
 
 [![Vite](https://img.shields.io/badge/Vite-3.0-blue)](https://vitejs.dev/)
 [![Docker](https://img.shields.io/badge/Docker-Yes-blue)](https://www.docker.com/)
